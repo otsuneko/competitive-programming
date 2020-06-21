@@ -1,0 +1,49 @@
+{
+	"input_line int(single)":{
+		"prefix":"input",
+		"body":["int(input())"],
+		"description":"input int(single)",
+	},
+	"input_line int(multiple)":{
+		"prefix":"input",
+		"body":["map(int,input().split())"],
+		"description":"input int(multiple)",
+	},
+	"input_line list(int)":{
+		"prefix":"input",
+		"body":["list(map(int,input().split()))"],
+		"description":"input list(int)",
+	},
+	"input_line list(str)":{
+		"prefix":"input",
+		"body":["input().split()"],
+		"description":"input list(int)",
+	},
+	"input_line tuple(int)":{
+		"prefix":"input",
+		"body":["tuple(map(int,input().split()))"],
+		"description":"input tuple(int)",
+	},
+	"input_lines list(single_int)":{
+		"prefix":"input",
+		"body":["[int(input()) for _ in range(n)]"],
+		"description":"input_lines list(single_int)",
+	},
+	"input_lines list(multiple_int)":{
+		"prefix":"input",
+		"body":["[list(map(int,input().split())) for _ in range(n)]"],
+		"description":"input_lines list(multiple_int)",
+	},
+	"input_lines list(single_str)":{
+		"prefix":"input",
+		"body":["[input() for _ in range(n)]"],
+		"description":"input_lines list(single_int)",
+	},
+	"input_lines list(multiple_str)":{
+		"prefix":"input",
+		"body":["[input().split() for _ in range(n)]"],
+		"description":"input_lines list(multiple_int)",
+	},
+
+
+}

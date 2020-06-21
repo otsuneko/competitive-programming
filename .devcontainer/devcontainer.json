@@ -1,0 +1,24 @@
+{
+"name": "Python 3",
+    "context": "..",
+    "dockerFile": "Dockerfile",
+
+    "settings": { 
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.pythonPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.linting.pylintPath": "/usr/local/bin/pylint"
+    },
+
+    "appPort": [ 9000 ],
+
+    "postCreateCommand": "sudo pip install -r requirements.txt",
+
+    "remoteUser": "vscode",
+
+    "extensions": [
+		"ms-python.python",
+		"coenraads.bracket-pair-colorizer-2"
+	]
+}
