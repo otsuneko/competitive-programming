@@ -103,7 +103,7 @@ atcoder
         もしくは入力をブランクにすると、graph_sampleにあるサンプルを実行するのでそこを手入力で直して実行します。  
         ![gif](https://raw.github.com/wiki/yamatia/atcoder_py_dokcer_sample/image/sample.gif)  
         
-        入力ファイル形式は↓のようなものを想定  
+        入力ファイル形式は↓のようなものを想定。重みなし0-index無向グラフのみです。他はオイオイやっていきたい所存...
         #-input.in--  
         #n m  
         #a1 b1  
