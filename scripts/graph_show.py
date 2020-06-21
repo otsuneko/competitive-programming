@@ -3,7 +3,7 @@ import os,glob
 import networkx as nx
 import matplotlib.pyplot as plt
 
-#-input.txt--
+#-input.in--
 #n m
 #a1 b1
 #a2 b2
