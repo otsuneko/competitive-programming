@@ -6,7 +6,7 @@
         {
             "label": "oj test python",
             "type": "shell",
-            "command": "/workspaces/atcoder/scripts/oj_test.sh",
+            "command": "${workspaceFolder}/scripts/oj_test.sh",
             "args":["${file}"],
             "group":{
                 "kind":"build",

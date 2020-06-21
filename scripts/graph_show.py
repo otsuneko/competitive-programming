@@ -31,9 +31,9 @@ def graph_draw(path):
 
 def main():
     input_path = input('enter:folder_name of tmp /or None')
-    path = '/workspaces/atcoder/tmp/{}'.format(input_path)
+    path = os.path.join(os.path.dirname(__file__),'../tmp/{}'.format(input_path))
     if not input_path:
-        path = '/workspaces/atcoder/tmp/graph_sample'
+        path = os.path.join(os.path.dirname(__file__),'../tmp/graph_sample')
 
     files = glob.glob('{}/*.in'.format(path))
     print('input_files:',files)
