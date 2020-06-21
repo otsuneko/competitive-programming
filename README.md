@@ -91,7 +91,8 @@ atcoder
 5. __scripts__
     - oj_test.sh  
 
-        online-judge-toolsで開いている問題のファイル名からサンプルをダウンロード、出力のテストまで行います。  
+        online-judge-toolsで開いている問題のファイル名からサンプルをダウンロード、出力のテストまで行います。
+        企業コンテストなどではURLをうまく認識できずバグることがあります。 
 
     - graph_show.py  
 
