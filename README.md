@@ -57,13 +57,13 @@ atcoder
 
 ## 説明
 
-1. dockerコンテナビルド関連
+1. __dockerコンテナビルド関連__
 
     .devcontainerにあるdevcontainer.json,Dockerfile、とrequirements.txtでイメージの立ち上げを行っています。
 
     atocderのジャッジ(2020/6/21時点)でのpython3.8とそのモジュール、他にはグラフ問題の可視化用にjupyter,matplotlib、あとはonline-judge-toolsを導入しています  
 
-2. .vscode
+2. __.vscode__
     - launch.json  
 
         vscodeでのpythonデバッグ設定です。  
@@ -80,15 +80,15 @@ atcoder
 
         vscodeのスニペット一覧です。   
 
-3. field  
+3. __field__  
     コンテストの解法ファイルをまとめて入れています。contestsでは開催中コンテスト、other_problemsではその他の問題を放り込んでいます。  
 
     .gitignoreにcontestsを記載することで、PASTの問題などで事故らないようにする想定です。  
 
-4. library  
+4. __library__  
     典型的なライブラリをコピペ用に入れていく予定のフォルダです  
 
-5. scripts
+5. __scripts__
     - oj_test.sh  
 
         online-judge-toolsで開いている問題のファイル名からサンプルをダウンロード、出力のテストまで行います。  
