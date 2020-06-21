@@ -74,7 +74,7 @@ atcoder
         解法ファイル(e.g.abc168_a.py)を開いた状態で、Ctr+Shift+Bで実行可能です。私の環境では。  
 
         実行されると、online-judge-toolsを用いてファイル名からサンプルをダウンロード、出力のテストまで行われます。
-        ![gif](https://github.com/yamatia/atcoder_py_dokcer_sample.git/sample/sample2.gif)    
+        ![gif](https://github.com/yamatia/atcoder_py_dokcer_sample/sample/sample2.gif)    
 
     - py_atcoder_snippet.code-snippets  
 
@@ -100,7 +100,7 @@ atcoder
         tmp以下の指定のフォルダにある入力サンプルをnetworkx+matplotlib+jupyterで可視化します。  
 
         もしくは入力をブランクにすると、graph_sampleにあるサンプルを実行するのでそこを手入力で直して実行します。  
-        ![gif](https://github.com/yamatia/atcoder_py_dokcer_sample.git/sample/sample.gif)  
+        ![gif](https://github.com/yamatia/atcoder_py_dokcer_sample/sample/sample.gif)  
         
         入力ファイル形式は↓のようなものを想定  
         #-input.in--  
