@@ -1,7 +1,7 @@
 # 説明
 
-このフォルダはatcoder用のvscode+docker+git環境を構築する自分用のオレオレ環境構築メモです。  
-pythonとc++で実行可能です。
+atcoder用のvscode+docker+git環境構築ファイルです。  
+pythonとc++を使用可能です。
 
 以下の３つがメインとなっています。 
 
@@ -174,7 +174,7 @@ atcoder_docker_sample
 7. __version_check.py__     
     AtCoderのコードテストで実行することで、ジャッジに導入されているモジュールのバージョンを確認することができます。
 
-8. __.gitignore__
+8. __.gitignore__   
     GitHubで管理を行う際に、更新を反映しないファイルを指定できます。デフォルトではfield/contestsとtmpを指定しています。  
 
 
