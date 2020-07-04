@@ -4,7 +4,7 @@ s=[list(map(int,input().split())) for i in range(m)]
  
 g=nx.Graph()
 g.add_nodes_from([i for i in range(1,n+1)])
- 
+
 for x in s:
     g.add_edge(x[0],x[1])
 di=nx.predecessor(g,source=1)

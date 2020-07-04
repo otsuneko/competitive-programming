@@ -11,6 +11,7 @@ pythonとc++で実行可能です。
 
 ## フォルダ構成
 atcoder_docker_sample   
+│        
 ├── README.md      
 ├── .devcontainerdocker   
 │   ├── devcontainer.json    
@@ -55,26 +56,32 @@ atcoder_docker_sample
 
 簡単な導入＆立ち上げ方法です。わかる人はスキップ推奨
 
-0. 前準備   
-vscode+dockerが動かせる環境が必要です。
-導入については下記参照：
-https://code.visualstudio.com/docs/remote/containers
-https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2
+0. __前準備__
 
-1. gitからのダウンロード   
-githubからのダウンロード方法です。
+    vscode+dockerが動かせる環境が必要です。
+    導入については下記参照：
+    https://code.visualstudio.com/docs/remote/containers
+    https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2
+
+1. __gitからのダウンロード__   
+
+    githubからのダウンロード方法です。
     ```
     git clone https://github.com/yamatia/atcoder_docker_sample.git
     ```
-2. VSCodeで開く     
-左下の`><`マークをクリックして、`Remote Containers:Open Foleder in Container`から1でダウンロードしたatcoder-docker-samleをクリックする  
-<>
-初回は少し時間がかかりますが、dockerイメージがビルドされて実行可能になります。  
-※docker imageのサイズが大きいですが、不満な人はdevcontainer.jsonからextensionを適宜削除してください 
 
-3. atcoderへのログイン  
-online-judge-toolsでの提出を行うのであればログイン作業が必要です。
-以下を入力するとユーザー名とパスワードを求められるので適宜入力してください。
+2. __VSCodeで開く__
+
+    左下の`><`マークをクリックして、`Remote Containers:Open Foleder in Container`から1でダウンロードしたatcoder-docker-samleをクリックする  
+    
+    ![docker](https://raw.github.com/wiki/yamatia/atcoder_docker_sample/image/docker.gif)
+    
+    初回は少し時間がかかりますが、dockerイメージがビルドされて実行可能になります。  
+    ※docker imageのサイズが大きいですが、不満な人はdevcontainer.jsonからextensionを適宜削除してください 
+
+3. __atcoderへのログイン__  
+    online-judge-toolsでの提出を行うのであればログイン作業が必要です。
+    以下を入力するとユーザー名とパスワードを求められるので適宜入力してください。
 
     ```
     oj login https://atcoder.jp/
@@ -85,26 +92,43 @@ online-judge-toolsでの提出を行うのであればログイン作業が必�
 - コンテストの解法はfield以下に収める事を想定してます。/field/contest/abc168/d.pyのようにフォルダで管理するか、/field/other_problems/abc168_d.pyのように問題で管理することができます。<br><br>
 .gitignoreには/field/contestsを記載しているので、この部分はGitしても上がりません。なのでPASTの問題などをここで管理して賠償問題事故などをおこさないようにしています。
 
-- 基本的に、解法ファイルを作成する以外の操作はすべてタスクランナーでGUIから実行可能です。解法ファイルを開いた状態で、左下のTASK RUNNNERから以下の５つを選択することで操作できます。
+- 基本的に、解法ファイルを作成する以外の操作はすべてタスクランナーでGUIから実行可能です。解法ファイルを開いた状態で、左下のTASK RUNNNERから以下の５つを選択することで操作できます。<br><br>
 
-    1. __oj_download&test__       
-    online-judge-toolsのdownloadとtestをいい感じに実行するようにしています。フォルダ名とファイル名から、atcoderの問題URLにアクセスし、tmp以下に問題ファイルをダウンロード、実行テストという作業をまとめて行っています。     
-    ※企業コンなどで時に問題URLに辿り着けないことがあるので、その時はterminalから入力を求められます。
+    1. __oj_download&test__   
+
+        online-judge-toolsのdownloadとtestをいい感じに実行するようにしています。    
+        フォルダ名とファイル名から、atcoderの問題URLにアクセスし、tmp以下に問題ファイルをダウンロード、実行テストという作業をまとめて行っています。     
+        ※企業コンなどで時に問題URLに辿り着けないことがあるので、その時はterminalから入力を求められます。
+
+        ![oj_download](https://raw.github.com/wiki/yamatia/atcoder_docker_sample/image/oj_download_test.gif)
 
     2. __oj_submit__    
-    online-judge-toolsのsubmitを実行するようにしてます。これでatcoderへの提出が行えます。   
-    ※1つ注意点として、そのままだと実行時にoj側から最後にエラーメッセージが表示されます。しかしコンテストページを見るとわかるのですが、提出はできています。
-    これは、online-judge-toolsの挙動として、ファイル提出後にブラウザで提出画面を自動で開こうとするのですが、dockerからホストのブラウザが参照できないことが原因です。提出後にブラウザで開いてほしい人は適宜パスを追加すればいいと思います。
+    
+        online-judge-toolsのsubmitを実行するようにしてます。これでatcoderへの提出が行えます。
+        
+        ![oj_test](https://raw.github.com/wiki/yamatia/atcoder_docker_sample/image/oj_submit.gif)
 
-    3. __clean tmp folder__        
-    上記1を実行すると、tmp以下にsampleファイルがたまっていくので、その掃除用です。実行すると、1日以上前にダウンロードしたファイルを削除します。
+        ※1つ注意点として、そのままだと実行時にoj側から最後にエラーメッセージが表示されます。しかしコンテストページを見るとわかるのですが、提出はできています。
+        これは、online-judge-toolsの挙動として、ファイル提出後にブラウザで提出画面を自動で開こうとするのですが、dockerからホストのブラウザが参照できないことが原因です。提出後にブラウザで開いてほしい人は適宜パスを追加すればいいと思います。
 
-    4. __cpp runner__       
-    C++の実行ファイル(.cpp形式)をコンパイル、実行します。入力はterminalから行ってください。
+    3. __clean tmp folder__ 
+           
+        上記1を実行すると、tmp以下にsampleファイルがたまっていくので、その掃除用です。実行すると、1日以上前にダウンロードしたファイルを削除します。
 
-    5. __graph viewer__         
-    streamlitによるグラフ問題の簡易な可視化用です。<br><br>
-    実行すると、<https://localhost:8501/>でブラウザからアクセスできます。<br>基本的に上からポチポチ操作すれば、対応してるグラフ形式であればnetworkxによる可視化が可能です。他には、サイドバーからグラフの描画設定をいじることができます。一応保存も可能です。
+    4. __cpp runner__     
+      
+        C++の実行ファイル(.cpp形式)をコンパイル、実行します。入力はterminalから行ってください。
+
+    5. __graph viewer__   
+
+        streamlitによるグラフ問題の簡易な可視化用です。<br><br>
+        実行すると、<https://localhost:8501/>でブラウザからアクセスできます。<br>
+
+        ![graph](https://raw.github.com/wiki/yamatia/atcoder_docker_sample/image/graph.gif)
+        
+        基本的に上からポチポチ操作すれば、対応してるグラフ形式であればnetworkxによる可視化が可能です。他には、サイドバーからグラフの描画設定をいじることができます。一応保存も可能です。
+
+        終わったらCtr+Cなどで閉じてあげてください。
 
 - 他には、pythonとc++についてはF5でvscodeのデバッグを実行できます。c++についてはエラーメッセージが流れることもあり少し微妙です。
 
