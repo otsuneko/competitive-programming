@@ -148,7 +148,7 @@ class Input(object):
         if input_mode=='free input':
             st.write('---')
             inputs = st.text_area(label='free_input').rstrip()
-            self._inputs = inputs if inputs else None
+            self._inputs = inputs if inputs else []
 
         st.write('')
         if self._inputs:
@@ -298,16 +298,16 @@ class Draw(Input):
         draw_button = st.button('Graph Draw',key=33)
         images = []
         if draw_button:
-            #try:
-            for i,data in enumerate(inputs):
-                image = self.graph_to_networkx(idx,data)
+            try:
+                for i,data in enumerate(inputs):
+                    image = self.graph_to_networkx(idx,data)
                 
-                images.append(image)
-                st.write('---')
-                st.write('sample{}_graph'.format(i))
-                st.write(image)
-            #except:
-            #    st.write('draw error')
+                    images.append(image)
+                    st.write('---')
+                    st.write('sample{}_graph'.format(i))
+                    st.write(image)
+            except:
+                st.write('draw error')
         else:
             st.write('no image')
 
