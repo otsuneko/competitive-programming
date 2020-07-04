@@ -64,7 +64,7 @@ class Input(object):
         script_path = sys.argv[0]
         file_path = sys.argv[1]
         
-        basedir_path = ''
+        basedir_path=contest_id=problem_id=''
 
         for i,char in enumerate(file_path):
             if script_path[i]==file_path[i]:
@@ -96,6 +96,8 @@ class Input(object):
             
             try:
                 problem_id = '{0}_{1}'.format(self._contest_id,self._problem_id)
+                if problem_id=='_':
+                    problem_id = ''
             except:
                 problem_id = ''
             contest_id = st.text_input(label='problem_id',value=problem_id)
@@ -109,6 +111,7 @@ class Input(object):
         inputs = 0
         ###data download
         if contest_id:
+            self._contest_id = contest_id
             self._tmp_path = str(os.path.dirname(__file__)).replace('scripts','')+'tmp'
             self._path = str(os.path.dirname(__file__)).replace('scripts','')+'tmp/{}'.format(contest_id)
 
@@ -159,15 +162,15 @@ class Input(object):
 
     def draw_option(self):
         st.sidebar.subheader('node option:')
-        self._node_size = st.sidebar.slider('node_size:',min_value=100,max_value=3000,step=100,value=800)
+        self._node_size = st.sidebar.slider('node_size:',min_value=100,max_value=3000,step=100,value=1500)
         self._node_color = st.sidebar.selectbox('node_color:',('red','coral','gold','green','mediumspringgreen','darkturquoise','blue','darkviolet','white','black'),index=5)
         self._node_shape = st.sidebar.selectbox('node_shape(circle or square):',('o','s'),index=0)
         st.sidebar.subheader('edge option:')
         self._width = st.sidebar.slider('edge_width:',min_value=0.5,max_value=5.0,step=0.5,value=1.0)
         self._edge_color = st.sidebar.selectbox('edge_color:',('red','coral','gold','green','mediumspringgreen','darkturquoise','blue','darkviolet','white','black'),index=9)
         st.sidebar.subheader('other option:')
-        self._alpha = st.sidebar.slider('alpha(ノードとエッジの透明度):',min_value=0.0,max_value=1.0,step=0.1,value=0.8)
-        self._font_size = st.sidebar.slider('font_size:',min_value=5,max_value=50,step=5,value=15)
+        self._alpha = st.sidebar.slider('alpha(ノードとエッジの透明度):',min_value=0.0,max_value=1.0,step=0.1,value=1.0)
+        self._font_size = st.sidebar.slider('font_size:',min_value=5,max_value=50,step=1,value=20)
         self._font_color = st.sidebar.selectbox('font_color:',('red','coral','gold','green','mediumspringgreen','darkturquoise','blue','darkviolet','white','black'),index=8)
         self._font_weight = st.sidebar.selectbox('font_weight:',('bold','normal'))
         self._k = st.sidebar.slider('k(ノードの反発力):',min_value=0.0,max_value=10.0,step=0.1,value=0.8)
@@ -314,7 +317,7 @@ class Draw(Input):
         
         if save_button:
             for i,pic in enumerate(images):
-                pic.savefig('{}/graph_sample/sample{}.png'.format(self._tmp_path,i))
+                pic.savefig('{}/graph_sample/{}{}_graph{}.png'.format(self._tmp_path,self._contest_id,self._problem_id,i))
     
 def main():
     Draw(sys.argv[-1]).graph_draw()
