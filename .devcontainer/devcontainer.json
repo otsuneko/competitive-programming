@@ -11,14 +11,18 @@
         "python.linting.pylintPath": "/usr/local/bin/pylint"
     },
 
-    "appPort": [ 9000 ],
+    "appPort": [ 8501 ],
 
-    "postCreateCommand": "sudo pip install -r requirements.txt",
+    "postCreateCommand": "pip install -r requirements.txt && apt-get install -y gdb",
 
     "remoteUser": "vscode",
 
     "extensions": [
 		"ms-python.python",
-		"coenraads.bracket-pair-colorizer-2"
-	]
+		"coenraads.bracket-pair-colorizer-2",
+		"sanaajani.taskrunnercode",
+		"vscode-icons-team.vscode-icons",
+		"ms-vscode.cpptools",
+		"austin.code-gnu-global"
+    ],
 }

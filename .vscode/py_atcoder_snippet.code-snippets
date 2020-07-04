@@ -26,22 +26,22 @@
 	},
 	"input_lines list(single_int)":{
 		"prefix":"input",
-		"body":["[int(input()) for _ in range(n)]"],
+		"body":["[int(input()) for _ in range($1)]"],
 		"description":"input_lines list(single_int)",
 	},
 	"input_lines list(multiple_int)":{
 		"prefix":"input",
-		"body":["[list(map(int,input().split())) for _ in range(n)]"],
+		"body":["[list(map(int,input().split())) for _ in range($1)]"],
 		"description":"input_lines list(multiple_int)",
 	},
 	"input_lines list(single_str)":{
 		"prefix":"input",
-		"body":["[input() for _ in range(n)]"],
+		"body":["[input() for _ in range($1)]"],
 		"description":"input_lines list(single_int)",
 	},
 	"input_lines list(multiple_str)":{
 		"prefix":"input",
-		"body":["[input().split() for _ in range(n)]"],
+		"body":["[input().split() for _ in range($1)]"],
 		"description":"input_lines list(multiple_int)",
 	},
 

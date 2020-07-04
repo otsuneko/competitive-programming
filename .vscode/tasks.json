@@ -4,14 +4,76 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "oj test python",
+            "label": "oj_download & test",
             "type": "shell",
-            "command": "${workspaceFolder}/scripts/oj_test.sh",
-            "args":["${file}"],
-            "group":{
-                "kind":"build",
-                "isDefault":true,
-            }
-        }
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/scripts/oj_test.py",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+        },
+        {
+            "label": "oj_submit",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/scripts/oj_submit.py",
+                "${file}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label":"clean tmp folder",
+            "type":"shell",
+            "command":"${workspaceFolder}/scripts/clean_tmp.sh"
+        },
+        {
+            "label": "graph viewer",
+            "type": "shell",
+            "command": "streamlit",
+            "args": [
+                "run",
+                "${workspaceFolder}/scripts/graph_visualization.py",
+                "${file}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "cpp runner",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",
+                "-o",
+                "${workspaceFolder}/tmp/a.out",
+                "-lstdc++",
+                "-g",
+                "&&",
+                "${workspaceFolder}/tmp/a.out",
+                "&&",
+                "rm",
+                "-f",
+                "${workspaceFolder}/tmp/a.out",
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "cpp build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",
+                "-o",
+                "${workspaceFolder}/tmp/a.out",
+                "-lstdc++",
+                "-g",
+            ],
+            "problemMatcher": []
+        },
     ]
 }

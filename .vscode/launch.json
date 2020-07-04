@@ -5,11 +5,32 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "C++(gdb):Current File",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tmp/a.out",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask":"cpp build",
+            "miDebuggerPath":"/usr/bin/gdb",
+            "setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			]
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
+            "stopOnEntry": true,
             "program": "${file}",
             "console": "integratedTerminal"
-        }
+        },
     ]
 }
