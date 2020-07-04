@@ -3,7 +3,7 @@
 atcoder用のvscode+docker+git環境構築ファイルです。  
 pythonとc++を使用可能です。
 
-以下の３つがメインとなっています。 
+以下の３つがメインとなっています。 vscodeのタスクランナーを使用することでGUIで簡単に動かせることを目標にしてます。
 
     1.dockerコンテナの構築設定周り  
     2.online-judge-toolsの実行  
@@ -72,16 +72,14 @@ atcoder_docker_sample
 
 2. __VSCodeで開く__
 
-    左下の`><`マークをクリックして、`Remote Containers:Open Foleder in Container`から1でダウンロードしたatcoder-docker-samlpeをクリックする  
-    
-    ![docker](https://raw.github.com/wiki/yamatia/atcoder_docker_sample/image/docker.gif)
+    左下の緑色の`><`マークをクリックして、`Remote Containers:Open Foleder in Container`から1でダウンロードしたatcoder-docker-samlpeをクリックする  
     
     初回は少し時間がかかりますが、dockerイメージがビルドされて実行可能になります。  
     ※docker imageのサイズが大きいですが、不満な人はdevcontainer.jsonからextensionを適宜削除してください 
 
 3. __atcoderへのログイン__  
     online-judge-toolsでの提出を行うのであればログイン作業が必要です。
-    以下を入力するとユーザー名とパスワードを求められるので適宜入力してください。
+    以下を入力するとユーザー名とパスワードを求められるので適宜入力してください。seleniumがインストールされていない旨が通知されますが特に入れなくても大丈夫です。
 
     ```
     oj login https://atcoder.jp/
@@ -109,7 +107,7 @@ atcoder_docker_sample
         ![oj_test](https://raw.github.com/wiki/yamatia/atcoder_docker_sample/image/oj_submit.gif)
 
         ※1つ注意点として、そのままだと実行時にoj側から最後にエラーメッセージが表示されます。しかしコンテストページを見るとわかるのですが、提出はできています。
-        これは、online-judge-toolsの挙動として、ファイル提出後にブラウザで提出画面を自動で開こうとするのですが、dockerからホストのブラウザが参照できないことが原因です。提出後にブラウザで開いてほしい人は適宜パスを追加すればいいと思います。
+        これは、online-judge-toolsの挙動として、ファイル提出後にwebbrowserで提出画面を自動で開こうとするのですが、dockerからホストのブラウザが参照できないことが原因です。提出後にブラウザで開いてほしい人は適宜パスを追加すればいいと思います。
 
     3. __clean tmp folder__ 
            
@@ -130,7 +128,7 @@ atcoder_docker_sample
 
         終わったらCtr+Cなどで閉じてあげてください。
 
-- 他には、pythonとc++についてはF5でvscodeのデバッグを実行できます。c++についてはエラーメッセージが流れることもあり少し微妙です。
+- 他には、pythonとc++についてはF5でvscodeのデバッグを実行できます。c++についてはstep overで末端まで進んでしまうとエラーメッセージが流れることもあり少し微妙です。
 
 ## その他説明
 
