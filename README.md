@@ -72,7 +72,7 @@ atcoder_docker_sample
 
 2. __VSCodeで開く__
 
-    左下の`><`マークをクリックして、`Remote Containers:Open Foleder in Container`から1でダウンロードしたatcoder-docker-samleをクリックする  
+    左下の`><`マークをクリックして、`Remote Containers:Open Foleder in Container`から1でダウンロードしたatcoder-docker-samlpeをクリックする  
     
     ![docker](https://raw.github.com/wiki/yamatia/atcoder_docker_sample/image/docker.gif)
     
