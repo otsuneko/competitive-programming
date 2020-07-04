@@ -145,7 +145,7 @@ atcoder_docker_sample
 2. __.vscode__
     - launch.json  
 
-        vscodeでのpythonデバッグ設定です。python,c++で実行可能です。
+        vscodeでのpythonデバッグ設定です。python,c++で実行可能です。    
         ※c++は仕様上、step overでプログラムで末端まで走らせるとエラーメッセージ出ます 
 
     - task.json
@@ -174,6 +174,8 @@ atcoder_docker_sample
 7. __version_check.py__     
     AtCoderのコードテストで実行することで、ジャッジに導入されているモジュールのバージョンを確認することができます。
 
+8. __.gitignore__
+    GitHubで管理を行う際に、更新を反映しないファイルを指定できます。デフォルトではfield/contestsとtmpを指定しています。  
 
 
 
