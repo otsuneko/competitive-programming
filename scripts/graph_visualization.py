@@ -10,7 +10,7 @@ class Input(object):
     def __init__(self,file_name):
         self.file_name = file_name
         self._inputs = []
-        self._path = str(os.path.dirname(__file__)).replace('scripts','')+'tmp/sample'
+        self._path = str(os.path.dirname(__file__)).replace('scripts','')+'\\tmp\\sample'
 
     def select_graph_type(self):
         ##
@@ -75,12 +75,14 @@ class Input(object):
                 break
         print('filepath:',file_path)
         #folder形式かfile単体か
-        fs = file_path.split('/')
-        if len(fs)==3:
+        fs = file_path.split('\\')
+        idx = fs.index("atcoder")
+        fs = fs[idx:]
+        if len(fs)==2:
             parts = fs[-1].split('_')
             problem_id = parts.pop(-1).split('.')[0]
             contest_id = '_'.join(parts)
-        if len(fs)==4:
+        if len(fs)==3:
             contest_id = fs[-2]
             problem_id = fs[-1].split('.')[0]
 
@@ -113,10 +115,10 @@ class Input(object):
         if contest_id:
             self._contest_id = contest_id
             self._tmp_path = str(os.path.dirname(__file__)).replace('scripts','')+'tmp'
-            self._path = str(os.path.dirname(__file__)).replace('scripts','')+'tmp/{}'.format(contest_id)
+            self._path = str(os.path.dirname(__file__)).replace('scripts','')+'tmp\\{}'.format(contest_id)
 
             if st.button('Enter',key=1):
-                files = glob.glob('{}/*.in'.format(self._path))
+                files = glob.glob('{}\\*.in'.format(self._path))
                 if not files:
                     m = st.write('not exist.start download...')
                     oj_url="https://atcoder.jp/contests/{}/tasks/{}".format(contest_id.split('_')[0],contest_id)
@@ -130,7 +132,7 @@ class Input(object):
 
             #with open files
             inputs = []
-            for p in glob.glob('{}/*.in'.format(self._path)):
+            for p in glob.glob('{}\\*.in'.format(self._path)):
                 with open(p) as input_file:
                     f = [l.strip() for l in input_file.readlines()]
                     inputs.append(f)
@@ -317,7 +319,7 @@ class Draw(Input):
         
         if save_button:
             for i,pic in enumerate(images):
-                pic.savefig('{}/graph_sample/{}{}_graph{}.png'.format(self._tmp_path,self._contest_id,self._problem_id,i))
+                pic.savefig('{}\\graph_sample\\{}{}_graph{}.png'.format(self._tmp_path,self._contest_id,self._problem_id,i))
     
 def main():
     Draw(sys.argv[-1]).graph_draw()

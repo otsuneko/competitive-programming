@@ -18,6 +18,16 @@
             "problemMatcher": [],
         },
         {
+            "label": "oj_submit(AtCoder)",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/scripts/oj_submit_atcoder.py",
+                "${file}"
+            ],
+            "problemMatcher": []
+        },
+        {
             "label": "oj_download & test(Codeforces)",
             "type": "shell",
             "command": "python",
@@ -30,40 +40,6 @@
                 "isDefault": true
             },
             "problemMatcher": [],
-        },
-        {
-            "label": "oj_download & test(yukicoder)",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}/scripts/oj_test_yukicoder.py",
-                "${file}"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": [],
-        },
-        {
-            "label": "oj_submit(AtCoder)",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}/scripts/oj_submit_atcoder.py",
-                "${file}"
-            ],
-            "problemMatcher": []
-        },
-        {
-            "label": "oj_submit(yukicoder)",
-            "type": "shell",
-            "command": "python",
-            "args": [
-                "${workspaceFolder}/scripts/oj_submit_yukicoder.py",
-                "${file}"
-            ],
-            "problemMatcher": []
         },
         {
             "label":"clean tmp folder",
@@ -81,15 +57,37 @@
             ],
             "problemMatcher": []
         },
-        // {
-        //     "label": "create_blank_py",
-        //     "type": "shell",
-        //     "command": "python",
-        //     "args": [
-        //         "${workspaceFolder}/scripts/create_blank_py.py",
-        //         "${fileDirname}"
-        //     ],
-        //     "problemMatcher": [],
-        // },
+        {
+            "label": "cpp runner",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",
+                "-o",
+                "${workspaceFolder}/tmp/a.out",
+                "-lstdc++",
+                "-g",
+                "&&",
+                "${workspaceFolder}/tmp/a.out",
+                "&&",
+                "rm",
+                "-f",
+                "${workspaceFolder}/tmp/a.out",
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "cpp build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",
+                "-o",
+                "${workspaceFolder}/tmp/a.out",
+                "-lstdc++",
+                "-g",
+            ],
+            "problemMatcher": []
+        },
     ]
 }

@@ -5,6 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "C++(gdb):Current File",
             "type": "cppdbg",
             "request": "launch",
@@ -23,14 +31,6 @@
 					"ignoreFailures": true
 				}
 			]
-        },
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "stopOnEntry": true,
-            "program": "${file}",
-            "console": "integratedTerminal"
         },
     ]
 }
