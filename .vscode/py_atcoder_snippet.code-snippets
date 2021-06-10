@@ -95,6 +95,36 @@
         ],
         "description": "print_YESNO"
     },
+    "deque": {
+        "prefix": "deque",
+        "body": [
+            "from collections import deque",
+            "d = deque($1)",
+        ],
+        "description": "deque"
+    },
+    "sort_itemgetter": {
+        "prefix": "sort_itemgetter",
+        "body": [
+            "from operator import itemgetter",
+            "$1.sort(key=itemgetter(1))",
+        ],
+        "description": "多次元リストのソート"
+    },
+    "inverse": {
+        "prefix": "inverse",
+        "body": [
+            "inv = list(zip(*$1))",
+        ],
+        "description": "二次元配列の転置"
+    },
+    "round_up": {
+        "prefix": "round_up",
+        "body": [
+            "C = -(-A // B)",
+        ],
+        "description": "除算の切り上げ"
+    },
     "round_half_up": {
         "prefix": "round_half_up",
         "body": [
@@ -337,7 +367,7 @@
             "        for y in range(x, M+1, x):",
             "            phi[y] = phi[y] // x * (x-1)",
         ],
-        "description": "calculate φ(n)"
+        "description": "オイラーのファイ関数"
     },
     "Modint": {
         "prefix": "Modint",
@@ -513,7 +543,118 @@
             "        denomi %= mod",
             "    return numera * modinv(denomi) % mod",
         ],
-        "description": ""
+        "description": "combination mod"
+    },
+    "crt": {
+        "prefix": "crt",
+        "body": [
+            "def inv_gcd(a,b):",
+            "    a=a%b",
+            "    if a==0:",
+            "        return (b,0)",
+            "    s=b;t=a",
+            "    m0=0;m1=1",
+            "    while(t):",
+            "        u=s//t",
+            "        s-=t*u",
+            "        m0-=m1*u",
+            "        s,t=t,s",
+            "        m0,m1=m1,m0",
+            "    if m0<0:",
+            "        m0+=b//s",
+            "    return (s,m0)",
+            "",
+            "def inv_mod(x,m):",
+            "    assert 1<=m",
+            "    z=inv_gcd(x,m)",
+            "    assert z[0]==1",
+            "    return z[1]",
+            "",
+            "def crt(r,m):",
+            "    assert len(r)==len(m)",
+            "    n=len(r)",
+            "    r0=0;m0=1",
+            "    for i in range(n):",
+            "        assert 1<=m[i]",
+            "        r1=r[i]%m[i]",
+            "        m1=m[i]",
+            "        if m0<m1:",
+            "            r0,r1=r1,r0",
+            "            m0,m1=m1,m0",
+            "        if (m0%m1==0):",
+            "            if (r0%m1!=r1):",
+            "                return (0,0)",
+            "            continue",
+            "        g,im=inv_gcd(m0,m1)",
+            "        u1=m1//g",
+            "        if ((r1-r0)%g):",
+            "            return (0,0)",
+            "        x=(r1-r0)//g % u1*im%u1",
+            "        r0+=x*m0",
+            "        m0*=u1",
+            "        if r0<0:",
+            "            r0+=m0",
+            "    return (r0,m0)",
+            " ",
+            "T=int(input())",
+            "for _ in range(T):",
+            "    X,Y,P,Q = map(int, input().split())",
+            "    ans = 10**30",
+            "    for y in range(Y):",
+            "        for q in range(Q):",
+            "            C = [2*(X+Y),P+Q]#これで割ったら",
+            "            R = [X+y,P+q]#この余りになる対のリスト",
+            "            r,m = crt(R,C)",
+            "            if m!=0:",
+            "                ans = min(ans,r)",
+            "    if ans==10**30:",
+            "        print('infinity')",
+            "    else:",
+            "        print(ans)",
+        ],
+        "description": "中国剰余定理(○で割ったら△になる数字を見つける)"
+    },
+    "floor_sum": {
+        "prefix": "floor_sum",
+        "body": [
+            "# [0,n)の範囲で、y=a/m*x+b/mの下側(直線上含む)にある格子点の数を求める",
+            "def floor_sum(n,m,a,b):",
+            "    ans=0",
+            "    if a>=m:",
+            "        ans+=(n-1)*n*(a//m)//2",
+            "        a%=m",
+            "    if b>=m:",
+            "        ans+=n*(b//m)",
+            "        b%=m",
+            "    y_max=(a*n+b)//m",
+            "    x_max=(y_max*m-b)",
+            "    if y_max==0:",
+            "        return ans",
+            "    ans+=(n-(x_max+a-1)//a)*y_max",
+            "    ans+=floor_sum(y_max,a,m,(a-x_max%a)%a)",
+            "    return ans",
+        ],
+        "description": "floor_sum"
+    },
+    "LIS": {
+        "prefix": "LIS",
+        "body": [
+            "from bisect import bisect",
+            "",
+            "# N: 数列の長さ",
+            "# A[i]: a_i の値",
+            "def LIS(N, A):",
+            "    INF = 10**10",
+            "",
+            "    dp = [INF]*(N+1)",
+            "    dp[0] = -1",
+            "    for a in A:",
+            "        #idx = bisect(dp, a) #広義最長増加部分列",
+            "        idx = bisect(dp, a-1) ",
+            "        dp[idx] = min(a, dp[idx])",
+            "    return max(i for i in range(N+1) if dp[i] < INF)",
+        ],
+        "description": "最長増加部分列（LIS）"
     },
     "rotation_matrix": {
         "prefix": "rotation_matrix",
@@ -531,7 +672,7 @@
             "X = math.cos(angle) * (x - center_x) - math.sin(angle) * (y - center_y) + center_x",
             "Y = math.sin(angle) * (x - center_x) + math.cos(angle) * (y - center_y) + center_y",
         ],
-        "description": ""
+        "description": "回転行列"
     },
     "counter": {
         "prefix": "counter",
@@ -541,19 +682,20 @@
         ],
         "description": "数え上げ"
     },
+    "defaultdict": {
+        "prefix": "defaultdict",
+        "body": [
+            "from collections import defaultdict",
+            "d = defaultdict(int)",
+        ],
+        "description": "defaultdict"
+    },
     "alphabet": {
         "prefix": "alphabet",
         "body": [
             "alphabet = dict.fromkeys(\"abcdefghijklmnopqrstuvwxyz\",0)",
         ],
         "description": "アルファベットの辞書"
-    },
-    "inverse": {
-        "prefix": "inverse",
-        "body": [
-            "inv = list(zip(*$1))",
-        ],
-        "description": "二次元配列の転置"
     },
     "rolling": {
         "prefix": "rolling",
@@ -564,6 +706,17 @@
             "    return s[-n%l:] + s[:-n%l] #左にシフトの場合はnの正負を逆に",
         ],
         "description": "文字列sをn文字分右に回転"
+    },
+    "regular_expression": {
+        "prefix": "regular_expression",
+        "body": [
+            "import re",
+            "s = \"testtestest\"",
+            "p = re.compile('test')",
+            "hit = p.match(s)",
+            "find = p.findall(s) # ['test', 'test']",
+        ],
+        "description": "正規表現"
     },
     "LCS": {
         "prefix": "LCS",
@@ -622,14 +775,6 @@
         ],
         "description": "CS(共通部分列)の個数カウント"
     },
-    "sort_itemgetter": {
-        "prefix": "sort_itemgetter",
-        "body": [
-            "from operator import itemgetter",
-            "$1.sort(key=itemgetter(1))",
-        ],
-        "description": "多次元リストのソート"
-    },
     "bisect": {
         "prefix": "bisect",
         "body": [
@@ -643,7 +788,31 @@
             "#リストAに値xを入れ、xが複数になるとき、一番右の値xのインデックスを返す",
             "bisect.bisect_right(A,x)",
         ],
-        "description": ""
+        "description": "二分探索"
+    },
+    "meguru_bisect": {
+        "prefix": "meguru_bisect",
+        "body": [
+            "def is_ok(arg):",
+            "    # 条件を満たすかどうか？問題ごとに定義",
+            "    pass",
+            "",
+            "def meguru_bisect(ng, ok):",
+            "    '''",
+            "    初期値のng,okを受け取り,is_okを満たす最小(最大)のokを返す",
+            "    まずis_okを定義すべし",
+            "    ng ok は  とり得る最小の値-1 とり得る最大の値+1",
+            "    最大最小が逆の場合はよしなにひっくり返す",
+            "    '''",
+            "    while (abs(ok - ng) > 1):",
+            "        mid = (ok + ng) // 2",
+            "        if is_ok(mid):",
+            "            ok = mid",
+            "        else:",
+            "            ng = mid",
+            "    return ok",
+        ],
+        "description": "めぐる式二分探索"
     },
     "Dijkstra": {
         "prefix": "Dijkstra",
@@ -1392,30 +1561,6 @@
         ],
         "description": "セグメント木"
     },
-    "meguru_bisect": {
-        "prefix": "meguru_bisect",
-        "body": [
-            "def is_ok(arg):",
-            "    # 条件を満たすかどうか？問題ごとに定義",
-            "    pass",
-            "",
-            "def meguru_bisect(ng, ok):",
-            "    '''",
-            "    初期値のng,okを受け取り,is_okを満たす最小(最大)のokを返す",
-            "    まずis_okを定義すべし",
-            "    ng ok は  とり得る最小の値-1 とり得る最大の値+1",
-            "    最大最小が逆の場合はよしなにひっくり返す",
-            "    '''",
-            "    while (abs(ok - ng) > 1):",
-            "        mid = (ok + ng) // 2",
-            "        if is_ok(mid):",
-            "            ok = mid",
-            "        else:",
-            "            ng = mid",
-            "    return ok",
-        ],
-        "description": "めぐる式二分探索"
-    },
     "knapsack": {
         "prefix": "knapsack",
         "body": [
@@ -1435,5 +1580,4 @@
         ],
         "description": "ナップサック(重複なし)"
     },
-
 }
