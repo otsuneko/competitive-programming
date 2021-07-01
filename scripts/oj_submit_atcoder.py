@@ -34,19 +34,19 @@ def get_contest_id():
 def oj_submit(contest_id,problem_id):
     #check url
     oj_url = "https://atcoder.jp/contests/{0}/tasks/{0}_{1}".format(contest_id,problem_id)
-    try:
-        f = urlopen(oj_url)
-    except:
-        try:
-            oj_url = "https://atcoder.jp/contests/{0}/tasks/{0}_{1}".format(contest_id.replace('_','-'),problem_id)
-            f = urlopen(oj_url)
-        except:
-            try:
-                oj_url = "https://atcoder.jp/contests/{0}-open/tasks/{0}_{1}".format(contest_id.replace('_','-'),problem_id)
-                f = urlopen(oj_url)
-            except:
-                print('URL not found:',oj_url)
-                oj_url = input('Please enter contest_url:')
+    # try:
+    #     f = urlopen(oj_url)
+    # except:
+    #     try:
+    #         oj_url = "https://atcoder.jp/contests/{0}/tasks/{0}_{1}".format(contest_id.replace('_','-'),problem_id)
+    #         f = urlopen(oj_url)
+    #     except:
+    #         try:
+    #             oj_url = "https://atcoder.jp/contests/{0}-open/tasks/{0}_{1}".format(contest_id.replace('_','-'),problem_id)
+    #             f = urlopen(oj_url)
+    #         except:
+    #             print('URL not found:',oj_url)
+    #             oj_url = input('Please enter contest_url:')
 
     pypy_id = '4047'
     cp = subprocess.run(['oj','submit','--wait=0','--yes','--no-guess','--language',pypy_id,oj_url,sys.argv[1]])

@@ -118,6 +118,22 @@
         ],
         "description": "二次元配列の転置"
     },
+    "baisuu": {
+        "prefix": "baisuu",
+        "body": [
+            "2の倍数：1の位が2,4,6,8,0",
+            "3の倍数：各桁の数字の和が3の倍数",
+            "4の倍数：下2桁が4の倍数",
+            "5の倍数：1の位が5,0",
+            "6の倍数：2の倍数かつ3の倍数",
+            "7の倍数：3桁ごとに区切った数字を1つ飛ばしに足した和の差が7の倍数",
+            "8の倍数：下3桁が8の倍数",
+            "9の倍数：各桁の数字の和が9の倍数",
+            "11の倍数：(奇数桁目の数字の和)-(偶数桁目の数字の和)が11の倍数か0",
+            "13の倍数：3桁ごとに区切った数字を1つ飛ばしに足した和の差が13の倍数",
+        ],
+        "description": "倍数判別法"
+    },
     "round_up": {
         "prefix": "round_up",
         "body": [
@@ -460,17 +476,25 @@
         ],
         "description": ""
     },
-    "factorial": {
-        "prefix": "factorial",
+    "permutationCoeff(nPr)": {
+        "prefix": "permutationCoeff(nPr)",
         "body": [
-            "import itertools",
-            "",
-            "seq = ('a', 'b', 'c', 'd', 'e')",
-            "",
-            "#階乗",
-            "ptr = list(itertools.permutations(seq)) #組み合わせ列挙 5!",
+            "def permutationCoeff(n, k):",
+            "    fact = [0 for _ in range(n + 1)]",
+            " ",
+            "    # base case",
+            "    fact[0] = 1",
+            " ",
+            "    # Calculate value",
+            "    # factorials up to n",
+            "    for i in range(1, n + 1):",
+            "        fact[i] = i * fact[i - 1]",
+            " ",
+            "    # P(n, k) = n!/(n-k)!",
+            "    return fact[n] // fact[n - k]",
+            " ",
         ],
-        "description": "階乗"
+        "description": "順列(階乗)"
     },
     "permutation": {
         "prefix": "permutation",
@@ -512,8 +536,37 @@
         ],
         "description": "組み合わせ(重複あり)"
     },
-    "nCr": {
-        "prefix": "nCr",
+    "binomialCoeff(nCr)": {
+        "prefix": "binomialCoeff(nCr)",
+        "body": [
+            "def nCr(n, r):",
+            "",
+            "    res = 1",
+            "    for i in range(r):",
+            "        res = (res*(n-i))//(i+1)",
+            "",
+            "    return res",
+            "",
+        ],
+        "description": "二項係数(binomial Coefficient)、組み合わせ(nCr)"
+    },
+    "combination_with_repetition(nHr)": {
+        "prefix": "combination_with_repetition(nHr)",
+        "body": [
+            "def nHr(n, r):",
+            "",
+            "    n = n+r-1",
+            "    res = 1",
+            "    for i in range(r):",
+            "        res = (res*(n-i))//(i+1)",
+            "",
+            "    return res",
+            "",
+        ],
+        "description": "二項係数(binomial Coefficient)、組み合わせ(nCr)"
+    },
+    "binomialCoeff(nCr_mod)": {
+        "prefix": "binomialCoeff(nCr_mod)",
         "body": [
             "mod = 10**9 + 7",
             "# x ** a をmodで割った余りを、O(log(a))時間で求める。",
@@ -678,7 +731,7 @@
         "prefix": "counter",
         "body": [
             "from collections import Counter",
-            "d = Counter($1)",
+            "count = Counter($1)",
         ],
         "description": "数え上げ"
     },
@@ -686,7 +739,7 @@
         "prefix": "defaultdict",
         "body": [
             "from collections import defaultdict",
-            "d = defaultdict(int)",
+            "dict = defaultdict(int)",
         ],
         "description": "defaultdict"
     },
@@ -696,6 +749,24 @@
             "alphabet = dict.fromkeys(\"abcdefghijklmnopqrstuvwxyz\",0)",
         ],
         "description": "アルファベットの辞書"
+    },
+    "kth_alphabet": {
+        "prefix": "kth_alphabet",
+        "body": [
+            "# 0-indexed",
+            "def int_to_lower(k):",
+            "    return chr(k+97)",
+            "",
+            "def int_to_upper(k):",
+            "    return chr(k+65)",
+            "",
+            "def lower_to_int(c):",
+            "    return ord(c)-97",
+            "",
+            "def upper_to_int(c):",
+            "    return ord(c)-65",
+        ],
+        "description": "k番目のアルファベットcを相互変換"
     },
     "rolling": {
         "prefix": "rolling",
@@ -1395,6 +1466,7 @@
         "prefix": "cumsum",
         "body": [
             "import itertools",
+            "import operator",
             "cumsum = [0] + list(itertools.accumulate($1, func=operator.add))",
         ],
         "description": "累積和"
@@ -1437,9 +1509,41 @@
         ],
         "description": "いもす法"
     },
+    "imos_2d": {
+        "prefix": "imos_2d",
+        "body": [
+            "N = int(input())",
+            "H=W=1001",
+            "A = [[0]*W for _ in range(H)]",
+            "for _ in range(N):",
+            "    lx,ly,rx,ry = map(int,input().split())",
+            "    A[ly][lx] += 1",
+            "    A[ry][rx] += 1",
+            "    A[ry][lx] -= 1",
+            "    A[ly][rx] -= 1",
+            "",
+            "for y in range(H):",
+            "    for x in range(1,W):",
+            "        A[y][x] += A[y][x-1]",
+            "",
+            "for y in range(1,H):",
+            "    for x in range(W):",
+            "        A[y][x] += A[y-1][x]",
+            "",
+            "ans = [0]*N",
+            "for y in range(H):",
+            "    for x in range(W):",
+            "        if 0 < A[y][x] <= N:",
+            "            ans[A[y][x]-1] += 1",
+            "for a in ans:",
+            "    print(a)",
+        ],
+        "description": "二次元いもす法"
+    },
     "syakutori": {
         "prefix": "syakutori",
         "body": [
+            "from collections import deque",
             "q=deque()",
             "for c in a:",
             "    q.append(c)  ## dequeの右端に要素を一つ追加する。",
