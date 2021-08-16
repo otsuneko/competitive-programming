@@ -103,11 +103,34 @@
         ],
         "description": "deque"
     },
-    "sort_itemgetter": {
-        "prefix": "sort_itemgetter",
+    "heapq": {
+        "prefix": "heapq",
         "body": [
-            "from operator import itemgetter",
-            "$1.sort(key=itemgetter(1))",
+            "import heapq  # heapqライブラリのimport",
+            "",
+            "a = [1, 6, 8, 0, -1]",
+            "heapq.heapify(a)  # リストを優先度付きキューへ(リストが空の場合はheapify()不要)",
+            "heapq.heappop(a)  # 最小値の取り出し",
+            "heapq.heappush(a, -2)  # 要素の挿入",
+        ],
+        "description": "heapq(priority queue)"
+    },
+    "sort_with_index": {
+        "prefix": "sort_with_index",
+        "body": [
+            "def sort_with_index(arr, reverse=False):",
+            "    if reverse:",
+            "        return sorted([ (x,i) for i, x in enumerate(arr)], reverse=True)",
+            "    else:",
+            "        return sorted([ (x,i) for i, x in enumerate(arr)])",
+        ],
+        "description": "index付きソート"
+    },
+    "sort_multiple": {
+        "prefix": "sort_multiple",
+        "body": [
+            "# 昇順降順を入れ替える場合はlambda式の正負を反転",
+            "$1.sort(key=lambda x:(-x[1],x[0]))",
         ],
         "description": "多次元リストのソート"
     },
@@ -727,6 +750,17 @@
         ],
         "description": "回転行列"
     },
+    "compress_position": {
+        "prefix": "compress_position",
+        "body": [
+            "def compress(arr):",
+            "    *XS, = set(arr)",
+            "    XS.sort()",
+            "    return {e: i for i, e in enumerate(XS)}",
+            "",
+        ],
+        "description": "座標圧縮"
+    },
     "counter": {
         "prefix": "counter",
         "body": [
@@ -1075,9 +1109,22 @@
             "uf.same(0, 2) -> have same top node?",
             "uf.find(0) -> id of top node",
             "uf.size(5) -> num of group",
+            "",
+            "# 文字列や任意の数字を要素にしたり復元したい場合",
+            "l = ['A', 'B', 'C', 'D', 'E']",
+            "",
+            "# {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4}",
+            "d = {x: i for i, x in enumerate(l)}",
+            "",
+            "# {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E'}",
+            "d_inv = {i: x for i, x in enumerate(l)}",
+            "",
+            "uf.union(d['A'], d['D'])",
+            "print(d_inv[uf.find(d['D'])])",
+            "# A",
             "'''",
         ],
-        "description": ""
+        "description": "Union-Find"
     },
     "Kruskal": {
         "prefix": "Kruskal",
@@ -1351,6 +1398,7 @@
     "dfs": {
         "prefix": "dfs",
         "body": [
+            "# Pythonで提出！！",
             "import sys",
             "sys.setrecursionlimit(10**7)",
             "move = ([1, 0], [-1, 0], [0, 1], [0, -1])",
@@ -1372,9 +1420,42 @@
         ],
         "description": "地続きの島とその周りの海に面した辺をカウント"
     },
+    "dfs_euler_tour": {
+        "prefix": "dfs_euler_tour",
+        "body": [
+            "# Pythonで提出！！",
+            "import sys",
+            "sys.setrecursionlimit(10**7)",
+            "",
+            "def dfs(s,pre):",
+            "  ans.append(s+1)",
+            "  for to in graph[s]:",
+            "    if to!=pre:",
+            "      dfs(to,s)",
+            "      ans.append(s+1)",
+            "",
+            "N,M = map(int,input().split())",
+            "graph = [[] for _ in range(N)]",
+            "for i in range(M):",
+            "  a,b = map(int,input().split())",
+            "  a,b = a-1,b-1",
+            "  graph[a].append(b)",
+            "  graph[b].append(a)",
+            "",
+            "for i in range(N):",
+            "    graph[i].sort()",
+            "",
+            "ans=[]",
+            "dfs(0,-1)",
+            "print(*ans)",
+            "",
+        ],
+        "description": "Euler Tour(深さ優先探索で辿った経路の出力)"
+    },
     "dfs_stairs": {
         "prefix": "dfs_stairs",
         "body": [
+            "# Pythonで提出！！",
             "import sys",
             "sys.setrecursionlimit(10**7)",
             "def dfs(n):",
