@@ -65,22 +65,22 @@
             ],
             "problemMatcher": []
         },
-        {
-            "label":"clean tmp folder",
-            "type":"shell",
-            "command":"${workspaceFolder}/scripts/clean_tmp.sh"
-        },
-        {
-            "label": "graph viewer",
-            "type": "shell",
-            "command": "streamlit",
-            "args": [
-                "run",
-                "${workspaceFolder}/scripts/graph_visualization.py",
-                "${file}"
-            ],
-            "problemMatcher": []
-        },
+        // {
+        //     "label":"clean tmp folder",
+        //     "type":"shell",
+        //     "command":"${workspaceFolder}/scripts/clean_tmp.sh"
+        // },
+        // {
+        //     "label": "graph viewer",
+        //     "type": "shell",
+        //     "command": "streamlit",
+        //     "args": [
+        //         "run",
+        //         "${workspaceFolder}/scripts/graph_visualization.py",
+        //         "${file}"
+        //     ],
+        //     "problemMatcher": []
+        // },
         // {
         //     "label": "create_blank_py",
         //     "type": "shell",

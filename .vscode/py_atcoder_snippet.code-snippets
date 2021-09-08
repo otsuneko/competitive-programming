@@ -164,6 +164,20 @@
         ],
         "description": "除算の切り上げ"
     },
+    "mod_1000000007": {
+        "prefix": "mod_1000000007",
+        "body": [
+            "mod = 10**9+7",
+        ],
+        "description": "数え上げでよく使う数値その1"
+    },
+    "mod_998244353": {
+        "prefix": "mod_998244353",
+        "body": [
+            "mod = 998244353",
+        ],
+        "description": "数え上げでよく使う数値その2"
+    },
     "round_half_up": {
         "prefix": "round_half_up",
         "body": [
@@ -261,8 +275,8 @@
             "",
             "#10進数→n進数",
             "def base10int(value, base):",
-            "    if (int(value / base)):",
-            "        return base10int(int(value / base), base) + str(value % base)",
+            "    if value >= base:",
+            "        return base10int(value//base, base) + str(value % base)",
             "    return str(value % base)",
             "",
             "print(base10int(100, 2))",
@@ -270,7 +284,7 @@
             "",
             "#10進数→n進数(返り値リスト)",
             "def base10int(value, base):",
-            "    upper = value > base and base10int(value // base, base) or []",
+            "    upper = value >= base and base10int(value // base, base) or []",
             "    return upper + [value % base]  # リストの結合",
             "",
             "print(base10int(100, 4))",
@@ -369,8 +383,8 @@
         ],
         "description": "エラトステネスの篩"
     },
-    "pos": {
-        "prefix": "pos",
+    "pow_doubling": {
+        "prefix": "pow_doubling",
         "body": [
             "def pos(x, n, m):",
             "    if n == 0:",
@@ -380,7 +394,7 @@
             "        res = res*x%m",
             "    return res",
         ],
-        "description": "べき乗計算"
+        "description": "高速べき乗計算"
     },
     "euler_phi": {
         "prefix": "euler_phi",
@@ -592,20 +606,9 @@
         "prefix": "binomialCoeff(nCr_mod)",
         "body": [
             "mod = 10**9 + 7",
-            "# x ** a をmodで割った余りを、O(log(a))時間で求める。",
-            "def power(x, a):",
-            "    if a == 0:",
-            "        return 1",
-            "    elif a == 1:",
-            "        return x",
-            "    elif a % 2 == 0:",
-            "        return power(x, a//2) **2 % mod",
-            "    else:",
-            "        return power(x, a//2) **2 * x % mod",
-            "",
             "# xの逆元を求める。フェルマーの小定理より、 x の逆元は x ^ (mod - 2) に等しい。計算時間はO(log(mod))程度。",
             "def modinv(x):",
-            "    return power(x, mod-2)",
+            "    return pow(x,mod-2,mod)",
             "",
             "# nCrをmodで割った余りを計算",
             "def nCr(n, r):",
@@ -1305,6 +1308,34 @@
         ],
         "description": "#最小全域有向木の辺の重みの総和を求める"
     },
+    "tree_diameter": {
+        "prefix": "tree_diameter",
+        "body": [
+            "# N: 木Tの頂点数",
+            "# G[u] = [(w, c), ...]:",
+            "#   頂点uに隣接する頂点wとそれを繋ぐ辺の長さc",
+            "from collections import deque",
+            "def tree_diameter(s):",
+            "    dist = [None]*N",
+            "    que = deque([s])",
+            "    dist[s] = 0",
+            "    while que:",
+            "        v = que.popleft()",
+            "        d = dist[v]",
+            "        for w, c in G[v]:",
+            "            if dist[w] is not None:",
+            "                continue",
+            "            dist[w] = d + c",
+            "            que.append(w)",
+            "    d = max(dist)",
+            "    return dist.index(d), d",
+            "",
+            "u, _ = tree_diameter(0)",
+            "v, d = tree_diameter(u)",
+            "# パスu-vがこの木Tの直径(長さd)",
+        ],
+        "description": "木の直径"
+    },
     "LowLink": {
         "prefix": "LowLink",
         "body": [
@@ -1430,7 +1461,7 @@
             "def dfs(s,pre):",
             "  ans.append(s+1)",
             "  for to in graph[s]:",
-            "    if to!=pre:",
+            "    if to != pre: # to == preが葉(末端ノード)を表す",
             "      dfs(to,s)",
             "      ans.append(s+1)",
             "",
@@ -1518,12 +1549,12 @@
             "    queue = deque()",
             "    queue.append(0)",
             "    while queue:",
-            "        v1 = queue.popleft()",
-            "        for v2 in graph[v1]:",
-            "            if dist[v2] != -1:",
+            "        s = queue.popleft()",
+            "        for to in graph[s]:",
+            "            if dist[to] != -1:",
             "                continue",
-            "            dist[v2] = dist[v1] + 1",
-            "            queue.append(v2)",
+            "            dist[to] = dist[s] + 1",
+            "            queue.append(to)",
             "",
             "N,M = map(int, input().split())",
             "",
@@ -1534,7 +1565,7 @@
             " graph[a].append(b)",
             " graph[b].append(a)",
             "",
-            "dist = [-1]*n",
+            "dist = [-1]*N",
             "dist[0] = 0",
             "bfs(dist)",
             "",

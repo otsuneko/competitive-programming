@@ -54,7 +54,7 @@ def oj_test(tmp_path):
         cp = subprocess.run(['oj','t','-c','.\\a.out','-d',tmp_path,'-i','--print-memory'])
         os.remove('.\\a.out')
     else:    
-        cp = subprocess.run(['oj','t','-c','python \"{}\"'.format(sys.argv[1]),'-d',tmp_path,'-i','--print-memory'])
+        cp = subprocess.run(['oj','t','-c','pypy3 \"{}\"'.format(sys.argv[1]),'-d',tmp_path,'-i','--print-memory'])
     if cp.returncode!=0:
         print('oj test failed. exit')
         sys.exit(1)
