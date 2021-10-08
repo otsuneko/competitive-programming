@@ -18,6 +18,20 @@
             "problemMatcher": [],
         },
         {
+            "label": "oj_random_test(AtCoder)",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/scripts/oj_test_atcoder_random.py",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+        },
+        {
             "label": "oj_download & test(Codeforces)",
             "type": "shell",
             "command": "python",
