@@ -8,64 +8,58 @@
             "type": "shell",
             "command": "python",
             "args": [
-                "${workspaceFolder}/scripts/oj_test_atcoder.py",
-                "${file}"
+                "\"${workspaceFolder}/scripts/oj_test_atcoder.py\"",
+                "\"${file}\""
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": [],
+            "group": "build",
+            "problemMatcher": []
         },
         {
             "label": "oj_random_test(AtCoder)",
             "type": "shell",
             "command": "python",
             "args": [
-                "${workspaceFolder}/scripts/oj_test_atcoder_random.py",
-                "${file}"
+                "$\"{workspaceFolder}/scripts/oj_test_atcoder_random.py\"",
+                "$\"{file}\""
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": [],
+            "group": "build",
+            "problemMatcher": []
         },
         {
             "label": "oj_download & test(Codeforces)",
             "type": "shell",
             "command": "python",
             "args": [
-                "${workspaceFolder}/scripts/oj_test_codeforces.py",
-                "${file}"
+                "\"${workspaceFolder}/scripts/oj_test_codeforces.py\"",
+                "\"${file}\""
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": [],
+            "problemMatcher": []
         },
         {
             "label": "oj_download & test(yukicoder)",
             "type": "shell",
             "command": "python",
             "args": [
-                "${workspaceFolder}/scripts/oj_test_yukicoder.py",
-                "${file}"
+                "\"${workspaceFolder}/scripts/oj_test_yukicoder.py\"",
+                "\"${file}\""
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": [],
+            "problemMatcher": []
         },
         {
             "label": "oj_submit(AtCoder)",
             "type": "shell",
             "command": "python",
             "args": [
-                "${workspaceFolder}/scripts/oj_submit_atcoder.py",
-                "${file}"
+                "\"${workspaceFolder}/scripts/oj_submit_atcoder.py\"",
+                "\"${file}\""
             ],
             "problemMatcher": []
         },
@@ -74,36 +68,33 @@
             "type": "shell",
             "command": "python",
             "args": [
-                "${workspaceFolder}/scripts/oj_submit_yukicoder.py",
-                "${file}"
+                "\"${workspaceFolder}/scripts/oj_submit_yukicoder.py\"",
+                "\"${file}\""
             ],
             "problemMatcher": []
         },
-        // {
-        //     "label":"clean tmp folder",
-        //     "type":"shell",
-        //     "command":"${workspaceFolder}/scripts/clean_tmp.sh"
-        // },
-        // {
-        //     "label": "graph viewer",
-        //     "type": "shell",
-        //     "command": "streamlit",
-        //     "args": [
-        //         "run",
-        //         "${workspaceFolder}/scripts/graph_visualization.py",
-        //         "${file}"
-        //     ],
-        //     "problemMatcher": []
-        // },
-        // {
-        //     "label": "create_blank_py",
-        //     "type": "shell",
-        //     "command": "python",
-        //     "args": [
-        //         "${workspaceFolder}/scripts/create_blank_py.py",
-        //         "${fileDirname}"
-        //     ],
-        //     "problemMatcher": [],
-        // },
+        {
+            "type": "cppbuild",
+            "label": "cppbuild",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": ""
+        }
     ]
 }

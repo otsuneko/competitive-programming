@@ -16,14 +16,14 @@
             "name": "C++(gdb):Current File",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/tmp/a.out",
+            "program": "${fileDirname}\\a.exe",
             "args": [],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "externalConsole": false,
             "MIMode": "gdb",
-            "preLaunchTask":"cpp build",
-            "miDebuggerPath":"/usr/bin/gdb",
+            "preLaunchTask":"cppbuild",
+            "miDebuggerPath":"C:\\MinGW\\bin\\gdb.exe",
             "setupCommands": [
 				{
 					"description": "Enable pretty-printing for gdb",
