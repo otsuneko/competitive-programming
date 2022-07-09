@@ -638,6 +638,25 @@
         ],
         "description": "二次元配列の転置"
     },
+    "RunLengthEncoding": {
+        "prefix": "RunLengthEncoding",
+        "body": [
+            "def RunLengthEncoding(S):",
+            "    cur = S[0]",
+            "    cnt = 1",
+            "    ret = []",
+            "    for i in range(1,len(S)):",
+            "        if cur == S[i]:",
+            "            cnt += 1",
+            "        else:",
+            "            ret.append((cur,cnt))",
+            "            cur = S[i]",
+            "            cnt = 1",
+            "    ret.append((cur,cnt))",
+            "    return ret",
+        ],
+        "description": "ランレングス圧縮"
+    },
     "baisuu": {
         "prefix": "baisuu",
         "body": [
