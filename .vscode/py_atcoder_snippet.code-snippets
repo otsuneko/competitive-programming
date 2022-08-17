@@ -16,11 +16,16 @@
             "import sys",
             "input = lambda: sys.stdin.readline().rstrip()",
             "sys.setrecursionlimit(10**5)",
+            "import random",
+            "XOR=random.randint(10**7,10**8)",
             "INF = 10**18",
             "",
-            "for testcase in range(int(input())):",
+            "def solve():",
             "    N = int(input())",
-            "    ",
+            "",
+            "Q = int(input())",
+            "for _ in range(Q):",
+            "    solve()",
         ],
         "description": "Codeforces template"
     },
@@ -132,8 +137,9 @@
         "description": "print_YESNO"
     },
     "debug": {
-        "prefix": "debug",
+        "prefix": "debug_comment",
         "body": [
+            "import sys",
             "def debug(*args): print(*args, file=sys.stderr)",
         ],
         "description": "デバッグ用コメント出力関数"
@@ -2772,6 +2778,32 @@
             "print(ans)",
         ],
         "description": "フロイドの循環検出"
+    },
+    "CycleSum": {
+        "prefix": "CycleSum",
+        "body": [
+            "N,X,M = map(int,input().split())",
+            "",
+            "li = [X]",
+            "loop_start = 0",
+            "check = set([X])",
+            "for i in range(N):",
+            "    nxt = pow(li[-1],2,M)",
+            "    if nxt in check:",
+            "        loop_start = li.index(nxt)",
+            "        break",
+            "    li.append(nxt)",
+            "    check.add(nxt)",
+            "",
+            "loop_len = len(li)-loop_start",
+            "r = (N-loop_start)//loop_len",
+            "d = (N-loop_start)%loop_len",
+            "ini_sum = sum(li[:loop_start])",
+            "loop_sum = sum(li[loop_start:])*r",
+            "mod_sum = sum(li[loop_start:loop_start+d])",
+            "print(ini_sum + loop_sum + mod_sum)",
+        ],
+        "description": "サイクルを持つリストの和を求める"
     },
     "cumsum": {
         "prefix": "cumsum",

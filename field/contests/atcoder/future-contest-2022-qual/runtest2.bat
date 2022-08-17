@@ -1,0 +1,5 @@
+cargo run --release --bin tester pypy a.py < C:\\Users\\otsuneko\\Documents\\GitHub\\competitive-programming\\tmp\\future-contest-2022-qual_a\\0004.txt > out.txt
+cargo run --release --bin tester pypy a.py < C:\\Users\\otsuneko\\Documents\\GitHub\\competitive-programming\\tmp\\future-contest-2022-qual_a\\0005.txt > out.txt
+cargo run --release --bin tester pypy a.py < C:\\Users\\otsuneko\\Documents\\GitHub\\competitive-programming\\tmp\\future-contest-2022-qual_a\\0019.txt > out.txt
+cargo run --release --bin tester pypy a.py < C:\\Users\\otsuneko\\Documents\\GitHub\\competitive-programming\\tmp\\future-contest-2022-qual_a\\0026.txt > out.txt
+cargo run --release --bin tester pypy a.py < C:\\Users\\otsuneko\\Documents\\GitHub\\competitive-programming\\tmp\\future-contest-2022-qual_a\\0032.txt > out.txt

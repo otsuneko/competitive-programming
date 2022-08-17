@@ -76,7 +76,7 @@
         {
             "type": "cppbuild",
             "label": "cppbuild",
-            "command": "C:\\MinGW\\bin\\g++.exe",
+            "command": "C:\\MinGW\\bin\\g++.exe -std=c++1z",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",

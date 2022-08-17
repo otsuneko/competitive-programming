@@ -1,0 +1,1 @@
+C:\Users\otsuneko\Documents\GitHub\competitive-programming\field\contests\atcoder\future-contest-2022-qual\target\release\tester.exe: C:\Users\otsuneko\Documents\GitHub\competitive-programming\field\contests\atcoder\future-contest-2022-qual\src\bin\tester.rs C:\Users\otsuneko\Documents\GitHub\competitive-programming\field\contests\atcoder\future-contest-2022-qual\src\lib.rs

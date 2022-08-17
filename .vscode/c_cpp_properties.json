@@ -7,7 +7,7 @@
                 "C:\\MinGW\\include"
             ],
             "defines": [],
-            "compilerPath": "C:\\MinGW\\bin\\g++.exe",
+            "compilerPath": "C:\\MinGW\\bin\\g++.exe -std=c++1z",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-gcc-x86"

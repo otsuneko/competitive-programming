@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Farm King X tools</title>
+	<style type="text/css">
+		body {
+			margin: 10px 5%;
+		}
+		h2 {
+			border-left: 8px solid gray;
+			margin-top:  40px;
+			padding-left: 10px;
+		}
+		code {
+			background-color: rgba(27, 31, 35, 0.05);
+			border-radius: 3px;
+			font-family: monospace;
+			padding: 0.2em 0.4em;
+		}
+		pre {
+			background-color: rgb(246, 248, 250);
+			padding: 16px;
+		}
+	</style>
+</head>
+<body>
+<h1>Farm King X tools</h1>
+<p>
+	We provide the contestant tools for <a href="https://atcoder.jp/contests/rcl-contest-2021-long">RECRUIT Nihonbashi Half Marathon 2021 (long)</a> problem <a href="https://atcoder.jp/contests/rcl-contest-2021-long/tasks/rcl_contest_2021_long_a">Farm King X</a>.
+</p>
+<ul>
+	<li>These programs don't guarantee the actual score of the contest.</li>
+	<li>Use these programs at your own risk.</li>
+	<li>These programs are provided as-is. We don't accept any question about them.</li>
+	<li>You can use these programs in your solution.</li>
+</ul>
+
+<h2>Test case generation</h2>
+<p>You can generate a test case by providing a random seed to <code>generator.py</code></p>
+<p>These commands generate a test case and write it into <code>input.txt</code>, using <code>12345</code> as the random seed value.</p>
+<pre>
+python generator.py 12345 > input.txt
+</pre>
+<p>or</p>
+<pre>
+python3 generator.py 12345 > input.txt
+</pre>
+<p><code>input_0.txt</code> ~ <code>input_9.txt</code> are generated test cases with the seed <code>0</code> ~ <code>9</code> respectively.</p>
+
+<h2>Score calculation</h2>
+<p>You can use <code>judge.py</code> to calculate the score of your output.</p>
+<p>These commands calculate the score of <code>output.txt</code> against the test case <code>input.txt</code>.</p>
+<pre>
+python judge.py input.txt output.txt
+</pre>
+<p>or</p>
+<pre>
+python3 judge.py input.txt output.txt
+</pre>
+
+<h2>Example solution</h2>
+<p>We provide the sample solutions.</p>
+<ul>
+	<li><a href="sample_submission.cpp">C++</a></li>
+	<li><a href="sample_submission.py">Python</a></li>
+</ul>
+<p>They implement a basic greedy strategy described below.</p>
+<ul>
+<li>Do <code>purchase</code> if possible
+	<ul>
+		<li>Put the purchased harvest machine on the "best" area among the areas where no harvest machine is located yet.</li>
+		<li>"Best" area is the one with the highest total value of vegetables that will appear in the area after that time.</li>
+	</ul>
+</li>
+<li>Otherwise, do <code>pass</code></li>
+<li>Never do <code>move</code></li>
+</ul>
+</body>
+</html>

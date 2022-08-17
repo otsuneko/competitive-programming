@@ -1,4 +1,6 @@
-field/contests/
+field/contests/codeforces
+field/contests/topcoder
+field/contests/yukicoder
 field/other/
 tmp/
 .vscode/settings.json
