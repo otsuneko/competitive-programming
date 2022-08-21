@@ -1,5 +1,6 @@
 {
     "Template_AtCoder": {
+        "scope": "python",
         "prefix": "Template_AtCoder",
         "body": [
             "import sys",
@@ -11,6 +12,7 @@
         "description": "AtCoder template"
     },
     "Template_Codeforces": {
+        "scope": "python",
         "prefix": "Template_Codeforces",
         "body": [
             "import sys",
@@ -30,6 +32,7 @@
         "description": "Codeforces template"
     },
     "FileInput": {
+        "scope": "python",
         "prefix": "FileInput",
         "body": [
             "import sys",
@@ -38,55 +41,63 @@
         "description": "FileInput"
     },
 	"input_line int(single)":{
-		"prefix":"input_line int(single)",
+		"scope": "python",
+        "prefix":"input_line int(single)",
 		"body":[
             " int(input())"
         ],
 		"description":"input int(single)",
 	},
 	"input_line int(multiple)":{
-		"prefix":"input_line int(multiple)",
+		"scope": "python",
+        "prefix":"input_line int(multiple)",
 		"body":[
             " map(int,input().split())"
         ],
 		"description":"input int(multiple)",
 	},
 	"input_line list(int)":{
-		"prefix":"input_line list(int)",
+		"scope": "python",
+        "prefix":"input_line list(int)",
 		"body":[
             " list(map(int,input().split()))"
         ],
 		"description":"input list(int)",
 	},
     "input_lines list(int)":{
-		"prefix":"input_lines list(int)",
+		"scope": "python",
+        "prefix":"input_lines list(int)",
 		"body":[
             " [int(input()) for _ in range($1)]"
         ],
 		"description":"input_lines list(int)",
 	},
 	"input_lines list(multiple_int)":{
-		"prefix":"input_lines list(multiple_int)",
+		"scope": "python",
+        "prefix":"input_lines list(multiple_int)",
 		"body":[
             " [list(map(int,input().split())) for _ in range($1)]"
         ],
 		"description":"input_lines list(multiple_int)",
 	},
 	"input_line list(string)":{
-		"prefix":"input_line list(string)",
+		"scope": "python",
+        "prefix":"input_line list(string)",
 		"body":[
             " list(input())"
         ],
 		"description":"input line list(string)",
 	},
     "input_lines list(string)":{
-		"prefix":"input_lines list(string)",
+		"scope": "python",
+        "prefix":"input_lines list(string)",
 		"body":[
             " [list(input()) for _ in range($1)]"
         ],
 		"description":"input_lines list(string)",
 	},
     "input_tree": {
+        "scope": "python",
         "prefix": "input_tree",
         "body": [
             "N = int(input())",
@@ -100,6 +111,7 @@
         "description": "N頂点の木の入力"
     },
     "input_graph": {
+        "scope": "python",
         "prefix": "input_graph",
         "body": [
             "N,M = map(int,input().split())",
@@ -113,16 +125,19 @@
         "description": "N頂点M辺のグラフの入力"
     },
     "print":{
-		"prefix":"print",
+		"scope": "python",
+        "prefix":"print",
 		"body":["print($1)"],
 		"description":"print",
 	},
     "print_sep":{
-		"prefix":"print_sep",
+		"scope": "python",
+        "prefix":"print_sep",
 		"body":["print(*$1, sep=\"\\n\")"],
 		"description":"print_sep",
 	},
     "print_YesNo": {
+        "scope": "python",
         "prefix": "print_YesNo",
         "body": [
             "print([\"No\",\"Yes\"][$1])",
@@ -130,6 +145,7 @@
         "description": "print_YesNo"
     },
     "print_YESNO": {
+        "scope": "python",
         "prefix": "print_YESNO",
         "body": [
             "print([\"NO\",\"YES\"][$1])",
@@ -137,6 +153,7 @@
         "description": "print_YESNO"
     },
     "debug": {
+        "scope": "python",
         "prefix": "debug_comment",
         "body": [
             "import sys",
@@ -145,6 +162,7 @@
         "description": "デバッグ用コメント出力関数"
     },
     "deque": {
+        "scope": "python",
         "prefix": "deque",
         "body": [
             "from collections import deque",
@@ -153,6 +171,7 @@
         "description": "deque"
     },
     "DoublyLinkedList": {
+        "scope": "python",
         "prefix": "DoublyLinkedList",
         "body": [
             "class Node:",
@@ -321,6 +340,7 @@
         "description": "双方向連結リスト"
     },
     "heapq": {
+        "scope": "python",
         "prefix": "heapq",
         "body": [
             "from heapq import heapify, heappush, heappop, heappushpop, heapreplace, nlargest, nsmallest  # heapqライブラリのimport",
@@ -336,6 +356,7 @@
         "description": "heapq(priority queue)"
     },
     "SortedSet": {
+        "scope": "python",
         "prefix": "SortedSet",
         "body": [
             "# https://github.com/tatyam-prime/SortedSet/blob/main/SortedSet.py",
@@ -472,6 +493,7 @@
         "description": "SortedSet(順序付きset)。重複を許さない。"
     },
     "SortedMultiSet": {
+        "scope": "python",
         "prefix": "SortedMultiSet",
         "body": [
             "# https://github.com/tatyam-prime/SortedSet/blob/main/SortedMultiset.py",
@@ -609,6 +631,7 @@
         "description": "SortedMultiSet(順序付きマルチセット)。重複を許す。"
     },
     "sort_with_index": {
+        "scope": "python",
         "prefix": "sort_with_index",
         "body": [
             "def sort_with_index(arr, reverse=False):",
@@ -620,6 +643,7 @@
         "description": "index付きソート"
     },
     "sort_multiple": {
+        "scope": "python",
         "prefix": "sort_multiple",
         "body": [
             "# 昇順降順を入れ替える場合はlambda式の正負を反転",
@@ -628,6 +652,7 @@
         "description": "多次元リストのソート"
     },
     "rotate_2d": {
+        "scope": "python",
         "prefix": "rotate_2d",
         "body": [
             "# 二次元配列の90度右回転",
@@ -638,6 +663,7 @@
         "description": "二次元配列の90度右回転"
     },
     "inverse_2d": {
+        "scope": "python",
         "prefix": "inverse_2d",
         "body": [
             "inv = list(zip(*$1))",
@@ -645,6 +671,7 @@
         "description": "二次元配列の転置"
     },
     "RunLengthEncoding": {
+        "scope": "python",
         "prefix": "RunLengthEncoding",
         "body": [
             "def RunLengthEncoding(S):",
@@ -664,6 +691,7 @@
         "description": "ランレングス圧縮"
     },
     "baisuu": {
+        "scope": "python",
         "prefix": "baisuu",
         "body": [
             "2の倍数：1の位が2,4,6,8,0",
@@ -680,6 +708,7 @@
         "description": "倍数判別法"
     },
     "ceil": {
+        "scope": "python",
         "prefix": "ceil",
         "body": [
             "-(-($1)//)",
@@ -687,6 +716,7 @@
         "description": "ceil(切り上げ除算)"
     },
     "mod_1000000007": {
+        "scope": "python",
         "prefix": "mod_1000000007",
         "body": [
             "mod = 10**9+7",
@@ -694,6 +724,7 @@
         "description": "数え上げでよく使う数値その1"
     },
     "mod_998244353": {
+        "scope": "python",
         "prefix": "mod_998244353",
         "body": [
             "mod = 998244353",
@@ -701,6 +732,7 @@
         "description": "数え上げでよく使う数値その2"
     },
     "round_half_up": {
+        "scope": "python",
         "prefix": "round_half_up",
         "body": [
             "from decimal import Decimal, ROUND_HALF_UP, ROUND_HALF_EVEN",
@@ -715,6 +747,7 @@
         "description": "四捨五入"
     },
     "gcd": {
+        "scope": "python",
         "prefix": "gcd",
         "body": [
             "def gcd(a,b):",
@@ -726,6 +759,7 @@
         "description": "a,bの最大公約数"
     },
     "gcdlist": {
+        "scope": "python",
         "prefix": "gcdlist",
         "body": [
             "def gcd(a,b):",
@@ -743,6 +777,7 @@
         "description": "リスト l の最大公約数"
     },
     "lcm": {
+        "scope": "python",
         "prefix": "lcm",
         "body": [
             "def gcd(a,b):",
@@ -757,6 +792,7 @@
         "description": "a,bの最小公倍数"
     },
     "lcmlist": {
+        "scope": "python",
         "prefix": "lcmlist",
         "body": [
             "def gcd(a,b):",
@@ -774,6 +810,7 @@
         "description": "リスト l の最小公倍数"
     },
     "digsum": {
+        "scope": "python",
         "prefix": "digsum",
         "body": [
             "def digsum(n):",
@@ -787,6 +824,7 @@
         "description": "桁和"
     },
     "base_n": {
+        "scope": "python",
         "prefix": "base_n",
         "body": [
             "# 10進数⇒2,8,16進数",
@@ -822,6 +860,7 @@
         "description": "進数変換"
     },
     "divisor": {
+        "scope": "python",
         "prefix": "divisor",
         "body": [
             "def divisor(n):",
@@ -838,6 +877,7 @@
         "description": "nの約数を全て求める(O(√N))"
     },
     "mcb": {
+        "scope": "python",
         "prefix": "mcb",
         "body": [
             "def mcb(N):",
@@ -853,6 +893,7 @@
         "description": "三乗根"
     },
     "prime_decomposition": {
+        "scope": "python",
         "prefix": "prime_decomposition",
         "body": [
             "def prime_decomposition(n):",
@@ -870,6 +911,7 @@
         "description": "nを素因数分解したリストを返す"
     },
     "is_prime": {
+        "scope": "python",
         "prefix": "is_prime",
         "body": [
             "def is_prime(n):",
@@ -883,6 +925,7 @@
         "description": "素数判定"
     },
     "sieve": {
+        "scope": "python",
         "prefix": "sieve",
         "body": [
             "def sieve(n):",
@@ -901,6 +944,7 @@
         "description": "エラトステネスの篩"
     },
     "pow_doubling": {
+        "scope": "python",
         "prefix": "pow_doubling",
         "body": [
             "def pos(x, n, m):",
@@ -914,6 +958,7 @@
         "description": "高速べき乗計算"
     },
     "euler_phi": {
+        "scope": "python",
         "prefix": "euler_phi",
         "body": [
             "def euler_phi(n):",
@@ -940,6 +985,7 @@
         "description": "オイラーのファイ関数"
     },
     "Modint": {
+        "scope": "python",
         "prefix": "Modint",
         "body": [
             "class ModInt:",
@@ -1022,6 +1068,7 @@
         "description": "Modint"
     },
     "GrayCode": {
+        "scope": "python",
         "prefix": "GrayCode",
         "body": [
             "def BinaryToGray(self, n):",
@@ -1037,6 +1084,7 @@
         "description": "Grayコード⇔Binaryコード変換"
     },
     "bitlist": {
+        "scope": "python",
         "prefix": "bitlist",
         "body": [
             "import itertools",
@@ -1050,6 +1098,7 @@
         "description": "bit全探索"
     },
     "permutationCoeff(nPr)": {
+        "scope": "python",
         "prefix": "permutationCoeff(nPr)",
         "body": [
             "def nPr(n, k):",
@@ -1070,6 +1119,7 @@
         "description": "順列(nPr)"
     },
     "permutation": {
+        "scope": "python",
         "prefix": "permutation",
         "body": [
             "import itertools",
@@ -1079,6 +1129,7 @@
         "description": "順列全探索"
     },
     "permutation_product": {
+        "scope": "python",
         "prefix": "permutation_product",
         "body": [
             "import itertools",
@@ -1088,6 +1139,7 @@
         "description": "順列全探索(重複あり) 直積(デカルト積)"
     },
     "combination": {
+        "scope": "python",
         "prefix": "combination",
         "body": [
             "import itertools",
@@ -1097,6 +1149,7 @@
         "description": "組合せ全探索"
     },	
     "combinations_with_replacement": {
+        "scope": "python",
         "prefix": "combinations_with_replacement",
         "body": [
             "import itertools",
@@ -1106,6 +1159,7 @@
         "description": "組合せ全探索(重複あり)"
     },
     "binomialCoeff(nCr)": {
+        "scope": "python",
         "prefix": "binomialCoeff(nCr)",
         "body": [
             "def nCr(n, r):",
@@ -1120,6 +1174,7 @@
         "description": "組み合わせの通り数(nCr)"
     },
     "combination_with_repetition(nHr)": {
+        "scope": "python",
         "prefix": "combination_with_repetition(nHr)",
         "body": [
             "def nHr(n, r):",
@@ -1135,6 +1190,7 @@
         "description": "組み合わせ(重複あり)の通り数(nHr)"
     },
     "binomialCoeff(nCr_mod)": {
+        "scope": "python",
         "prefix": "binomialCoeff(nCr_mod)",
         "body": [
             "mod = 10**9 + 7",
@@ -1157,6 +1213,7 @@
         "description": "組み合わせの通り数(nCr)をmodで割った余り"
     },
     "crt": {
+        "scope": "python",
         "prefix": "crt",
         "body": [
             "def inv_gcd(a,b):",
@@ -1226,6 +1283,7 @@
         "description": "中国剰余定理(○で割ったら△になる数字を見つける)"
     },
     "floor_sum": {
+        "scope": "python",
         "prefix": "floor_sum",
         "body": [
             "# [0,n)の範囲で、y=a/m*x+b/mの下側(直線上含む)にある格子点の数を求める",
@@ -1248,6 +1306,7 @@
         "description": "floor_sum"
     },
     "LIS": {
+        "scope": "python",
         "prefix": "LIS",
         "body": [
             "from bisect import bisect",
@@ -1268,6 +1327,7 @@
         "description": "最長増加部分列（LIS）"
     },
     "rotation_matrix": {
+        "scope": "python",
         "prefix": "rotation_matrix",
         "body": [
             "import math",
@@ -1286,6 +1346,7 @@
         "description": "回転行列"
     },
     "compress_position": {
+        "scope": "python",
         "prefix": "compress_position",
         "body": [
             "def compress(arr):",
@@ -1303,6 +1364,7 @@
         "description": "座標圧縮"
     },
     "compress_position_2d": {
+        "scope": "python",
         "prefix": "compress_position_2d",
         "body": [
             "def compress(arr):",
@@ -1348,6 +1410,7 @@
         "description": "二次元座標圧縮"
     },
     "counter": {
+        "scope": "python",
         "prefix": "counter",
         "body": [
             "from collections import Counter",
@@ -1356,6 +1419,7 @@
         "description": "数え上げ"
     },
     "defaultdict": {
+        "scope": "python",
         "prefix": "defaultdict",
         "body": [
             "from collections import defaultdict",
@@ -1364,6 +1428,7 @@
         "description": "defaultdict"
     },
     "alphabet": {
+        "scope": "python",
         "prefix": "alphabet",
         "body": [
             "alphabet = dict.fromkeys(\"abcdefghijklmnopqrstuvwxyz\",0)",
@@ -1371,6 +1436,7 @@
         "description": "アルファベットの辞書"
     },
     "chr_and_ord": {
+        "scope": "python",
         "prefix": "chr_and_ord",
         "body": [
             "# 0-indexed",
@@ -1389,6 +1455,7 @@
         "description": "k番目のアルファベットcを相互変換"
     },
     "rolling": {
+        "scope": "python",
         "prefix": "rolling",
         "body": [
             "def rolling(s, n):",
@@ -1399,6 +1466,7 @@
         "description": "文字列sをn文字分右に回転"
     },
     "regular_expression": {
+        "scope": "python",
         "prefix": "regular_expression",
         "body": [
             "import re",
@@ -1410,6 +1478,7 @@
         "description": "正規表現"
     },
     "LCS": {
+        "scope": "python",
         "prefix": "LCS",
         "body": [
             "def lcs(S, T):",
@@ -1447,6 +1516,7 @@
         "description": "LCS(最長共通部分列)"
     },
     "LCS_COUNT": {
+        "scope": "python",
         "prefix": "LCS_COUNT",
         "body": [
             "def lcs_count(S, T):",
@@ -1471,6 +1541,7 @@
         "description": "CS(共通部分列)の個数カウント"
     },
     "bisect": {
+        "scope": "python",
         "prefix": "bisect",
         "body": [
             "from bisect import bisect, bisect_left, bisect_right, insort, insort_left, insort_right",
@@ -1484,6 +1555,7 @@
         "description": "二分探索"
     },
     "meguru_bisect": {
+        "scope": "python",
         "prefix": "meguru_bisect",
         "body": [
             "def is_ok(arg):",
@@ -1508,6 +1580,7 @@
         "description": "めぐる式二分探索"
     },
     "Dijkstra": {
+        "scope": "python",
         "prefix": "Dijkstra",
         "body": [
             "from heapq import heappush, heappop",
@@ -1553,6 +1626,7 @@
         "description": "ダイクストラ法：2点間の最短路をO(ElogV)で求める(負経路はNG)"
     },
     "Bellman_Ford": {
+        "scope": "python",
         "prefix": "Bellman_Ford",
         "body": [
             "inf=float(\"inf\")",
@@ -1577,6 +1651,7 @@
         "description": "ベルマンフォード法：２点間の最短路をO(EV)で見つける(負経路もOK)"
     },
     "Warshall_Floyd": {
+        "scope": "python",
         "prefix": "Warshall_Floyd",
         "body": [
             "#d[i][j]は2頂点間i, j間の移動コストを格納, Vは頂点数",
@@ -1640,6 +1715,7 @@
         "description": "ワーシャルフロイド法：グラフの全ての頂点の間の最短路をO(V^3)で見つける(負経路もOK)"
     },
     "Union-Find": {
+        "scope": "python",
         "prefix": "Union-Find",
         "body": [
             "from collections import defaultdict",
@@ -1716,6 +1792,7 @@
         "description": "Union-Find"
     },
     "WeightedUnion-Find": {
+        "scope": "python",
         "prefix": "WeightedUnion-Find",
         "body": [
             "# 重み付きUnionFind",
@@ -1779,6 +1856,7 @@
         "description": "重み付きUnion-Find"
     },
     "Kruskal": {
+        "scope": "python",
         "prefix": "Kruskal",
         "body": [
             "#union-find木",
@@ -1873,6 +1951,7 @@
         "description": "最小全域木の辺の重みの総和の算出"
     },
     "BalancingTree": {
+        "scope": "python",
         "prefix": "BalancingTree(AVLTree, OrderedSet)",
         "body": [
             "# 平衡二分木(AVL木)",
@@ -2049,6 +2128,7 @@
         "description": "平衡二分木(AVL木)"
     },
     "Chu_Liu_Edmonds": {
+        "scope": "python",
         "prefix": "Chu_Liu_Edmonds",
         "body": [
             "from heapq import heappush, heappop",
@@ -2135,6 +2215,7 @@
         "description": "#最小全域有向木の辺の重みの総和を求める"
     },
     "tree_diameter": {
+        "scope": "python",
         "prefix": "tree_diameter",
         "body": [
             "# N: 木Tの頂点数",
@@ -2163,6 +2244,7 @@
         "description": "木の直径"
     },
     "LCA": {
+        "scope": "python",
         "prefix": "LCA",
         "body": [
             "import sys",
@@ -2244,6 +2326,7 @@
         "description": "LCA(最小共通祖先)"
     },
     "LowLink": {
+        "scope": "python",
         "prefix": "LowLink",
         "body": [
             "import sys",
@@ -2288,6 +2371,7 @@
         "description": "無向グラフの関節点(Articulation Points)の算出"
     },
     "Bridge": {
+        "scope": "python",
         "prefix": "Bridge",
         "body": [
             "import sys",
@@ -2334,6 +2418,7 @@
         "description": "グラフの橋(除去するとグラフが連結でなくなる辺)を検出"
     },
     "SCC": {
+        "scope": "python",
         "prefix": "SCC",
         "body": [
             "import sys",
@@ -2400,6 +2485,7 @@
         "description": "SCC(強連結成分分解)"
     },
     "dfs_islands": {
+        "scope": "python",
         "prefix": "dfs_islands",
         "body": [
             "# Pythonで提出!!",
@@ -2431,6 +2517,7 @@
         "description": "DFS(グリッド地図の探索)"
     },
     "dfs_timestamp": {
+        "scope": "python",
         "prefix": "dfs_timestamp",
         "body": [
             "# Pythonで提出!!",
@@ -2479,6 +2566,7 @@
         "description": "行きがけ/帰りがけのタイムスタンプを取得するDFS(オイラーツアーも可能)"
     },
     "dfs_treeTraversal": {
+        "scope": "python",
         "prefix": "dfs_treeTraversal",
         "body": [
             "# Pythonで提出!!",
@@ -2519,6 +2607,7 @@
         "description": "Nodeで構築した二分木に対して行きがけ/通りがけ/帰りがけの順序を出力"
     },
     "dfs_stairs": {
+        "scope": "python",
         "prefix": "dfs_stairs",
         "body": [
             "# Pythonで提出!!",
@@ -2544,6 +2633,7 @@
         "description": "階段の上り方(1段orL段)の数え上げ"
     },
     "bfs_maze": {
+        "scope": "python",
         "prefix": "bfs_maze",
         "body": [
             "from collections import deque",
@@ -2577,6 +2667,7 @@
         "description": "迷路の探索(縦横移動のみ、周囲は全て壁、必ずGにたどり着ける前提)"
     },
     "bfs_graph": {
+        "scope": "python",
         "prefix": "bfs_graph",
         "body": [
             "from collections import deque",
@@ -2609,6 +2700,7 @@
         "description": "グラフの幅優先探索 O(N+M)"
     },
     "bfs_multiStart": {
+        "scope": "python",
         "prefix": "bfs_multiStart",
         "body": [
             "from collections import deque",
@@ -2635,6 +2727,7 @@
         "description": "多始点BFS"
     },
     "bfs_01": {
+        "scope": "python",
         "prefix": "bfs_01",
         "body": [
             "from collections import deque",
@@ -2665,6 +2758,7 @@
         "description": "01BFS"
     },
     "topological_sort": {
+        "scope": "python",
         "prefix": "topological_sort",
         "body": [
             "# V: 頂点数",
@@ -2691,6 +2785,7 @@
         "description": "トポロジカルソート"
     },
     "FloydsCycleDetection": {
+        "scope": "python",
         "prefix": "FloydsCycleDetection",
         "body": [
             "# フロイドの循環検出",
@@ -2780,6 +2875,7 @@
         "description": "フロイドの循環検出"
     },
     "CycleSum": {
+        "scope": "python",
         "prefix": "CycleSum",
         "body": [
             "N,X,M = map(int,input().split())",
@@ -2806,6 +2902,7 @@
         "description": "サイクルを持つリストの和を求める"
     },
     "cumsum": {
+        "scope": "python",
         "prefix": "cumsum",
         "body": [
             "import itertools",
@@ -2815,6 +2912,7 @@
         "description": "累積和"
     },
     "cumsum_2d": {
+        "scope": "python",
         "prefix": "cumsum_2d",
         "body": [
             "H,W = map(int,input().split())",
@@ -2832,6 +2930,7 @@
         "description": "二次元累積和"
     },
     "imos": {
+        "scope": "python",
         "prefix": "imos",
         "body": [
             "enter = [3, 4, 5]",
@@ -2854,6 +2953,7 @@
         "description": "いもす法"
     },
     "imos_2d": {
+        "scope": "python",
         "prefix": "imos_2d",
         "body": [
             "N = int(input())",
@@ -2885,6 +2985,7 @@
         "description": "二次元いもす法"
     },
     "syakutori": {
+        "scope": "python",
         "prefix": "syakutori",
         "body": [
             "from collections import deque",
@@ -2902,6 +3003,7 @@
         "description": "しゃくとり法"
     },
     "BIT": {
+        "scope": "python",
         "prefix": "BIT",
         "body": [
             "# BIT(Fenwick Tree) ※一点加算、区間和のRSQ相当",
@@ -2939,6 +3041,7 @@
         "description": "Binary Indexed Tree(Fenwick Tree)　※一点加算、区間和のRSQ相当"
     },
     "SegTree_Abstract": {
+        "scope": "python",
         "prefix": "SegTree_Abstract",
         "body": [
             "# 区間に行う操作(最小値:min、最大値:max、区間和:x+y、区間積:x*y、最大公約数:gcd)",
@@ -3015,6 +3118,7 @@
         "description": "抽象化セグメント木"
     },
     "RMQ_RUQ": {
+        "scope": "python",
         "prefix": "RMQ_RUQ",
         "body": [
             "# N: 処理する区間の長さ",
@@ -3083,6 +3187,7 @@
         "description": "RMQ(区間最小)、RUQ(区間更新)"
     },
     "01knapsack": {
+        "scope": "python",
         "prefix": "knapsack",
         "body": [
             "N,W = map(int,input().split())",
@@ -3104,6 +3209,7 @@
         "description": "ナップザック問題"
     },
     "treeDP": {
+        "scope": "python",
         "prefix": "treeDP",
         "body": [
             "# Pythonで提出!!",
@@ -3136,6 +3242,7 @@
         "description": "木DP(根から最も遠い頂点までの深さを求める)"
     },
     "Zobrist Hash": {
+        "scope": "python",
         "prefix": "Zobrist Hash",
         "body": [
             "# Zobrist Hash(ABC250 - E - Prefix Equality)",
