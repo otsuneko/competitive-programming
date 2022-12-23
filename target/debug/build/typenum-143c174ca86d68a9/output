@@ -1,0 +1,3 @@
+cargo:rerun-if-changed=build/main.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/otsuneko/workspace/competitive-programming/target/debug/build/typenum-143c174ca86d68a9/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/otsuneko/workspace/competitive-programming/target/debug/build/typenum-143c174ca86d68a9/out/op.rs

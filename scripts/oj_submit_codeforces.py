@@ -19,7 +19,7 @@ def get_contest_id():
             break
     print('filepath:',file_path)
     #folder形式かfile単体か
-    fs = file_path.split('\\')
+    fs = file_path.split('/')
     idx = fs.index("field")
     fs = fs[idx:]
     if len(fs)==3:
@@ -50,7 +50,7 @@ def oj_submit(contest_id,problem_id):
 def main():
     basedir_name,contest_id,problem_id = get_contest_id()
 
-    tmp_path = '{}tmp\\{}_{}'.format(basedir_name,contest_id,problem_id)
+    tmp_path = '{}tmp/{}_{}'.format(basedir_name,contest_id,problem_id)
     oj_submit(contest_id,problem_id)
 
 if __name__=='__main__':

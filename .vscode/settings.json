@@ -1,8 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\tki13\\Anaconda3\\python.exe",
-    "files.associations": {
-        "*.rqtf": "xml",
-        "python.pythonPath": "C:\\\\Users\\\\tki13\\\\Anaconda3\\\\envs\\\\flaskenv\\\\python.exe",
-        "vector": "cpp"
-    }
+    "rust-analyzer.linkedProjects": [
+        "Cargo.toml"
+    ],
 }

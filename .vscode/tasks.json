@@ -6,7 +6,7 @@
         {
             "label": "oj_download & test(AtCoder)",
             "type": "shell",
-            "command": "python",
+            "command": "python3",
             "args": [
                 "\"${workspaceFolder}/scripts/oj_test_atcoder.py\"",
                 "\"${file}\""
@@ -17,7 +17,7 @@
         {
             "label": "oj_random_test(AtCoder)",
             "type": "shell",
-            "command": "python",
+            "command": "python3",
             "args": [
                 "$\"{workspaceFolder}/scripts/oj_test_atcoder_random.py\"",
                 "$\"{file}\""
@@ -28,7 +28,7 @@
         {
             "label": "oj_download & test(Codeforces)",
             "type": "shell",
-            "command": "python",
+            "command": "python3",
             "args": [
                 "\"${workspaceFolder}/scripts/oj_test_codeforces.py\"",
                 "\"${file}\""
@@ -42,7 +42,7 @@
         {
             "label": "oj_download & test(yukicoder)",
             "type": "shell",
-            "command": "python",
+            "command": "python3",
             "args": [
                 "\"${workspaceFolder}/scripts/oj_test_yukicoder.py\"",
                 "\"${file}\""
@@ -56,7 +56,7 @@
         {
             "label": "oj_submit(AtCoder)",
             "type": "shell",
-            "command": "python",
+            "command": "python3",
             "args": [
                 "\"${workspaceFolder}/scripts/oj_submit_atcoder.py\"",
                 "\"${file}\""
@@ -66,35 +66,35 @@
         {
             "label": "oj_submit(yukicoder)",
             "type": "shell",
-            "command": "python",
+            "command": "python3",
             "args": [
                 "\"${workspaceFolder}/scripts/oj_submit_yukicoder.py\"",
                 "\"${file}\""
             ],
             "problemMatcher": []
         },
-        {
-            "type": "cppbuild",
-            "label": "cppbuild",
-            "command": "C:\\MinGW\\bin\\g++.exe -std=c++1z",
-            "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "C:\\MinGW\\bin"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": ""
-        }
+        // {
+        //     "type": "cppbuild",
+        //     "label": "cppbuild",
+        //     "command": "C:\\MinGW\\bin\\g++.exe -std=c++1z",
+        //     "args": [
+        //         "-fdiagnostics-color=always",
+        //         "-g",
+        //         "${file}",
+        //         "-o",
+        //         "${fileDirname}\\${fileBasenameNoExtension}.exe"
+        //     ],
+        //     "options": {
+        //         "cwd": "C:\\MinGW\\bin"
+        //     },
+        //     "problemMatcher": [
+        //         "$gcc"
+        //     ],
+        //     "group": {
+        //         "kind": "build",
+        //         "isDefault": true
+        //     },
+        //     "detail": ""
+        // }
     ]
 }

@@ -125,9 +125,21 @@
         "description": "N頂点M辺のグラフの入力"
     },
     "print":{
-		"scope": "python",
+		"scope": "rust",
         "prefix":"print",
-		"body":["print($1)"],
+		"body":["println!(\"{}\",$1);"],
+		"description":"print",
+	},
+    "print_list":{
+		"scope": "rust",
+        "prefix":"print_list",
+		"body":["println!(\"{}\",$1.iter().join(\" \");"],
+		"description":"print",
+	},
+    "print_list2d":{
+		"scope": "rust",
+        "prefix":"print_list2d",
+		"body":["println!(\"{}\",$1.iter().map(|x| x.iter().join(\" \")).join(\"\\n\"));"],
 		"description":"print",
 	},
     "print_sep":{
@@ -716,18 +728,18 @@
         "description": "ceil(切り上げ除算)"
     },
     "mod_1000000007": {
-        "scope": "python",
+        "scope": "rust",
         "prefix": "mod_1000000007",
         "body": [
-            "mod = 10**9+7",
+            "const MOD: usize = 1_000_000_007;",
         ],
         "description": "数え上げでよく使う数値その1"
     },
     "mod_998244353": {
-        "scope": "python",
+        "scope": "rust",
         "prefix": "mod_998244353",
         "body": [
-            "mod = 998244353",
+            "const MOD: usize = 998_244_353",
         ],
         "description": "数え上げでよく使う数値その2"
     },
@@ -747,67 +759,36 @@
         "description": "四捨五入"
     },
     "gcd": {
-        "scope": "python",
+        "scope": "rust",
         "prefix": "gcd",
         "body": [
-            "def gcd(a,b):",
-            "    if b == 0:",
-            "        return a",
-            "    else:",
-            "        return gcd(b,a%b)",
+            "fn gcd(a: usize, b: usize) -> usize {",
+            "    if b == 0 {",
+            "        a",
+            "    } else {",
+            "        gcd(b, a % b)",
+            "    }",
+            "}",
+            "",
+            "fn gcd_list(list: &[usize]) -> usize {",
+            "    list.iter().fold(list[0], |a, b| gcd(a, *b))",
+            "}",
         ],
         "description": "a,bの最大公約数"
     },
-    "gcdlist": {
-        "scope": "python",
-        "prefix": "gcdlist",
-        "body": [
-            "def gcd(a,b):",
-            "    if b == 0:",
-            "        return a",
-            "    else:",
-            "        return gcd(b,a%b)",
-            "",
-            "def gcdlist(l):",
-            "    a = l[0]",
-            "    for i in range(len(l)):",
-            "        a = gcd(a,l[i])",
-            "    return a",
-        ],
-        "description": "リスト l の最大公約数"
-    },
     "lcm": {
-        "scope": "python",
+        "scope": "rust",
         "prefix": "lcm",
         "body": [
-            "def gcd(a,b):",
-            "    if b == 0:",
-            "        return a",
-            "    else:",
-            "        return gcd(b,a%b)",
+            "fn lcm(a: usize, b: usize) -> usize {",
+            "    a / gcd(a, b) * b",
+            "}",
             "",
-            "def lcm(a, b):",
-            "    return a * b // gcd (a, b)",
+            "fn lcm_list(list: &[usize]) -> usize {",
+            "    list.iter().fold(list[0], |a, b| lcm(a, *b))",
+            "}",
         ],
         "description": "a,bの最小公倍数"
-    },
-    "lcmlist": {
-        "scope": "python",
-        "prefix": "lcmlist",
-        "body": [
-            "def gcd(a,b):",
-            "    if b == 0:",
-            "        return a",
-            "    else:",
-            "        return gcd(b,a%b)",
-            "",
-            "def lcmlist(l):",
-            "    a = l[0]",
-            "    for i in range(1, len(l)):",
-            "        a = (a * l[i]) // gcd(a, l[i])",
-            "    return a",
-        ],
-        "description": "リスト l の最小公倍数"
     },
     "digsum": {
         "scope": "python",

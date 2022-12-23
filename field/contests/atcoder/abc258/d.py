@@ -11,6 +11,4 @@ for watch,play in games:
     cnt += 1
     miB = min(miB, play)
     ans = min(ans, time + miB*(X-cnt))
-    # if cnt == X:
-    #     break
 print(ans)

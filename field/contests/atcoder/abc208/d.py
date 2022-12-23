@@ -1,43 +1,34 @@
 #d[i][j]は2頂点間i, j間の移動コストを格納, Vは頂点数
-inf = float("INF")
-def warshall_floyd(d,nxt,n):
+INF = 10**18
+def Warshall_Floyd(d,n,K):
     global ans
     for k in range(n):
         for i in range(n):
             for j in range(n):
-                d[i][j] = min(d[i][k] + d[k][j], d[i][j])
-                if d[i][j] != inf:
-                    ans += d[i][j]
-
-#s→tの最短経路復元
-def get_path(s,t):
-    if dist[s][t] == inf:
-        return []
-    path = [s]
-    curr = s
-    while curr != t:
-        curr = nxt[curr][t]
-        path.append(curr)
-    return path
+                if d[i][k]!=INF and d[k][j]!=INF:
+                    if d[i][k] + d[k][j] < d[i][j]:
+                        d[i][j] = d[i][k] + d[k][j]
+                    if k <= K:
+                        ans += d[i][j]
 
 #隣接行列で経路を格納
-N,M = map(int,input().split())
-dist = [[inf]*N for _ in range(N)]
+N,M = map(int, input().split())
+roads = []
 for i in range(M):
-    A,B,C = map(int, input().split())
-    A,B = A-1,B-1
-    dist[A][B] = C
-#s,tが同じ場合は距離0
-for i in range(N):
-    dist[i][i] = 0
-
-#経路復元用
-nxt = [[0]*N for _ in range(N)]
-for i in range(N):
-    for j in range(N):
-        nxt[i][j] = j
+    s,t,d = map(int, input().split())
+    s,t = s-1,t-1
+    roads.append((s,t,d))
 
 ans = 0
-warshall_floyd(dist,nxt,N)
+for K in range(N):
+    dist = [[INF]*N for _ in range(N)]
+    for s,t,d in roads:
+        dist[s][t] = d
+
+    #s,tが同じ場合は距離0
+    for i in range(N):
+        dist[i][i] = 0
+
+    Warshall_Floyd(dist,K,N)
 
 print(ans)

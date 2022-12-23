@@ -3,10 +3,10 @@ import subprocess
 
 def main():
     file_path = sys.argv[1]
-    fs = file_path.split('\\')
+    fs = file_path.split('/')
 
     # oj-prepareで事前に作成したフォルダのパス
-    file_path2 = "\\".join(fs[:-1]) + "\\" + fs[-2] + "_" + fs[-1].split(".")[0]
+    file_path2 = "/".join(fs[:-1]) + "/" + fs[-2] + "_" + fs[-1].split(".")[0]
     print(file_path2)
 
     if not os.path.exists(file_path2):
@@ -19,7 +19,7 @@ def main():
         print('generate random case failed. exit')
         sys.exit(1)
 
-    cp = subprocess.run(['oj','g/o','-c','python ..\\{}'.format(fs[-1])], cwd=file_path2)
+    cp = subprocess.run(['oj','g/o','-c','python ../{}'.format(fs[-1])], cwd=file_path2)
     if cp.returncode!=0:
         print('random test failed. exit')
         sys.exit(1)

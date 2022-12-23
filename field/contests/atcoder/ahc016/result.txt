@@ -1,0 +1,400 @@
+N = 5
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 200000000
+N = 76
+E = 1
+oooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 11842105
+N = 100
+E = 39
+oooooxoxoooxxoxoooooxooxoxooxooxoxoxoooooxxooooxoxoxoooxxoxoxxoooxoxoxooooxoxxoxoxoxoxoxoxxxxoooxoxo
+Score = 164232
+N = 100
+E = 48
+ooxoxxxxoxxoxoxoxxoxxoxoxoxxooxxoxxoxoooooxoxxxoxooooxxxxxoooooooooxxxxoxxxoxoxoooxooooxoxoxoxoxoxoo
+Score = 63627
+N = 32
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 31250000
+N = 33
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 30303030
+N = 80
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 12500000
+N = 67
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 14925373
+N = 100
+E = 47
+xxooxoxoxxxxoooooxoxxxooooxxooooxooxxooxooxxoxoxoxxooxoxoxoxxoooxoxooxooxxxoooooxooxoxxooxxooxxxxxox
+Score = 70697
+N = 100
+E = 4
+ooooooooooooooxooooooooooooooooxooooooooooooxooooooooooooooooooooooooooooooooxoooooooooooooooooooooo
+Score = 6561000
+N = 100
+E = 73
+oxooxooxoxxxoxoxoxxxxxoxxxxoxxxoxxoxxoxxxxxxxxxxooooxxxxoxxxxxxxoxxxxxxxoxxxxoxxxxxxxoxxxxooxxooxxxx
+Score = 4568
+N = 100
+E = 53
+xxooxxxxxxxxooxoxxxoxooxxoxxxxoxoooooxoxoooooooxxoxxoxoxxoxooxoxxoxxooxxoxoxoxooxoxxxxoxoooxoooxxxxo
+Score = 37571
+N = 100
+E = 3
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooooxooooooxoooooooooooooooooooooooooo
+Score = 7290000
+N = 70
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 14285714
+N = 67
+E = 3
+ooxoooooooooooooooooooooxoooooooooooooooooooooooooooooooooooxooooooooooooooooooooooooooooooooooooooo
+Score = 10880597
+N = 67
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 14925373
+N = 100
+E = 78
+xxxxxxxxoxxxoxoxxxxxxxxxxoxxxxxoxxoxxxxxxoxxxoxoxxxxxxxxxxxxxxoxoxxxxxoxxxxxxoxooxxooxxoxxxxoooxxoxx
+Score = 2697
+N = 100
+E = 86
+xoxxxxxoxxoxxxxxxxxxoxoxxoxoxxoxxxxxxxxxxxxxoxxxxxxxxxxxxxxoxxxxxoxxxxxxxoxxxxxxxxxxxoxxxoxxxxxxxxxx
+Score = 1161
+N = 88
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 11363636
+N = 78
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 12820513
+N = 61
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 16393443
+N = 100
+E = 14
+ooooxoooooxooooooxoxoooooooxoooooxooooooooooooooooxoooooxoooooooxoooooooxooooooooooooooxxoxooooooxoo
+Score = 2287679
+N = 70
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 14285714
+N = 100
+E = 36
+ooxoooxoxoxoxoooooxxxxxxxxxooxooxoooxoooxoooxxoooxooooooooxxoxxooooxxoxooooooxxxxxooooxxoooooooooxoo
+Score = 225284
+N = 72
+E = 2
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooooooooooxooooooooooooooooooooooo
+Score = 11250000
+N = 100
+E = 48
+oooxxoooxxxooooooooxxxooxxoxxxxooxxxxoooxxooxxxxoooxxooxoooxxooxxxxxxoxxoxoxxoooooooooxxoxoxxxxoxooo
+Score = 63627
+N = 100
+E = 69
+xxoooooxxooxxxoxxxxxxxxoxxxoxoxxxxxoooxxoxxxxxxxxxxxxxxxxoxoxoxoxoxxxxoxxooxoxxoxxoxooxxxxoxoxxoxxxx
+Score = 6962
+N = 78
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 12820513
+N = 46
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 21739130
+N = 91
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 10989011
+N = 12
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 83333333
+N = 48
+E = 1
+oooooooooooooooooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 18750000
+N = 99
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 10101010
+N = 67
+E = 10
+xxoooooooooxooooooxooooooooooooooooooxoooooooxooooxooooxooooxooxoooooooooooooooooooooooooooooooooooo
+Score = 5204156
+N = 77
+E = 1
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooxooooooooooooooooooooooooooooooooooooooooooooo
+Score = 11688312
+N = 30
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 33333333
+N = 55
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 18181818
+N = 34
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 29411765
+N = 100
+E = 14
+oooxooooooxxoooxooooxooooooooooooooxoooooooooooooxooooooooooooooxxoooxoxoooooooooxoooooooxooooxooooo
+Score = 2287679
+N = 66
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 15151515
+N = 72
+E = 3
+oooooooooooooooooooxoooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoo
+Score = 10125000
+N = 67
+E = 1
+ooooooooooooooooooooooooooooooooooooooooooooxooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 13432836
+N = 90
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 11111111
+N = 30
+E = 1
+ooooooooooooooooooooooooooooooooooooooooooooooxooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 30000000
+N = 67
+E = 5
+oooooooooooooxoooooooooooooooooooooooooooooooooooooxoxoooooooooooooooooooooooooooooooooooooxooxooooo
+Score = 8813284
+N = 100
+E = 76
+xxxxxxxxooxxxxxxxoxxxxoxoxxxxoxooxxxxxxoxxoxxxxxoxoxoxxoxxxxxoxxxxxxxxxxxxxxxoxxoxooxooxxxoxooxxxxxx
+Score = 3330
+N = 96
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 10416667
+N = 100
+E = 61
+xxoxxoxoxoxxxoxxxxoxoooxxxxxoxxooxoxxoxoxxxooxoxoooxxoxxxxxxxooxxxoxoxxoxxoxoxxxxoooxxxoooxxxoxooxxo
+Score = 16173
+N = 100
+E = 71
+xxxoooxxxxxxoxxxxxxxxooxxxxooxxxoxxxxxoxxoooxxxoxxxxxxooxoxxoxxxoxoooxxxoxoooxxxoxxxxxxxoxxxxxxxoxxx
+Score = 5639
+N = 40
+E = 1
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxooooooooooooooooooooooooooooooooo
+Score = 22500000
+N = 67
+E = 4
+ooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooxooooooooxooooooooooooooooooxooo
+Score = 9792537
+N = 100
+E = 5
+ooooooooxoxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxooooxooooooxooooooo
+Score = 5904900
+N = 85
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 11764706
+N = 95
+E = 21
+ooooooooxxxoxoooooxoooxoooooooxooooooooxxoooxooooooxoooooxooooxoooooooooxoooxooooooxoooooxoooxxxooxo
+Score = 1151779
+N = 59
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 16949153
+N = 65
+E = 3
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooxooooooxoo
+Score = 11215385
+N = 11
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 90909091
+N = 78
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 12820513
+N = 100
+E = 64
+xxoxxoxxxxxxxxooxxxxxxxoxoxxxooxoxxxxoxoxoooxxooxoxooxxooxxxoxxxxxxxoxoxxxoxxxxxxxxoxoooxooxxooooxox
+Score = 11790
+N = 100
+E = 82
+xxxoxxxxxoxxxxxxxooxxxxoxxxxxxoxxoxooxoxxoxxxxoxxxxxxxxxoxoxxxxxxxxxxxoxxxxxoxxxxxxxxxxxxoxxxxxxxoxx
+Score = 1770
+N = 97
+E = 5
+ooooooooxxooooooooooooooxoooooooooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxooo
+Score = 6087526
+N = 65
+E = 1
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooxooooooooooo
+Score = 13846154
+N = 98
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 10204082
+N = 75
+E = 72
+xxxxoxxxxooxooooxxoxxxxxxxxoxxxoxoxxxoxxxxxxxxxxxooxoxxxxxxxoxxxxxoxoxxoxoxxoxoxxxxxxxxoxoxxxooxxoxo
+Score = 6767
+N = 100
+E = 44
+xxooxxxooxooxooxoxoxxxxoxoooxoxxxooxooooxxooxxoxoooxxxoooooxxxoooxxxooxxxooxxxoooxxoooooxooooxooooox
+Score = 96977
+N = 30
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 33333333
+N = 78
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 12820513
+N = 84
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 11904762
+N = 67
+E = 2
+oooooooooooooooooooooooooooooooooooooooooooooooxoooooooooooooooooooxoooooooooooooooooooooooooooooooo
+Score = 12089552
+N = 89
+E = 1
+oooooooooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 10112360
+N = 100
+E = 60
+oxxoxxxooxoxxxxxxooxxoxoxoxxxooooxxoxooxxxxoxoxxxoxoxxoooxxxoxxoxooxoooxxxxooxxxxxxoxoxooxxxxoxxxoox
+Score = 17970
+N = 100
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 10000000
+N = 57
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 17543860
+N = 100
+E = 92
+oxxxxxxxxxxxxxxxxxxxxoxxxxxooxxxxxxxxxxxxxxxxoxxxxxxxxxxxxxoxxxxxxxxxxxxxxxxxxxxxxxxxxxxxoxxoxxxxxxx
+Score = 617
+N = 100
+E = 79
+xxxooxxxxxoxxxxxooxxxxxooxxxoxxxxxoxxxoxxoxxxxxxoxxxoxoxxxxxxxxxxxxxxxxxoxxxxoxxxxxxxxxxxooxxxoooxxx
+Score = 2427
+N = 67
+E = 1
+oooooooooooooooooooooooooooxoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 13432836
+N = 81
+E = 69
+xxxoxxoxoxxxoxxoxooxoxxxoxoxxxxxxxxxooxxoooxxxxooxxxxxxxxxxxxoxoxxxoxxxoxooxxxoxxxxoxoxxxooxoxxxxoox
+Score = 8595
+N = 100
+E = 61
+ooxoxoxxxxxxoooxxxxooooxxxxoooxooxoooxoxxooxoxxxxxooooxxxxxxoxxxoxxxoxxxxoxooxxxoxxoxooxoxxxoxxxxxxx
+Score = 16173
+N = 80
+E = 6
+oooooooooooooooooooooooxooxoooxoooooooooooooooxoooooxooooooooxoooooooooooooooooooooooooooooooooooooo
+Score = 6643013
+N = 75
+E = 6
+xxoxoooooooooooooooooooooooooooooooooooooooooooooooooooxooooooooxoooooooooooooooxooooooooooooooooooo
+Score = 7085880
+N = 62
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 16129032
+N = 100
+E = 19
+ooooxoooooooooooooooooxoxooxooooxoooxoooooooooooooooxooooxoooooooooxxoooooxooooooxooooxooooxxooxxxxo
+Score = 1350852
+N = 100
+E = 30
+xoxoooxoxooooxoooooxxoooooxxxxxxoxooooxooxxoooxoooooxooooooxooxoooooooooooooooxooxxooxoooooxoxxoooxx
+Score = 423912
+N = 100
+E = 63
+ooxxxoxxxoxxoxxoxxxxxxxxxxxxxoxxooxoxxooxxxxoxooxoxxxxxxxxooxxooxxooxoooxxooooxxoxxoxxoxxxxoxooxxoxo
+Score = 13100
+N = 61
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 16393443
+N = 100
+E = 10
+oooooooooooooooooooooooxooooooxooooooxoxooooxoooooooooooooxoooooooooooooooxooooooooooxxoooooooooxooo
+Score = 3486784
+N = 79
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 12658228
+N = 100
+E = 46
+oxoxxxxoxooxoxoxoxxxxooooxxoooooooxooooxxxoxxxooxoxxooooxxxooooxoxxxoooxoooxoxoxxxxooxxoxoxoxoooxoxo
+Score = 78552
+N = 56
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 17857143
+N = 100
+E = 4
+oooooooooooooooooooooooooooooxooooooooooooxoooooxoooooooooooooooooooooooooooooooooooxooooooooooooooo
+Score = 6561000
+N = 67
+E = 8
+oooooxoooooooooooooooooooxoooooooooooooooooooxooooooxoooooooxooxoooxooooooxooooooooooooooooooooooooo
+Score = 6424884
+N = 22
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 45454545
+N = 100
+E = 23
+ooooooxoooooooxoxooxoooxooxooooxoxxooooooxxxxooxoooooooxoooooxooooooooooooooxxoxooooooooxxoxooooooox
+Score = 886294
+N = 51
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 19607843
+N = 67
+E = 10
+oooooxoooxooooooxxoxoooooooxoooxoooooooooxoooooooooooooooxooooxooooooooooooooooooooooooooooooooooooo
+Score = 5204156
+N = 100
+E = 68
+oxxoxoxxooxooxxoxxxxxxoxoxxxxxxooxxoxoxoxxxooxxoxxxooxxooxoxoxxxxxxxxxoxoxxxxxxxoxxxxoxoxxxoxxoxxoxx
+Score = 7736
+N = 100
+E = 92
+xxxxxxxxxxxxxxxxxxoxxxxoxxxxoxxxxxxxxxxxxxxxoxxxxxxxoxoxxxxxoxxxxxxxxxxxxxxxxxxxxxxxxxxxxxoxxxxxxxxx
+Score = 617
+N = 100
+E = 31
+xoooxxoxoxooxxxooxoxoxoxooooxxoooooxxxxoxooooxooooooooooooooooooooooxooxooooooxoxoxooxooooxooxxoooxx
+Score = 381520
+N = 100
+E = 6
+oooooooooooooxoooooooxoxoxoooooooooooooooooooooooooooooxoooooooooooooooooooooooooooxoooooooooooooooo
+Score = 5314410
+N = 91
+E = 0
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+Score = 10989011

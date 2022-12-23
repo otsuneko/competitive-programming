@@ -1,0 +1,12 @@
+/home/otsuneko/workspace/competitive-programming/target/debug/deps/proconio-2ecfd835c1f832fa.rmeta: /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/lib.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/marker.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/read.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/source/mod.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/source/line.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/source/once.rs
+
+/home/otsuneko/workspace/competitive-programming/target/debug/deps/libproconio-2ecfd835c1f832fa.rlib: /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/lib.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/marker.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/read.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/source/mod.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/source/line.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/source/once.rs
+
+/home/otsuneko/workspace/competitive-programming/target/debug/deps/proconio-2ecfd835c1f832fa.d: /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/lib.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/marker.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/read.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/source/mod.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/source/line.rs /home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/source/once.rs
+
+/home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/lib.rs:
+/home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/marker.rs:
+/home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/read.rs:
+/home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/source/mod.rs:
+/home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/source/line.rs:
+/home/otsuneko/.cargo/registry/src/github.com-1ecc6299db9ec823/proconio-0.3.6/src/source/once.rs:
