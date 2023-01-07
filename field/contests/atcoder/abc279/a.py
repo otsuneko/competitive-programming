@@ -1,3 +1,3 @@
 S = input()
 
-print(S.count("w")*2 + S.count("v")*1)
+print(S.count("v") + S.count("w")*2)

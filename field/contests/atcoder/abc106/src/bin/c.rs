@@ -17,5 +17,13 @@ fn main() {
         K:usize
     }
 
+    for k in 0..K{
+        if S[k] != '1'{
+            println!("{}",S[k]);
+            return
+        }
+    }
+    println!("{}",S[K-1]);
+
     
 }

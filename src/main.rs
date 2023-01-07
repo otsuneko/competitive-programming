@@ -1,25 +1,21 @@
-use proconio::{fastout, input};
-use num::abs;
-use nalgebra::min;
+#[allow(unused_imports)]
+use itertools::Itertools;
+#[allow(unused_imports)]
+use proconio::{fastout, input,marker::{Chars, Bytes, Isize1, Usize1}};
+#[allow(unused_imports)]
+use std::{
+    cmp::{max, min, Reverse},
+    collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque},
+    process::exit,
+};
 
 #[fastout]
-#[allow(non_snake_case, non_upper_case_globals)]
+#[allow(non_snake_case, non_upper_case_globals, path_statements)]
 fn main() {
     input! {
-        N:i64,
-        A:[i64;N]
+        S:String
     }
 
-    let total = A.iter().sum::<i64>();
-
-    let mut mi = 10_i64.pow(12);
-    let mut su = 0;
-
-    for a in A{
-        su += a;
-        mi = min(mi,abs(total-su-su))
-    }
-
-    println!("{}",mi);
+    println!("{}",&S[..(S.len()-8)]);
 
 }

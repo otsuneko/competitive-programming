@@ -1,36 +1,4 @@
 {
-    "Template_AtCoder": {
-        "scope": "python",
-        "prefix": "Template_AtCoder",
-        "body": [
-            "import sys",
-            "input = lambda: sys.stdin.readline().rstrip()",
-            "INF = 10**18",
-            "",
-            "",
-        ],
-        "description": "AtCoder template"
-    },
-    "Template_Codeforces": {
-        "scope": "python",
-        "prefix": "Template_Codeforces",
-        "body": [
-            "import sys",
-            "input = lambda: sys.stdin.readline().rstrip()",
-            "sys.setrecursionlimit(10**5)",
-            "import random",
-            "XOR=random.randint(10**7,10**8)",
-            "INF = 10**18",
-            "",
-            "def solve():",
-            "    N = int(input())",
-            "",
-            "Q = int(input())",
-            "for _ in range(Q):",
-            "    solve()",
-        ],
-        "description": "Codeforces template"
-    },
     "FileInput": {
         "scope": "python",
         "prefix": "FileInput",
@@ -40,87 +8,13 @@
         ],
         "description": "FileInput"
     },
-	"input_line int(single)":{
-		"scope": "python",
-        "prefix":"input_line int(single)",
-		"body":[
-            " int(input())"
-        ],
-		"description":"input int(single)",
-	},
-	"input_line int(multiple)":{
-		"scope": "python",
-        "prefix":"input_line int(multiple)",
-		"body":[
-            " map(int,input().split())"
-        ],
-		"description":"input int(multiple)",
-	},
-	"input_line list(int)":{
-		"scope": "python",
-        "prefix":"input_line list(int)",
-		"body":[
-            " list(map(int,input().split()))"
-        ],
-		"description":"input list(int)",
-	},
-    "input_lines list(int)":{
-		"scope": "python",
-        "prefix":"input_lines list(int)",
-		"body":[
-            " [int(input()) for _ in range($1)]"
-        ],
-		"description":"input_lines list(int)",
-	},
-	"input_lines list(multiple_int)":{
-		"scope": "python",
-        "prefix":"input_lines list(multiple_int)",
-		"body":[
-            " [list(map(int,input().split())) for _ in range($1)]"
-        ],
-		"description":"input_lines list(multiple_int)",
-	},
-	"input_line list(string)":{
-		"scope": "python",
-        "prefix":"input_line list(string)",
-		"body":[
-            " list(input())"
-        ],
-		"description":"input line list(string)",
-	},
-    "input_lines list(string)":{
-		"scope": "python",
-        "prefix":"input_lines list(string)",
-		"body":[
-            " [list(input()) for _ in range($1)]"
-        ],
-		"description":"input_lines list(string)",
-	},
-    "input_tree": {
-        "scope": "python",
-        "prefix": "input_tree",
-        "body": [
-            "N = int(input())",
-            "graph = [[] for _ in range(N)]",
-            "for _ in range(N-1):",
-            "    a,b = map(int,input().split())",
-            "    a,b = a-1,b-1",
-            "    graph[a].append(b)",
-            "    graph[b].append(a)",
-        ],
-        "description": "N頂点の木の入力"
-    },
     "input_graph": {
         "scope": "python",
         "prefix": "input_graph",
         "body": [
-            "N,M = map(int,input().split())",
-            "graph = [[] for _ in range(N)]",
-            "for _ in range(M):",
-            "    a,b = map(int,input().split())",
-            "    a,b = a-1,b-1",
-            "    graph[a].append(b)",
-            "    graph[b].append(a)",
+            "N: usize,",
+            "M: usize,",
+            "graph: [(Usize1, Usize1); M]",
         ],
         "description": "N頂点M辺のグラフの入力"
     },

@@ -1,0 +1,22 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      25
+    out: |
+      Christmas
+  - name: sample2
+    in: |
+      22
+    out: |
+      Christmas Eve Eve Eve
+
+extend:
+  - type: Text
+    path: "./a"
+    in: /in/*.txt
+    out: /out/*.txt
