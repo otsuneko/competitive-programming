@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 #[allow(unused_imports)]
 use itertools::Itertools;
 #[allow(unused_imports)]

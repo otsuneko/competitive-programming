@@ -1,7 +1,7 @@
 {
     "git.ignoreLimitWarning": true,
     "rust-analyzer.linkedProjects": [
-        "Cargo.toml"
+        "/home/otsuneko/workspace/competitive-programming/Cargo.toml"
     ],
     // ====================================
     // エディタ全体のUIに関する設定
