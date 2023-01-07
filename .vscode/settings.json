@@ -1,5 +1,49 @@
 {
+    "git.ignoreLimitWarning": true,
     "rust-analyzer.linkedProjects": [
         "Cargo.toml"
+    ],
+    // ====================================
+    // エディタ全体のUIに関する設定
+    // ====================================
+    "breadcrumbs.enabled": false,
+
+
+    // ====================================
+    // エディタのUIに関する詳細設定
+    // ====================================
+    // 括弧（ブラケット）のペアガイドを表示する
+    "editor.guides.bracketPairs": true,
+    // 括弧（ブラケット）の水平方向のペアガイドを表示する
+    "editor.guides.bracketPairsHorizontal": true,
+    // 括弧（ブラケット）のペアごとに色を分ける
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
+
+    // ====================================
+    // ワークベンチの設定
+    // ====================================
+    // アイコンテーマ
+    "workbench.iconTheme": "material-icon-theme",
+    // "workbench.iconTheme": "vs-seti",
+
+    // ====================================
+    // その他の設定
+    // ====================================
+    // 空フォルダがある場合、コンパクト形式で表示する
+    "explorer.compactFolders": false,
+
+    // ====================================
+    // 拡張機能の個別設定
+    // ====================================
+    // ------------------------------------
+    // Insert <br> Tag
+    // ------------------------------------
+    "insert-br-tag.enableOnLanguage": [
+        // 任意の言語で有効化する
+        "html",
+        "php",
+        "javascript",
+        "markdown"
     ],
 }
