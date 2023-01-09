@@ -11,5 +11,21 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        Q:usize,
+        A:[usize;N],
+        query:[(usize,usize);Q]
+    }
+
+    let mut cumsum = vec![0];
+    for i in 0..N{
+        cumsum.push(cumsum[i] + A[i])
+    }
+
+    for (L,R) in query{
+        println!("{}",cumsum[R]-cumsum[L-1]);
+    }
+
+
 }

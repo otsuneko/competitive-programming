@@ -11,5 +11,10 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        A:usize,
+        B:usize
+    }
+
+    println!("{}",A+B);
 }

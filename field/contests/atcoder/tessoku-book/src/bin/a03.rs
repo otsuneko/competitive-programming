@@ -11,5 +11,20 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        K:usize,
+        P:[usize;N],
+        Q:[usize;N]
+    }
+
+    for i in 0..N{
+        for j in 0..N{
+            if P[i] + Q[j] == K{
+                println!("{}","Yes");
+                return
+            }
+        }
+    }
+    println!("{}","No");
 }

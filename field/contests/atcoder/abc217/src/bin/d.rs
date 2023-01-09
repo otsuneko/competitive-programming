@@ -13,12 +13,22 @@ const INF: usize = 1 << 60;
 #[fastout]
 fn main() {
     input! {
-        N:usize,
-        X:usize,
-        A:[usize;N]
+        L:usize,
+        Q:usize,
+        query:[(usize,usize);Q]
     }
 
-    let ans = A.lower_bound(&X);
-    println!("{}",ans+1);
+    let mut bts:BTreeSet<usize> = BTreeSet::new();
+    bts.insert(0);
+    bts.insert(L);
 
+    for (c,x) in query{
+        if c == 1{
+            bts.insert(x);
+        }else if c == 2{
+            let left = bts.range(..x).next_back().unwrap();
+            let right = bts.range(x..).next().unwrap();
+            println!("{}",right-left);
+        }
+    }
 }

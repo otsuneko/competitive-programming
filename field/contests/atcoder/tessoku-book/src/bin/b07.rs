@@ -11,5 +11,22 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        T:usize,
+        N:usize,
+        p:[(usize,usize);N]
+    }
+
+    let mut imos = vec![0;T+1];
+    for (L,R) in p{
+        imos[L] += 1;
+        imos[R] -= 1;
+    }
+
+    let mut cumsum = vec![0];
+    for i in 0..T{
+        cumsum.push(cumsum[i] + imos[i]);
+        println!("{}",cumsum[i+1]);
+    }
+
 }

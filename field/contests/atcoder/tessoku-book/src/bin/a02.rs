@@ -11,5 +11,15 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        X:usize,
+        A:[usize;N]
+    }
+
+    if A.contains(&X){
+        println!("{}","Yes");
+    }else{
+        println!("{}","No");
+    }
 }

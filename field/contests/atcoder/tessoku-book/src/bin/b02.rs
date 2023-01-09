@@ -11,5 +11,16 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        A:usize,
+        B:usize
+    }
+
+    for i in A..=B{
+        if 100%i==0{
+            println!("{}","Yes");
+            return
+        }
+    }
+    println!("{}","No");
 }
