@@ -11,5 +11,35 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        K:usize,
+        A:[usize;N],
+        B:[usize;N],
+        C:[usize;N],
+        D:[usize;N]
+    }
+
+    let mut E = HashSet::<usize>::new();
+    let mut F = HashSet::<usize>::new();
+
+    for &a in &A{
+        for &b in &B{
+            E.insert(a+b);
+        }
+    }
+
+    for &c in &C{
+        for &d in &D{
+            F.insert(c+d);
+        }
+    }
+
+    for &e in &E{
+        if F.contains(&(K-e)) {
+                println!("{}","Yes");
+                return
+        }
+    }
+    println!("{}","No");
 }

@@ -8,8 +8,22 @@ use std::{
 };
 
 const INF: usize = 1 << 60;
-
+   
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        mut A:[usize;N]
+    }
+
+    let mut cp = A.clone();
+    cp.sort();
+    cp.dedup();
+
+    let mut A_compress = vec![];
+    for a in A{
+        A_compress.push(cp.binary_search(&a).unwrap()+1);
+    }
+
+    println!("{}",A_compress.iter().map(|x| x.to_string()).collect::<Vec<_>>().join(" "));
 }
