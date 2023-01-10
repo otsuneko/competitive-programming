@@ -4,12 +4,40 @@ use proconio::{fastout, input,marker::{Chars, Bytes, Isize1, Usize1}};
 use std::{
     cmp::{max, min, Reverse},
     collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque},
-    process::exit,
 };
 
 const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        M:usize,
+        A:[[usize;N];M]
+    }
+
+    let mut dp = vec![vec![INF;1<<N];M+1];
+    dp[0][0] = 0;
+
+    for i in 0..M{
+        for j in 0..1<<N{
+            let mut mask = j;
+
+            for k in 0..N{
+                if A[i][k] == 1{
+                    mask |= 1<<k;
+                }
+            }
+
+            dp[i+1][j] = min(dp[i+1][j], dp[i][j]);
+            dp[i+1][mask] = min(dp[i+1][mask], dp[i][j] + 1);
+        }
+    }
+    
+    if dp[M][(1<<N)-1] == INF{
+        println!("{}",-1);
+    }else{
+        println!("{}",dp[M][(1<<N)-1]);
+    }
+
 }

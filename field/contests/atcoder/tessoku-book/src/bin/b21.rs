@@ -11,5 +11,27 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        S:Chars
+    }
+
+    let mut dp = vec![vec![0;N];N];
+    for i in 0..N{dp[i][i] = 1;}
+    for i in 0..N-1{
+        dp[i][i+1] = if S[i]==S[i+1] {2} else {1};
+    }
+
+    for LEN in 2..N{
+        for l in 0..N-LEN{
+            let r = l+LEN;
+            dp[l][r] = max(dp[l][r-1], dp[l+1][r]);
+            if S[l] == S[r]{
+                dp[l][r] = max(dp[l][r], dp[l+1][r-1] + 2);
+            }
+        }
+    }
+
+    println!("{}",dp[0][N-1]);
+
 }

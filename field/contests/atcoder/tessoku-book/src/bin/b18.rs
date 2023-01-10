@@ -4,12 +4,47 @@ use proconio::{fastout, input,marker::{Chars, Bytes, Isize1, Usize1}};
 use std::{
     cmp::{max, min, Reverse},
     collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque},
-    process::exit,
+    process::exit, vec,
 };
 
 const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        S:usize,
+        A:[usize;N]
+    }
+
+    let mut dp = vec![vec![false;S+1];N+1];
+    dp[0][0] = true;
+
+    for i in 0..N{
+        for j in 0..S+1{
+            if dp[i][j] == true && j + A[i] <= S{
+                dp[i+1][j+A[i]] = true;
+            }
+            dp[i+1][j] |= dp[i][j];
+        }
+    }
+
+    if dp[N][S] == false{
+        println!("{}",-1);
+        return
+    }
+
+    let mut path:Vec<usize> = vec![];
+    let mut su = S;
+
+    for i in (0..N).rev(){
+        if su >= A[i] && dp[i][su-A[i]] == true{
+            path.push(i+1);
+            su -= A[i];
+        }
+    }
+
+    path.reverse();
+    println!("{}",path.len());
+    println!("{}",path.iter().map(|x| x.to_string()).collect::<Vec<_>>().join(" "));
 }

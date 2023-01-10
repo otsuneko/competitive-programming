@@ -11,5 +11,23 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        H:[isize;N]
+    }
+
+    let mut dp:Vec<isize> = vec![INF as isize;N];
+    dp[0] = 0;
+
+    for i in 0..N{
+        if i < N-1{
+            dp[i+1] = min(dp[i+1],dp[i] + (H[i+1]-H[i]).abs());
+        }
+        if i < N-2{
+            dp[i+2] = min(dp[i+2],dp[i] + (H[i+2]-H[i]).abs());
+        }
+    }
+
+    println!("{}",dp[N-1]);
+
 }
