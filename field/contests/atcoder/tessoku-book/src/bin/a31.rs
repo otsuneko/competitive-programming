@@ -11,5 +11,13 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize
+    }
+
+    let div3 = N/3;
+    let div5 = N/5;
+    let div15 = N/15;
+
+    println!("{}",div3+div5-div15);
 }

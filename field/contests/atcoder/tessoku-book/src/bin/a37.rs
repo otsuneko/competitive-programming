@@ -11,5 +11,14 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        M:usize,
+        B:usize,
+        A:[usize;N],
+        C:[usize;M]
+    }
+
+    let ans = N*M*B + M*A.iter().sum::<usize>() + N*C.iter().sum::<usize>();
+    println!("{}",ans);
 }

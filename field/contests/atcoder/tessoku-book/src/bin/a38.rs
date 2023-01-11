@@ -11,5 +11,10 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        D:usize,
+        N:usize,
+        work:[(usize,usize,usize);N]
+    }
+    
 }

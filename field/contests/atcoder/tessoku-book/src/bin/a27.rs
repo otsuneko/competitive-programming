@@ -9,7 +9,26 @@ use std::{
 
 const INF: usize = 1 << 60;
 
+fn gcd(a: usize, b: usize) -> usize {
+    if b == 0 {
+        a
+    } else {
+        gcd(b, a % b)
+    }
+}
+
+fn gcd_list(list: &[usize]) -> usize {
+    list.iter().fold(list[0], |a, b| gcd(a, *b))
+}
+
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        A:usize,
+        B:usize
+    }
+
+    println!("{}",gcd(A,B));
+
+
 }

@@ -11,5 +11,19 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        K:usize,
+        S:Chars
+    }
+
+    let cnt_on = S.iter().filter(|&x| *x == '1').count();
+
+    if cnt_on%2 == K%2 {
+        println!("Yes");
+    }else{
+        println!("No");
+    }
+
+
 }

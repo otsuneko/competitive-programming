@@ -11,5 +11,20 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        query:[(char,i64);N]
+    }
+
+    let mut ans:i64 = 0;
+    let _mod = 10000;
+    for &(op,a) in &query{
+        match op {
+            '+' => {ans = (ans+a)%_mod;}
+            '-' => {ans = (ans-a+_mod)%_mod;}
+            '*' => {ans = (ans*a)%_mod;}
+            _ => {}
+        }
+        println!("{}",ans);
+    }
 }

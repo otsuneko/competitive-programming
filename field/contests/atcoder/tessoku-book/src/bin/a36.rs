@@ -11,5 +11,16 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        K:usize
+    }
+
+    if K < (N-1)*2{
+        println!("{}","No");
+    }else if (K - (N-1)*2)%2 == 1{
+        println!("{}","No");
+    }else{
+        println!("{}","Yes");
+    }
 }
