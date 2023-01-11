@@ -11,5 +11,29 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        Q:usize,
+        A:[Usize1;N],
+        query:[(Usize1,usize);Q]
+    }
+
+let lv = 1<<5;
+let mut dp = vec![vec![0;N];lv+1]; //10^9 < 2^32
+for i in 0..N { dp[0][i] = A[i]; }
+for d in 0..lv {
+    for i in 0..N {
+        dp[d+1][i] = dp[d][dp[d][i]];
+    }
+}
+
+for &(X,Y) in &query{
+    let mut cur = X;
+    for d in (0..lv).rev() {
+        if (Y / (1<<d)) % 2 == 1 {
+            cur = dp[d][cur];
+        }
+    }
+    println!("{}",cur+1);
+}
 }

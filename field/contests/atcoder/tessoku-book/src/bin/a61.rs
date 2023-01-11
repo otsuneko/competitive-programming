@@ -11,5 +11,21 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N: usize,
+        M: usize,
+        edges: [(Usize1, Usize1); M]
+    }
+    
+    let mut graph = vec![vec![];N];
+    for &(A,B) in &edges{
+        graph[A].push(B);
+        graph[B].push(A);
+    }
+    
+    for i in 0..N{
+        print!("{}: {{",i+1);
+        print!("{}",graph[i].iter().map(|x| (x+1).to_string()).collect::<Vec<_>>().join(", "));
+        println!("}}");
+    }
 }

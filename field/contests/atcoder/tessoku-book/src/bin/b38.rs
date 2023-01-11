@@ -11,5 +11,23 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        S:Chars
+    }
+
+    let mut H = vec![0;N];
+    for i in 0..N-1{
+        if S[i] == 'A'{
+            H[i+1] = H[i] + 1;
+        }else{
+            H[i+1] = H[i] - 1;
+        }
+    }
+
+    println!("{:?}",H);
+
+    let mi = H.iter().min().unwrap();
+    let ans = H.iter().sum::<i32>() - (mi.abs()-1)*N as i32;
+    println!("{}",ans);
 }

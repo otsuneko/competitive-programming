@@ -14,7 +14,16 @@ fn main() {
     input! {
         D:usize,
         N:usize,
-        work:[(usize,usize,usize);N]
+        work:[(Usize1,Usize1,usize);N]
     }
     
+    let mut max_t = vec![24;D];
+    for &(L,R,H) in &work{
+        for d in L..=R{
+            max_t[d] = min(max_t[d],H);
+        }
+    }
+
+    let ans = max_t.iter().sum::<usize>();
+    println!("{}",ans);
 }

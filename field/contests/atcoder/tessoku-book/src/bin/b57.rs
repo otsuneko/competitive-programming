@@ -11,5 +11,37 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        K:usize
+    }
+
+    let mut A = vec![0;N+1];
+    for i in 1..=N {
+        A[i] = i - i
+            .to_string()
+            .chars()
+            .into_iter()
+            .map(|c| c.to_digit(10).unwrap() as usize)
+            .sum::<usize>()
+    }
+
+    let lv = 1<<5;
+    let mut dp = vec![vec![0;N+1];lv+1]; //10^9 < 2^32
+    for i in 1..=N { dp[0][i] = A[i]; }
+    for d in 0..lv {
+        for i in 1..=N {
+            dp[d+1][i] = dp[d][dp[d][i]];
+        }
+    }
+    
+    for i in 1..=N {
+        let mut cur = i;
+        for d in (0..lv).rev() {
+            if (K / (1<<d)) % 2 == 1 {
+                cur = dp[d][cur];
+            }
+        }
+        println!("{}",cur);
+    }
 }

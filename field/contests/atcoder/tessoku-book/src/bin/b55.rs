@@ -7,9 +7,36 @@ use std::{
     process::exit,
 };
 
-const INF: usize = 1 << 60;
+const INF: isize = 1 << 60;
+const NINF: isize = -1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        Q:usize,
+    }
+
+    let mut set = BTreeSet::new();
+    for _ in 0..Q{
+        input! {
+            n:isize
+        }
+        if n == 1{
+            input! {
+                x:isize
+            }
+            set.insert(x);
+        }else{
+            input! {
+                x:isize
+            }
+            let upper = set.range(x..).next().unwrap_or(&INF);
+            let lower = set.range(..=x).next_back().unwrap_or(&NINF);
+            if (upper,lower) == (&INF,&NINF){
+                println!("{}",-1);
+            }else{
+                println!("{}",min(upper-x,x-lower));
+            }
+        }
+    }
 }

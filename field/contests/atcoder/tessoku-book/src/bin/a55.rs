@@ -11,5 +11,30 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        Q:usize
+    }
+    
+    let mut set = BTreeSet::new();
+    for _ in 0..Q{
+        input! {
+            n:isize
+        }
+        if n == 1{
+            input! {
+                x:isize,
+            }
+            set.insert(x);
+        }else if n == 2{
+            input! {
+                x:isize,
+            }
+            set.remove(&x);
+        }else {
+            input! {
+                x:isize,
+            }
+            println!("{}",set.range(x..).next().unwrap_or(&-1));
+        }
+    }
 }

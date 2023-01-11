@@ -11,5 +11,24 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        Q:usize,
+    }
+
+    let mut stack = vec![];
+
+    for _ in 0..Q{
+        input!{
+            n:usize
+        }
+        if n == 1{
+            input!{x:String}
+            stack.push(x);
+        }else if n == 2{
+            println!("{}",stack[stack.len()-1]);
+        }else{
+            stack.pop();
+        }
+
+    }
 }

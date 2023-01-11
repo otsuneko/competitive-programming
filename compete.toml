@@ -28,6 +28,7 @@ use std::{
     cmp::{max, min, Reverse},
     collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque},
     mem::swap,
+    process::exit,
 };
 use itertools::Itertools;
 use superslice::Ext;

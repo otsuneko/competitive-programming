@@ -11,5 +11,26 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        Q:usize,
+    }
+
+    let mut dic = HashMap::new();
+    for _ in 0..Q{
+        input! {
+            n:usize
+        }
+        if n == 1{
+            input! {
+                x:String,
+                y:usize
+            }
+            dic.insert(x, y);
+        }else{
+            input! {
+                x:String
+            }
+            println!("{}",dic.get(&x).unwrap());
+        }
+    }
 }

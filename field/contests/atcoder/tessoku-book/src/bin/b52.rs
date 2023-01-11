@@ -11,5 +11,27 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        X:Usize1,
+        mut A:Chars
+    }
+
+    let mut deq = VecDeque::new();
+    deq.push_back(X);
+    A[X] = '@';
+
+    while !deq.is_empty(){
+        let pos = deq.pop_front().unwrap();
+        if pos > 0 && A[pos-1] == '.'{
+            A[pos-1] = '@';
+            deq.push_back(pos-1);
+        }
+        if pos < N-1 && A[pos+1] == '.'{
+            A[pos+1] = '@';
+            deq.push_back(pos+1);
+        }
+    }
+    println!("{}",A.iter().join(""));
+
 }

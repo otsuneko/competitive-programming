@@ -11,5 +11,19 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        A:[usize;N]
+    }
+
+    let mut dic:HashMap<usize, usize> = HashMap::new();
+    for &a in &A{
+        *dic.entry(a).or_insert(0) += 1;
+    }
+
+    let mut ans = 0;
+    for (key,value) in &dic{
+        ans += value*(value-1)/2;
+    }
+    println!("{}",ans);
 }

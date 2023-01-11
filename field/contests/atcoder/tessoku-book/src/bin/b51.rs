@@ -11,5 +11,19 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        S:Chars
+    }
+
+    let mut stack = vec![];
+
+    for i in 0..S.len(){
+        if S[i] == '('{
+            stack.push((i+1,'('));
+        }else{
+            let (n,bracket) = stack.pop().unwrap();
+            println!("{} {}",n,i+1);
+        }
+    }
+
 }

@@ -1541,6 +1541,7 @@
         "description": "CS(共通部分列)の個数カウント"
     },
     "RollingHash": {
+        "scope": "python",
         "prefix": "RollingHash",
         "body": [
             "from random import randrange",
