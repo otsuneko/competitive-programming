@@ -11,5 +11,29 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        A:[Usize1;N-1]
+    }
+
+    let mut graph = vec![vec![];N];
+    for (i,&a) in A.iter().enumerate(){
+        graph[i+1].push(a);
+        graph[a].push(i+1);
+    }
+
+    let mut dp = vec![0;N];
+    fn dfs(s:usize, pre:usize, graph:&Vec<Vec<usize>>, dp:&mut Vec<usize>) {
+        for &to in &graph[s] {
+            if to != pre {
+                dfs(to,s, graph, dp);
+                dp[s] += dp[to] + 1;
+            }
+        }
+    }
+
+    dfs(0,INF, &graph, &mut dp);
+
+    println!("{}",dp.iter().map(|x| x.to_string()).collect::<Vec<_>>().join(" "));
+
 }
