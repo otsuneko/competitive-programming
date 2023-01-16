@@ -17,5 +17,17 @@ fn main() {
         B:usize
     }
 
+    let mut dp = vec![false;N+1];
+    for i in 0..=N{
+        if dp[i] { continue }
+        if i+A <= N { dp[i+A] = true; }
+        if i+B <= N {dp[i+B] = true; }
+    }
+
+    if dp[N] == true {
+        println!("First");
+    }else{
+        println!("Second");
+    }
     
 }

@@ -11,5 +11,22 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        H:usize,
+        W:usize,
+        koma:[(usize,usize);N]
+    }
+
+    let mut xor = 0;
+    for &(A,B) in &koma{
+        xor ^= A-1;
+        xor ^= B-1;
+    }
+
+    if xor != 0 {
+        println!("First");
+    }else{
+        println!("Second");
+    }
 }

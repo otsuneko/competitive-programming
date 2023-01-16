@@ -7,9 +7,31 @@ use std::{
     process::exit,
 };
 
-const INF: usize = 1 << 60;
+const INF: isize = 100000;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        A:[usize;N]
+    }
+
+    let mut dp = vec![vec![0;N+1];N+1];
+
+    for i in 0..N{
+        dp[N][i] = A[i];
+    }
+
+    for i in (0..N).rev(){
+        for j in 0..=i{
+            if i%2==1{
+                dp[i][j] = max(dp[i+1][j], dp[i+1][j+1]);
+            }else{
+                dp[i][j] = min(dp[i+1][j], dp[i+1][j+1]);
+            }
+        }
+    }
+
+    println!("{}",dp[1][0]);
+
 }

@@ -11,5 +11,23 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        K:usize,
+        mut A:[usize;K]
+    }
+
+    let mut dp = vec![false;N+1];
+    for i in 0..=N{
+        if dp[i] { continue }
+        for &a in &A{
+            if i+a <= N { dp[i+a] = true; }
+        }
+    }
+
+    if dp[N] {
+        println!("First");
+    }else{
+        println!("Second");
+    }
 }

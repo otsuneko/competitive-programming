@@ -1,27 +1,37 @@
-import heapq  # heapqライブラリのimport
+from heapq import heapify, heappush, heappop, heappushpop, heapreplace, nlargest, nsmallest  # heapqライブラリのimport
+def topological_sort(n, graph):
+    # 各頂点への入次数を求める
+    indeg = [0] * n
+    for i in range(n):
+        for to in graph[i]:
+            indeg[to] += 1
+
+    # 入次数が0の頂点はトポソ後のグラフの始点としてよい
+    que = [i for i in range(n) if indeg[i] == 0]
+    heapify(que)
+    ret = []
+    cnt = 0 # サイクル判定用
+    while que:
+        s = heappop(que)
+        ret.append(s+1)
+        for to in graph[s]:
+            indeg[to] -= 1
+            if indeg[to] == 0:
+                heappush(que,to)
+        cnt += 1
+
+    # サイクルが存在する場合は-1
+    if cnt != n:
+        return [-1]
+ 
+    return ret
+
 N,M = map(int,input().split())
-G = [[] for _ in range(N)]
-deg = [0]*N
+graph = [[] for _ in range(N)]
 for _ in range(M):
-    A,B = map(int,input().split())
-    A,B = A-1,B-1
-    G[A].append(B)
-    deg[B] += 1
+    a,b = map(int,input().split())
+    a,b = a-1,b-1
+    graph[a].append(b)
 
-hq = [v for v in range(N) if deg[v]==0]
-heapq.heapify(hq)
-ans = []
-cnt = 0
-while hq:
-    v = heapq.heappop(hq)
-    ans.append(v+1)
-    for t in G[v]:
-        deg[t] -= 1
-        if deg[t]==0:
-            heapq.heappush(hq,t)
-    cnt += 1
-
-if cnt != N:
-    print(-1)
-else:
-    print(*ans)
+ans = topological_sort(N,graph)
+print(*ans)

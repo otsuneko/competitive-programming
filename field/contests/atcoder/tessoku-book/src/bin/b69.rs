@@ -127,7 +127,7 @@ fn main() {
     let t = s+1;
     let mut flow = dinitz::Dinitz::new(t+1);
     for i in 0..N{
-        flow.add_edge(s, i, 1);
+        flow.add_edge(s, i, 10);
         for j in 0..24{
             if C[i][j] == '1'{
                 flow.add_edge(i, N+j, 1);
@@ -135,8 +135,12 @@ fn main() {
         }
     }
     for i in 0..24{
-        flow.add_edge(N+i, t, 1);
+        flow.add_edge(N+i, t, M as i64);
     }
 
-    println!("{}",flow.max_flow(s, t));
+    if flow.max_flow(s,t) == 24*M as i64 {
+        println!("Yes");
+    }else{
+        println!("No");
+    }
 }

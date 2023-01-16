@@ -11,5 +11,21 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        A:[usize;N]
+    }
+
+    let mut xor = 0;
+    for &a in &A{
+        xor ^= a;
+    }
+
+    if xor != 0 {
+        println!("First");
+    }else{
+        println!("Second");
+    }
+
+
 }
