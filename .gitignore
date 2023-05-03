@@ -6,3 +6,4 @@ tmp/
 target/
 .vscode/settings.json
 .vscode/settings.json
+scripts/
