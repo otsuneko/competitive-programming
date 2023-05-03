@@ -52,3 +52,12 @@ def dfs(n):
 N = int(input())
 
 print(dfs(1))
+
+# 確率MOD典型
+# ModIntを用いて確率をDP/メモ化再帰で計算する
+# iP = 1 / ModInt(P)　のように分母をModIntで計算しておき、
+# dp[i][j][0] *= iPのように逆元として乗算すると計算量からlogが取れて高速らしい
+# ターン制2人ゲームの場合は、dp[i][j][f]のfでAのターン→Bのターン(またその逆)の遷移を表現してゴールから計算
+# 参考提出
+# E - Dice Product 3 (https://atcoder.jp/contests/abc300/submissions/41068136)
+# E - Unfair Sugoroku (https://atcoder.jp/contests/abc298/submissions/41068068)
