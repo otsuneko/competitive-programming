@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "abc046"
+name = "abc038"
 version = "0.1.0"
 dependencies = [
  "alga",
@@ -11,7 +11,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -32,10 +32,55 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc046"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -56,7 +101,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -77,10 +122,55 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc050"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -101,7 +191,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -122,10 +212,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -146,7 +236,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -167,10 +257,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -191,7 +281,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -212,10 +302,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -236,7 +326,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -257,10 +347,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -281,7 +371,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -302,10 +392,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -326,7 +416,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -347,10 +437,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -371,7 +461,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -392,10 +482,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -416,7 +506,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -437,10 +527,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -461,7 +551,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -482,10 +572,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -506,7 +596,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -527,10 +617,55 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc110"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -551,7 +686,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -572,10 +707,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -596,7 +731,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -617,10 +752,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -641,7 +776,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -662,10 +797,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -686,7 +821,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -707,10 +842,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -731,7 +866,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -752,10 +887,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -776,7 +911,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -797,10 +932,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -821,7 +956,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -842,10 +977,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -866,7 +1001,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -887,10 +1022,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -911,7 +1046,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -932,10 +1067,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -956,7 +1091,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -977,10 +1112,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1001,7 +1136,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1022,10 +1157,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1046,7 +1181,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1067,10 +1202,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1091,7 +1226,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1112,10 +1247,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1136,7 +1271,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1157,10 +1292,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1181,7 +1316,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1202,10 +1337,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1226,7 +1361,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1247,10 +1382,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1271,7 +1406,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1292,10 +1427,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1316,7 +1451,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1337,10 +1472,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1361,7 +1496,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1382,10 +1517,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1406,7 +1541,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1427,10 +1562,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1451,7 +1586,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1472,10 +1607,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1496,7 +1631,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1517,10 +1652,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1541,7 +1676,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1562,10 +1697,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1586,7 +1721,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1607,10 +1742,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1631,7 +1766,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1652,10 +1787,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1676,7 +1811,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1697,10 +1832,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1721,7 +1856,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1742,10 +1877,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1766,7 +1901,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1787,10 +1922,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1803,7 +1938,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "agc004"
+name = "abc286"
 version = "0.1.0"
 dependencies = [
  "alga",
@@ -1811,7 +1946,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1832,10 +1967,556 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc287"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc288"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc289"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc290"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc293"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc294"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc295"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc297"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc298"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc299"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "abc300"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "adler"
+version = "1.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f26201604c87b1e01bd3d98f8d5d9a8fcbb815e8cedb41ffccbeb4bf593a35fe"
+
+[[package]]
+name = "agc004"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1856,7 +2537,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1877,10 +2558,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1901,7 +2582,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1922,10 +2603,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1946,7 +2627,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -1967,10 +2648,55 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "ahc018"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -1997,7 +2723,7 @@ version = "0.9.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4f823d037a7ec6ea2197046bafd4ae150e6bc36f9ca347404f46a46823fa84f2"
 dependencies = [
- "approx",
+ "approx 0.3.2",
  "num-complex",
  "num-traits",
 ]
@@ -2012,40 +2738,16 @@ dependencies = [
 ]
 
 [[package]]
-name = "ascii"
-version = "1.0.0"
+name = "approx"
+version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bbf56136a5198c7b01a49e3afcbef6cf84597273d298f54432926024107b0109"
-
-[[package]]
-name = "autocfg"
-version = "1.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d468802bab17cbc0cc575e9b053f41e72aa36bfa6b7f55e3529ffa43161b97fa"
-
-[[package]]
-name = "bitmaps"
-version = "2.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "031043d04099746d8db04daf1fa424b2bc8bd69d92b25962dcde24da39ab64a2"
+checksum = "cab112f0a86d568ea0e627cc1d6be74a1e9cd55214684db5561995f6dad897c6"
 dependencies = [
- "typenum",
+ "num-traits",
 ]
 
 [[package]]
-name = "bitset-fixed"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a8cc868e96ba5c32ffae4d42bf2940ca7fca317dcef3f19b6d7de66b6885abff"
-
-[[package]]
-name = "cfg-if"
-version = "0.1.10"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4785bdd1c96b2a846b2bd7cc02e86b6b3dbf14e7e53446c4f54c92a361040822"
-
-[[package]]
-name = "competitive-programming"
+name = "arc154"
 version = "0.1.0"
 dependencies = [
  "alga",
@@ -2053,7 +2755,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -2074,10 +2776,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -2090,16 +2792,200 @@ dependencies = [
 ]
 
 [[package]]
+name = "arc159"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "arrayvec"
+version = "0.5.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "23b62fc65de8e4e7f52534fb52b0f3ed04746ae267519eef2a83941e8085068b"
+
+[[package]]
+name = "ascii"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bbf56136a5198c7b01a49e3afcbef6cf84597273d298f54432926024107b0109"
+
+[[package]]
+name = "autocfg"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d468802bab17cbc0cc575e9b053f41e72aa36bfa6b7f55e3529ffa43161b97fa"
+
+[[package]]
+name = "bitflags"
+version = "1.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a"
+
+[[package]]
+name = "bitmaps"
+version = "2.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "031043d04099746d8db04daf1fa424b2bc8bd69d92b25962dcde24da39ab64a2"
+dependencies = [
+ "typenum",
+]
+
+[[package]]
+name = "bitset-fixed"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a8cc868e96ba5c32ffae4d42bf2940ca7fca317dcef3f19b6d7de66b6885abff"
+
+[[package]]
+name = "bumpalo"
+version = "3.12.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0d261e256854913907f67ed06efbc3338dfe6179796deefc1ff763fc1aee5535"
+
+[[package]]
+name = "cfg-if"
+version = "0.1.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4785bdd1c96b2a846b2bd7cc02e86b6b3dbf14e7e53446c4f54c92a361040822"
+
+[[package]]
+name = "cfg-if"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
+
+[[package]]
+name = "competitive-programming"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "crc32fast"
+version = "1.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b540bd8bc810d3885c6ea91e2018302f68baba2129ab3e88f32389ee9370880d"
+dependencies = [
+ "cfg-if 1.0.0",
+]
+
+[[package]]
 name = "either"
 version = "1.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bb1f6b1ce1c140482ea30ddd3335fc0024ac7ee112895426e0a629a6c20adfe3"
 
 [[package]]
+name = "euclid"
+version = "0.22.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b52c2ef4a78da0ba68fbe1fd920627411096d2ac478f7f4c9f3a54ba6705bade"
+dependencies = [
+ "num-traits",
+]
+
+[[package]]
+name = "find-crate"
+version = "0.6.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "59a98bbaacea1c0eb6a0876280051b892eb73594fd90cf3b20e9c817029c57d2"
+dependencies = [
+ "toml",
+]
+
+[[package]]
 name = "fixedbitset"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "37ab347416e802de484e4d03c7316c48f1ecb56574dfd4a46a80f173ce1de04d"
+
+[[package]]
+name = "flate2"
+version = "1.0.25"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a8a2db397cb1c8772f31494cb8917e48cd1e64f0fa7efac59fbd741a0a8ce841"
+dependencies = [
+ "crc32fast",
+ "miniz_oxide",
+]
 
 [[package]]
 name = "generic-array"
@@ -2116,9 +3002,22 @@ version = "0.1.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7abc8dd8451921606d809ba32e95b6111925cd2906060d2dcc29c070220503eb"
 dependencies = [
- "cfg-if",
+ "cfg-if 0.1.10",
  "libc",
- "wasi",
+ "wasi 0.9.0+wasi-snapshot-preview1",
+]
+
+[[package]]
+name = "getrandom"
+version = "0.2.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c05aeb6a22b8f62540c194aac980f2115af067bfe15a0734d7277a768d396b31"
+dependencies = [
+ "cfg-if 1.0.0",
+ "js-sys",
+ "libc",
+ "wasi 0.11.0+wasi-snapshot-preview1",
+ "wasm-bindgen",
 ]
 
 [[package]]
@@ -2128,7 +3027,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "303f7e6256d546e01979071417432425f15c1891fb309a5f2d724ee908fabd6e"
 dependencies = [
  "bitmaps",
- "rand_core",
+ "rand_core 0.5.1",
  "rand_xoshiro",
  "sized-chunks",
  "typenum",
@@ -2163,12 +3062,30 @@ dependencies = [
 ]
 
 [[package]]
+name = "itertools"
+version = "0.10.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b0fd2260e829bddf4cb6ea802289de2f86d6a7a690192fbe91b3f46e0f2c8473"
+dependencies = [
+ "either",
+]
+
+[[package]]
 name = "itertools-num"
 version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a872a22f9e6f7521ca557660adb96dd830e54f0f490fa115bb55dd69d38b27e7"
 dependencies = [
  "num-traits",
+]
+
+[[package]]
+name = "js-sys"
+version = "0.3.61"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "445dde2150c55e483f3d8416706b97ec8e8237c307e5b7b4b8dd15e6af2a0730"
+dependencies = [
+ "wasm-bindgen",
 ]
 
 [[package]]
@@ -2188,6 +3105,26 @@ name = "libm"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c7d73b3f436185384286bd8098d17ec07c9a7d2388a6599f824d8502b529702a"
+
+[[package]]
+name = "log"
+version = "0.4.17"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "abb12e687cfb44aa40f41fc3978ef76448f9b6038cad6aef4259d3c095a2382e"
+dependencies = [
+ "cfg-if 1.0.0",
+]
+
+[[package]]
+name = "lyon_geom"
+version = "0.17.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "71d89ccbdafd83d259403e22061be27bccc3254bba65cdc5303250c4227c8c8e"
+dependencies = [
+ "arrayvec",
+ "euclid",
+ "num-traits",
+]
 
 [[package]]
 name = "maplit"
@@ -2211,19 +3148,28 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2dffe52ecf27772e601905b7522cb4ef790d2cc203488bbd0e2fe85fcb74566d"
 
 [[package]]
+name = "miniz_oxide"
+version = "0.6.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b275950c28b37e794e8c55d88aeb5e139d0ce23fdbbeda68f8d7174abdf9e8fa"
+dependencies = [
+ "adler",
+]
+
+[[package]]
 name = "nalgebra"
 version = "0.20.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c6511777ed3da44b6a11e732a66a7d6274dfbbcd68ad968e64b778dcb829d94a"
 dependencies = [
  "alga",
- "approx",
+ "approx 0.3.2",
  "generic-array",
  "matrixmultiply",
  "num-complex",
  "num-rational",
  "num-traits",
- "rand",
+ "rand 0.7.3",
  "rand_distr",
  "typenum",
 ]
@@ -2240,6 +3186,17 @@ dependencies = [
  "num-integer",
  "num-traits",
  "rawpointer",
+]
+
+[[package]]
+name = "noise"
+version = "0.8.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9ba869e17168793186c10ca82c7079a4ffdeac4f1a7d9e755b9491c028180e40"
+dependencies = [
+ "num-traits",
+ "rand 0.7.3",
+ "rand_xorshift",
 ]
 
 [[package]]
@@ -2333,9 +3290,9 @@ dependencies = [
 
 [[package]]
 name = "once_cell"
-version = "1.16.0"
+version = "1.17.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "86f0b0d4bf799edbc74508c1e8bf170ff5f41238e5f8225603ca7caaae2b7860"
+checksum = "b7e5500299e16ebb147ae15a00a942af264cf3688f47923b8fc2cd5858f23ad3"
 
 [[package]]
 name = "ordered-float"
@@ -2344,6 +3301,30 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "18869315e81473c951eb56ad5558bbc56978562d3ecfb87abb7a1e944cea4518"
 dependencies = [
  "num-traits",
+]
+
+[[package]]
+name = "palette"
+version = "0.6.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8f9cd68f7112581033f157e56c77ac4a5538ec5836a2e39284e65bd7d7275e49"
+dependencies = [
+ "approx 0.5.1",
+ "num-traits",
+ "palette_derive",
+ "phf",
+]
+
+[[package]]
+name = "palette_derive"
+version = "0.6.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "05eedf46a8e7c27f74af0c9cfcdb004ceca158cb1b918c6f68f8d7a549b3e427"
+dependencies = [
+ "find-crate",
+ "proc-macro2 1.0.47",
+ "quote 1.0.21",
+ "syn 1.0.105",
 ]
 
 [[package]]
@@ -2363,6 +3344,60 @@ dependencies = [
 ]
 
 [[package]]
+name = "phf"
+version = "0.11.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "928c6535de93548188ef63bb7c4036bd415cd8f36ad25af44b9789b2ee72a48c"
+dependencies = [
+ "phf_macros",
+ "phf_shared",
+]
+
+[[package]]
+name = "phf_generator"
+version = "0.11.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b1181c94580fa345f50f19d738aaa39c0ed30a600d95cb2d3e23f94266f14fbf"
+dependencies = [
+ "phf_shared",
+ "rand 0.8.5",
+]
+
+[[package]]
+name = "phf_macros"
+version = "0.11.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "92aacdc5f16768709a569e913f7451034034178b05bdc8acda226659a3dccc66"
+dependencies = [
+ "phf_generator",
+ "phf_shared",
+ "proc-macro2 1.0.47",
+ "quote 1.0.21",
+ "syn 1.0.105",
+]
+
+[[package]]
+name = "phf_shared"
+version = "0.11.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e1fb5f6f826b772a8d4c0394209441e7d37cbbb967ae9c7e0e8134365c9ee676"
+dependencies = [
+ "siphasher",
+]
+
+[[package]]
+name = "png"
+version = "0.17.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5d708eaf860a19b19ce538740d2b4bdeeb8337fa53f7738455e706623ad5c638"
+dependencies = [
+ "bitflags",
+ "crc32fast",
+ "flate2",
+ "miniz_oxide",
+]
+
+[[package]]
 name = "ppv-lite86"
 version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2377,7 +3412,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -2398,10 +3433,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -2442,6 +3477,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "proconio"
+version = "0.4.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "91c333be3af2936f8e810300bc74fe4d0cc168ebc04ab02a28c5b1060fa1bd59"
+dependencies = [
+ "lazy_static",
+]
+
+[[package]]
 name = "proconio-derive"
 version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2476,12 +3520,23 @@ version = "0.7.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6a6b1679d49b24bbfe0c803429aa1874472f50d9b363131f0e89fc356b544d03"
 dependencies = [
- "getrandom",
+ "getrandom 0.1.14",
  "libc",
- "rand_chacha",
- "rand_core",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_hc",
  "rand_pcg",
+]
+
+[[package]]
+name = "rand"
+version = "0.8.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "34af8d1a0e25924bc5b7c43c079c942339d8f0a8b57c39049bef581b46327404"
+dependencies = [
+ "libc",
+ "rand_chacha 0.3.1",
+ "rand_core 0.6.4",
 ]
 
 [[package]]
@@ -2491,7 +3546,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f4c8ed856279c9737206bf725bf36935d8666ead7aa69b52be55af369d193402"
 dependencies = [
  "ppv-lite86",
- "rand_core",
+ "rand_core 0.5.1",
+]
+
+[[package]]
+name = "rand_chacha"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e6c10a63a0fa32252be49d21e7709d4d4baf8d231c2dbce1eaa8141b9b127d88"
+dependencies = [
+ "ppv-lite86",
+ "rand_core 0.6.4",
 ]
 
 [[package]]
@@ -2500,7 +3565,16 @@ version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "90bde5296fc891b0cef12a6d03ddccc162ce7b2aff54160af9338f8d40df6d19"
 dependencies = [
- "getrandom",
+ "getrandom 0.1.14",
+]
+
+[[package]]
+name = "rand_core"
+version = "0.6.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ec0be4795e2f6a28069bec0b5ff3e2ac9bafc99e6a9a7dc3547996c5c816922c"
+dependencies = [
+ "getrandom 0.2.8",
 ]
 
 [[package]]
@@ -2509,7 +3583,7 @@ version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "96977acbdd3a6576fb1d27391900035bf3863d4a16422973a409b488cf29ffb2"
 dependencies = [
- "rand",
+ "rand 0.7.3",
 ]
 
 [[package]]
@@ -2518,7 +3592,7 @@ version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ca3129af7b92a17112d59ad498c6f81eaf463253766b90396d39ea7a39d6613c"
 dependencies = [
- "rand_core",
+ "rand_core 0.5.1",
 ]
 
 [[package]]
@@ -2527,7 +3601,16 @@ version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "16abd0c1b639e9eb4d7c50c0b8100b0d0f849be2349829c740fe8e6eb4816429"
 dependencies = [
- "rand_core",
+ "rand_core 0.5.1",
+]
+
+[[package]]
+name = "rand_xorshift"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "77d416b86801d23dde1aa643023b775c3a462efc0ed96443add11546cdf1dca8"
+dependencies = [
+ "rand_core 0.5.1",
 ]
 
 [[package]]
@@ -2536,7 +3619,20 @@ version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a9fcdd2e881d02f1d9390ae47ad8e5696a9e4be7b547a1da2afbc61973217004"
 dependencies = [
- "rand_core",
+ "rand_core 0.5.1",
+]
+
+[[package]]
+name = "raqote"
+version = "0.8.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f5b6cb89f8be6a645e5834f3ad44a7960d12343d97b5b7fb07cb0365ae36aa2d"
+dependencies = [
+ "euclid",
+ "lyon_geom",
+ "png",
+ "sw-composite",
+ "typed-arena",
 ]
 
 [[package]]
@@ -2554,7 +3650,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -2575,10 +3671,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -2615,6 +3711,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "08d43f7aa6b08d49f382cde6a7982047c3426db949b1424bc4b7ec9ae12c6ce2"
 
 [[package]]
+name = "serde"
+version = "1.0.152"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bb7d1f0d3021d347a83e556fc4683dea2ea09d87bccdf88ff5c12545d89d5efb"
+
+[[package]]
+name = "siphasher"
+version = "0.3.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7bd3e3206899af3f8b12af284fafc038cc1dc2b41d1b89dd17297221c5d225de"
+
+[[package]]
 name = "sized-chunks"
 version = "0.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2635,6 +3743,18 @@ name = "superslice"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ab16ced94dbd8a46c82fd81e3ed9a8727dac2977ea869d217bcc4ea1f122e81f"
+
+[[package]]
+name = "svg"
+version = "0.13.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e715e0c3fc987f4c435dc7189641fd9caa6919a74675ace605c38e201d278001"
+
+[[package]]
+name = "sw-composite"
+version = "0.7.15"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0b8d4f1dd38540e3f62c393ae78e874c94491c403025368183b018e3fb098b1f"
 
 [[package]]
 name = "syn"
@@ -2667,7 +3787,7 @@ dependencies = [
  "bitset-fixed",
  "either",
  "fixedbitset",
- "getrandom",
+ "getrandom 0.1.14",
  "im-rc",
  "indexmap",
  "itertools 0.9.0",
@@ -2688,10 +3808,10 @@ dependencies = [
  "ordered-float",
  "permutohedron",
  "petgraph",
- "proconio",
- "rand",
- "rand_chacha",
- "rand_core",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
  "rand_distr",
  "rand_hc",
  "rand_pcg",
@@ -2717,6 +3837,39 @@ checksum = "5516c27b78311c50bf42c071425c560ac799b11c30b31f87e3081965fe5e0180"
 dependencies = [
  "once_cell",
 ]
+
+[[package]]
+name = "toml"
+version = "0.5.11"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f4f7f0dd8d50a853a531c426359045b1998f04219d88799810762cd4ad314234"
+dependencies = [
+ "serde",
+]
+
+[[package]]
+name = "tools"
+version = "0.1.0"
+dependencies = [
+ "getrandom 0.2.8",
+ "itertools 0.10.5",
+ "noise",
+ "once_cell",
+ "palette",
+ "proconio 0.4.3",
+ "rand 0.8.5",
+ "rand_chacha 0.3.1",
+ "raqote",
+ "svg",
+ "wasm-bindgen",
+ "web-sys",
+]
+
+[[package]]
+name = "typed-arena"
+version = "2.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6af6ae20167a9ece4bcb41af5b80f8a1f1df981f6391189ce00fd257af04126a"
 
 [[package]]
 name = "typenum"
@@ -2747,6 +3900,76 @@ name = "wasi"
 version = "0.9.0+wasi-snapshot-preview1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cccddf32554fecc6acb585f82a32a72e28b48f8c4c1883ddfeeeaa96f7d8e519"
+
+[[package]]
+name = "wasi"
+version = "0.11.0+wasi-snapshot-preview1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
+
+[[package]]
+name = "wasm-bindgen"
+version = "0.2.84"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "31f8dcbc21f30d9b8f2ea926ecb58f6b91192c17e9d33594b3df58b2007ca53b"
+dependencies = [
+ "cfg-if 1.0.0",
+ "wasm-bindgen-macro",
+]
+
+[[package]]
+name = "wasm-bindgen-backend"
+version = "0.2.84"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "95ce90fd5bcc06af55a641a86428ee4229e44e07033963a2290a8e241607ccb9"
+dependencies = [
+ "bumpalo",
+ "log",
+ "once_cell",
+ "proc-macro2 1.0.47",
+ "quote 1.0.21",
+ "syn 1.0.105",
+ "wasm-bindgen-shared",
+]
+
+[[package]]
+name = "wasm-bindgen-macro"
+version = "0.2.84"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4c21f77c0bedc37fd5dc21f897894a5ca01e7bb159884559461862ae90c0b4c5"
+dependencies = [
+ "quote 1.0.21",
+ "wasm-bindgen-macro-support",
+]
+
+[[package]]
+name = "wasm-bindgen-macro-support"
+version = "0.2.84"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2aff81306fcac3c7515ad4e177f521b5c9a15f2b08f4e32d823066102f35a5f6"
+dependencies = [
+ "proc-macro2 1.0.47",
+ "quote 1.0.21",
+ "syn 1.0.105",
+ "wasm-bindgen-backend",
+ "wasm-bindgen-shared",
+]
+
+[[package]]
+name = "wasm-bindgen-shared"
+version = "0.2.84"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0046fef7e28c3804e5e38bfa31ea2a0f73905319b677e57ebe37e49358989b5d"
+
+[[package]]
+name = "web-sys"
+version = "0.3.61"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e33b99f4b23ba3eec1a53ac264e35a755f00e966e0065077d6027c0f575b0b97"
+dependencies = [
+ "js-sys",
+ "wasm-bindgen",
+]
 
 [[package]]
 name = "whiteread"

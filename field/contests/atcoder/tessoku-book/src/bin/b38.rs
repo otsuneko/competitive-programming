@@ -25,9 +25,31 @@ fn main() {
         }
     }
 
-    println!("{:?}",H);
+    // println!("{:?}",H);
 
     let mi = H.iter().min().unwrap();
-    let ans = H.iter().sum::<i32>() - (mi.abs()-1)*N as i32;
+    let mut H2:Vec<i32> = H.iter().map(|x| x+(1-mi)).collect();
+
+    let sub = H2[0]-1;
+    for i in 0..N-1{
+        if S[i] == 'A'{
+            H2[i] -= sub;
+        }else{
+            break
+        }
+    }
+
+    let sub = H2[N-1]-1;
+    for i in (0..N-1).rev(){
+        if S[i] == 'B'{
+            H2[i] -= sub;
+        }else{
+            break
+        }
+    }
+
+    // println!("{:?}",H2);
+
+    let ans = H2.iter().sum::<i32>();
     println!("{}",ans);
 }

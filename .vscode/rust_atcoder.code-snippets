@@ -1027,7 +1027,7 @@
         "description": "オイラーのファイ関数"
     },
     "Modint": {
-        "scope": "python",
+        "scope": "pytho",
         "prefix": "Modint",
         "body": [
             "class ModInt:",
