@@ -1,11 +1,11 @@
+import random
+
 N =int(input())
 A =list(map(int,input().split()))
 B =list(map(int,input().split()))
 Q =int(input())
 
-# Zobrist Hash
-import random
-
+# リストの各要素をユニークな乱数に変換
 rand = {}
 for a,b in zip(A,B):
     if a not in rand:
@@ -14,6 +14,7 @@ for a,b in zip(A,B):
     if b not in rand:
         rand[b] = random.randrange(1 << 64)
 
+# リストの先頭から順に集合の状態をハッシュ化(累積XOR)
 zhA,zhB = [0],[0]
 setA,setB = set(),set()
 for a,b in zip(A,B):
@@ -29,6 +30,7 @@ for a,b in zip(A,B):
         zhB.append(zhB[-1] ^ rand[b])
         setB.add(b)
 
+# ハッシュ値を比較し、同じ集合か判定
 for _ in range(Q):
     x,y = map(int, input().split())
     if zhA[x] == zhB[y]:

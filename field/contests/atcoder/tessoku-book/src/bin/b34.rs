@@ -1,9 +1,6 @@
-#![allow(dead_code)]
-#[allow(unused_imports)]
+#![allow(dead_code,unused_imports,unused_variables,non_snake_case, non_upper_case_globals, path_statements)]
 use itertools::Itertools;
-#[allow(unused_imports)]
 use proconio::{fastout, input,marker::{Chars, Bytes, Isize1, Usize1}};
-#[allow(unused_imports)]
 use std::{
     cmp::{max, min, Reverse},
     collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque},
@@ -13,7 +10,24 @@ use std::{
 const INF: usize = 1 << 60;
 
 #[fastout]
-#[allow(non_snake_case, non_upper_case_globals, path_statements)]
 fn main() {
-    input! {}
+    input! {
+        N:usize,
+        X:usize,
+        Y:usize,
+        A:[usize;N]
+    }
+
+    let grundy = [0,0,1,1,2];
+
+    let mut xor = 0;
+    for &a in &A{
+        xor ^= grundy[a%5];
+    }
+
+    if xor != 0 {
+        println!("First");
+    }else{
+        println!("Second");
+    }
 }

@@ -1,0 +1,37 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      ICEDT
+    out: |
+      YES
+  - name: sample2
+    in: |
+      MUGICHA
+    out: |
+      NO
+  - name: sample3
+    in: |
+      OOLONGT
+    out: |
+      YES
+  - name: sample4
+    in: |
+      T
+    out: |
+      YES
+  - name: sample5
+    in: |
+      TEA
+    out: |
+      NO
+
+extend:
+  - type: Text
+    path: "./a"
+    in: /in/*.txt
+    out: /out/*.txt

@@ -1,0 +1,23 @@
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/otsuneko/workspace/competitive-programming/field/contests/atcoder/ahc018/tools/Cargo.toml
+workspace: /home/otsuneko/workspace/competitive-programming/Cargo.toml
+    Finished release [optimized] target(s) in 0.13s
+     Running `/home/otsuneko/workspace/competitive-programming/target/release/tester pypy3 ../a.py`
+Total Cost = 169991
+
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/otsuneko/workspace/competitive-programming/field/contests/atcoder/ahc018/tools/Cargo.toml
+workspace: /home/otsuneko/workspace/competitive-programming/Cargo.toml
+    Finished release [optimized] target(s) in 0.12s
+     Running `/home/otsuneko/workspace/competitive-programming/target/release/tester pypy3 ../a.py`
+Total Cost = 18212
+
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/otsuneko/workspace/competitive-programming/field/contests/atcoder/ahc018/tools/Cargo.toml
+workspace: /home/otsuneko/workspace/competitive-programming/Cargo.toml
+    Finished release [optimized] target(s) in 0.12s
+     Running `/home/otsuneko/workspace/competitive-programming/target/release/tester pypy3 ../a.py`
+2 136
+13 136
+Total Cost = 256603
+
