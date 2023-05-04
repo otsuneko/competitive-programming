@@ -2298,6 +2298,51 @@ dependencies = [
 ]
 
 [[package]]
+name = "abc296"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
 name = "abc297"
 version = "0.1.0"
 dependencies = [
@@ -2575,6 +2620,51 @@ dependencies = [
 
 [[package]]
 name = "agc021"
+version = "0.1.0"
+dependencies = [
+ "alga",
+ "ascii",
+ "bitset-fixed",
+ "either",
+ "fixedbitset",
+ "getrandom 0.1.14",
+ "im-rc",
+ "indexmap",
+ "itertools 0.9.0",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "ordered-float",
+ "permutohedron",
+ "petgraph",
+ "proconio 0.3.6",
+ "rand 0.7.3",
+ "rand_chacha 0.2.2",
+ "rand_core 0.5.1",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "superslice",
+ "text_io",
+ "whiteread",
+]
+
+[[package]]
+name = "agc023"
 version = "0.1.0"
 dependencies = [
  "alga",
