@@ -1,29 +1,17 @@
-import bisect
-import itertools
-import sys
-input = lambda: sys.stdin.readline().rstrip()
-INF = 10**18
-
 N,Q = map(int,input().split())
-A = list(map(int,input().split()))
+A = [0] + list(map(int,input().split()))
+A2 = []
+for i in range(N):
+    A2.append(A[i+1]-A[i]-1)
 
-cnt = [0]*N
-cnt[0] = A[0]-1
-prev = A[0]
-for i in range(N-1):
-    cnt[i+1] = A[i+1]-A[i]-1
+import itertools
+import operator
+cumsum = [0] + list(itertools.accumulate(A2, func=operator.add))
 
-cumsum = [0] + list(itertools.accumulate(cnt))
-
+from bisect import bisect, bisect_left, bisect_right, insort, insort_left, insort_right
 # print(cumsum)
 for _ in range(Q):
     K = int(input())
-    idx = bisect.bisect_left(cumsum,K)
-    # print(idx)
-    if idx == 1:
-        print(K)
-    elif idx == N+1:
-        print(A[N-1]+K-cumsum[N])
-    else:
-        print(A[idx-2]+K-cumsum[idx-1])
-
+    idx = bisect_left(cumsum,K)-1
+    base = A[idx]
+    print(base + K - cumsum[idx])

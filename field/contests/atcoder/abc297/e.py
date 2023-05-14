@@ -131,9 +131,18 @@ class SortedSet(Generic[T]):
 
 N,K = map(int,input().split())
 A = list(map(int,input().split()))
-A.sort()
-ss = SortedSet(A)
-for i in range(N):
-    while 1:
-        mi = ss[0]
-        
+ss = SortedSet([0])
+
+ans = [-1]*(K+1)
+for i in range(K+1):
+    v = ss[0]
+    ans[i] = v
+    ss.discard(v)
+    if v == ans[i-1]:
+        v = ss[0]
+        ss.discard(v)
+    for j in range(N):
+        ss.add(v + A[j])
+# print(ss)
+# print(ans)
+print(ans[K])

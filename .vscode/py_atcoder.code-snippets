@@ -2398,6 +2398,7 @@
             "import sys",
             "sys.setrecursionlimit(10**7)",
             "",
+            "# https://tjkendev.github.io/procon-library/python/graph/scc.html",
             "# 強連結成分分解(SCC): グラフGに対するSCCを行う",
             "# 入力: <N>: 頂点サイズ, <G>: 順方向の有向グラフ, <RG>: 逆方向の有向グラフ",
             "# 出力: num_group:ラベル数, group:各頂点のラベル番号",
@@ -2453,7 +2454,7 @@
             "    rgraph[X[i]].append(i)",
             "",
             "num_group,group = scc(N,graph,rgraph)",
-            "G0,GP = construct(N,G,num_group,group)",
+            "G0,GP = construct(N,graph,num_group,group)",
             "",
         ],
         "description": "SCC(強連結成分分解)"
@@ -2462,7 +2463,6 @@
         "scope": "python",
         "prefix": "dfs_islands",
         "body": [
-            "# Pythonで提出!!",
             "import sys",
             "sys.setrecursionlimit(10**7)",
             "",
@@ -2494,7 +2494,6 @@
         "scope": "python",
         "prefix": "dfs_timestamp",
         "body": [
-            "# Pythonで提出!!",
             "import sys",
             "sys.setrecursionlimit(10**7)",
             "",
@@ -2543,7 +2542,6 @@
         "scope": "python",
         "prefix": "dfs_treeTraversal",
         "body": [
-            "# Pythonで提出!!",
             "import sys",
             "sys.setrecursionlimit(10**7)",
             "",
@@ -2584,7 +2582,6 @@
         "scope": "python",
         "prefix": "dfs_stairs",
         "body": [
-            "# Pythonで提出!!",
             "import sys",
             "sys.setrecursionlimit(10**7)",
             "def dfs(n):",
@@ -3227,7 +3224,6 @@
         "scope": "python",
         "prefix": "treeDP",
         "body": [
-            "# Pythonで提出!!",
             "import sys",
             "sys.setrecursionlimit(10**7)",
             "",

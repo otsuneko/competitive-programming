@@ -1,39 +1,19 @@
 from collections import deque
 
-def bfs(s,d):
+def bfs(s):
     queue = deque()
     queue.append(s)
+    dist = [-1]*N
     dist[s] = 0
 
-    if d == 0:
-        if S[s] == "0":
-            print("No")
-            exit()
-        else:
-            return
-
-    cnt = 0
     while queue:
         s = queue.popleft()
-        if dist[s] > d:
-            break
-        elif dist[s] == d:
-            if S[s] == "1":
-                cnt += 1
-                continue
-        S[s] = "0"
-
         for to in graph[s]:
             if dist[to] != -1:
                 continue
             dist[to] = dist[s] + 1
-            if dist[to] < d:
-                S[to] = "0"
             queue.append(to)
-
-    if cnt == 0:
-        print("No")
-        exit()
+    return dist
 
 N,M = map(int,input().split())
 graph = [[] for _ in range(N)]
@@ -43,17 +23,31 @@ for _ in range(M):
     graph[a].append(b)
     graph[b].append(a)
 
+dists = [[-1]*N for _ in range(N)]
+for i in range(N):
+    dists[i] = bfs(i)
+
+# まずはすべて黒に塗って条件の通り更新
 S = ["1"]*N
 K = int(input())
+query = []
 for _ in range(K):
     p,d = map(int,input().split())
     p -= 1
+    query.append((p,d))
 
-    dist = [-1]*N
-    bfs(p,d)
+    for i in range(N):
+        if dists[p][i] < d:
+            S[i] = "0"
 
-if S.count("1") == 0:
-    print("No")
-else:
-    print("Yes")
-    print("".join(S))
+# 条件を満たすか確認
+for p,d in query:
+    cnt = 0
+    for i in range(N):
+        if dists[p][i] == d and S[i] == "1":
+            cnt += 1
+    if cnt == 0:
+        print("No")
+        exit()
+print("Yes")
+print("".join(S))
