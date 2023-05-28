@@ -2,18 +2,23 @@
 import sys
 sys.setrecursionlimit(10**7)
 
-# 連結でないグラフの場合は、未発見の頂点が無くなるまでdfsを繰り返す
 # コメントアウト箇所を有効化するとオイラーツアー可能
-def dfs(s,p):
+def dfs(s):
+    global cnt
 
-    if p != -1:
-        add[s] += add[p]
+    # 行きがけ
+    cnt += add[s]
+    ans[s] = cnt
+    # euler.append(s+1)
 
     seen[s] = True
     for to in graph[s]:
         if seen[to]:
             continue
-        dfs(to,s)
+        dfs(to)
+        # euler.append(s+1)
+
+    cnt -= add[s]
 
 N,Q =map(int,input().split())
 graph = [[] for _ in range(N)]
@@ -30,5 +35,7 @@ for _ in range(Q):
     add[p] += x
 
 seen = [False]*N
-dfs(0,-1)
-print(*add)
+ans = [-1]*N
+cnt = 0
+dfs(0)
+print(*ans)

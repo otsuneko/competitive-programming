@@ -1,6 +1,7 @@
 import itertools
 N = int(input())
 if N%2:
+    print()
     exit()
 
 ans = 0
