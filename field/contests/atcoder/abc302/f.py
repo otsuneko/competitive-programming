@@ -1,29 +1,29 @@
 N,M = map(int,input().split())
-cnt_one,cnt_M = 0,0
-start = []
-goal = []
-middle = []
-for _ in range(N):
+graph = [[] for _ in range(M+1+N)]
+for i in range(N):
     A = int(input())
-    s = set(map(int,input().split()))
-    if 1 in s and M in s:
-        print(0)
-        exit()
-    elif 1 in s:
-        start.append(s)
-        cnt_one += 1
-    elif M in s:
-        goal.append(s)
-        cnt_M += 1
-    else:
-        middle.append(s)
+    S = set(map(int,input().split()))
+    for s in S:
+        graph[s].append(i+M+1)
+        graph[i+M+1].append(s)
 
-if [cnt_one,cnt_M] == [0,0]:
-    print(-1)
-    exit()
+from collections import deque
 
-ans = 10**18
-memo = dict()
-for s in start:
-    for g in goal:
-        
+def bfs(dist):
+    queue = deque()
+    queue.append(1)
+    while queue:
+        s = queue.popleft()
+        if s == M:
+            print((dist[M]-1)//2)
+            exit()
+        for to in graph[s]:
+            if dist[to] != -1:
+                continue
+            dist[to] = dist[s] + 1
+            queue.append(to)
+
+dist = [-1]*(M+1+N)
+dist[1] = 0
+bfs(dist)
+print(-1)
