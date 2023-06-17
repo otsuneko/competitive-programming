@@ -359,8 +359,6 @@
         "scope": "python",
         "prefix": "SortedSet",
         "body": [
-            "import sys",
-            "input = sys.stdin.readline",
             "# https://github.com/tatyam-prime/SortedSet/blob/main/SortedSet.py",
             "import math",
             "from bisect import bisect_left, bisect_right",
@@ -498,8 +496,6 @@
         "scope": "python",
         "prefix": "SortedMultiSet",
         "body": [
-            "import sys",
-            "input = sys.stdin.readline",
             "# https://github.com/tatyam-prime/SortedSet/blob/main/SortedMultiset.py",
             "import math",
             "from bisect import bisect_left, bisect_right, insort",

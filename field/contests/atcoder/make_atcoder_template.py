@@ -1,6 +1,7 @@
 import os
 import sys
 import pathlib
+import shutil
 import subprocess
 args = sys.argv
 
@@ -34,4 +35,5 @@ for f in file_name:
     file_path = contest_path + "/" + f + ".py"
     if os.path.isfile(file_path):
         continue
-    pathlib.Path(file_path).touch()
+    shutil.copyfile(folder_path + "atcoder_template.py", file_path)
+    # pathlib.Path(file_path).touch()
