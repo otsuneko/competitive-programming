@@ -359,6 +359,8 @@
         "scope": "python",
         "prefix": "SortedSet",
         "body": [
+            "import sys",
+            "input = sys.stdin.readline",
             "# https://github.com/tatyam-prime/SortedSet/blob/main/SortedSet.py",
             "import math",
             "from bisect import bisect_left, bisect_right",
@@ -496,6 +498,8 @@
         "scope": "python",
         "prefix": "SortedMultiSet",
         "body": [
+            "import sys",
+            "input = sys.stdin.readline",
             "# https://github.com/tatyam-prime/SortedSet/blob/main/SortedMultiset.py",
             "import math",
             "from bisect import bisect_left, bisect_right, insort",
@@ -822,6 +826,29 @@
             "    return res",
         ],
         "description": "桁和"
+    },
+    "mex": {
+        "prefix": "mex",
+        "body": [
+            "# mex(数列Aに含まれない最小の非負整数)を求める",
+            "# https://qiita.com/toast-uz/items/bf6f142bace86c525532",
+            "def mex(s):   # sがユニークなソート済みリストの場合、O(log len(s))",
+            "    s = sorted(set(s)) # もしsがユニークなソート済みリストならこの行をコメントアウト",
+            "    if len(s) == 0 or s[0] > 0:  # 0は頻出なのでショートカット処理",
+            "        return 0",
+            "    def check(n):",
+            "        return n - 1 == s[n - 1] ",
+            "    low, high = 1, len(s) + 1",
+            "    while low + 1 < high:",
+            "        mid = (low + high) // 2",
+            "        if check(mid):",
+            "            low = mid",
+            "        else:",
+            "            high = mid",
+            "    return low",
+            "",
+        ],
+        "description": "mex(数列Aに含まれない最小の非負整数)"
     },
     "base_n": {
         "scope": "python",

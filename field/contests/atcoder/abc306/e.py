@@ -1,10 +1,12 @@
-# https://github.com/tatyam-prime/SortedSet/blob/main/SortedSet.py
+import sys
+input = sys.stdin.readline
+# https://github.com/tatyam-prime/SortedSet/blob/main/SortedMultiset.py
 import math
-from bisect import bisect_left, bisect_right
+from bisect import bisect_left, bisect_right, insort
 from typing import Generic, Iterable, Iterator, TypeVar, Union, List
 T = TypeVar('T')
 
-class SortedSet(Generic[T]):
+class SortedMultiset(Generic[T]):
     BUCKET_RATIO = 50
     REBUILD_RATIO = 170
 
@@ -16,10 +18,10 @@ class SortedSet(Generic[T]):
         self.a = [a[size * i // bucket_size : size * (i + 1) // bucket_size] for i in range(bucket_size)]
     
     def __init__(self, a: Iterable[T] = []) -> None:
-        "Make a new SortedSet from iterable. / O(N) if sorted and unique / O(N log N)"
+        "Make a new SortedMultiset from iterable. / O(N) if sorted / O(N log N)"
         a = list(a)
-        if not all(a[i] < a[i + 1] for i in range(len(a) - 1)):
-            a = sorted(set(a))
+        if not all(a[i] <= a[i + 1] for i in range(len(a) - 1)):
+            a = sorted(a)
         self._build(a)
 
     def __iter__(self) -> Iterator[T]:
@@ -34,7 +36,7 @@ class SortedSet(Generic[T]):
         return self.size
     
     def __repr__(self) -> str:
-        return "SortedSet" + str(self.a)
+        return "SortedMultiset" + str(self.a)
     
     def __str__(self) -> str:
         s = str(list(self))
@@ -52,20 +54,21 @@ class SortedSet(Generic[T]):
         i = bisect_left(a, x)
         return i != len(a) and a[i] == x
 
-    def add(self, x: T) -> bool:
-        "Add an element and return True if added. / O(√N)"
+    def count(self, x: T) -> int:
+        "Count the number of x."
+        return self.index_right(x) - self.index(x)
+
+    def add(self, x: T) -> None:
+        "Add an element. / O(√N)"
         if self.size == 0:
             self.a = [[x]]
             self.size = 1
-            return True
+            return
         a = self._find_bucket(x)
-        i = bisect_left(a, x)
-        if i != len(a) and a[i] == x: return False
-        a.insert(i, x)
+        insort(a, x)
         self.size += 1
         if len(a) > len(self.a) * self.REBUILD_RATIO:
             self._build()
-        return True
 
     def discard(self, x: T) -> bool:
         "Remove an element and return True if removed. / O(√N)"
@@ -77,7 +80,7 @@ class SortedSet(Generic[T]):
         self.size -= 1
         if len(a) == 0: self._build()
         return True
-    
+
     def lt(self, x: T) -> Union[T, None]:
         "Find the largest element < x, or None if it doesn't exist."
         for a in reversed(self.a):
@@ -110,7 +113,7 @@ class SortedSet(Generic[T]):
             if x < len(a): return a[x]
             x -= len(a)
         raise IndexError
-    
+
     def index(self, x: T) -> int:
         "Count the number of elements < x."
         ans = 0
@@ -129,25 +132,55 @@ class SortedSet(Generic[T]):
             ans += len(a)
         return ans
 
-N,M = map(int,input().split())
-A = list(map(int,input().split()))
+N,K,Q = map(int,input().split())
 
-from collections import defaultdict
-cnt = defaultdict(int)
-ss = SortedSet([i for i in range(max(A)+2)])
+A = [0]*N
+sms1 = SortedMultiset([0]*K)
+sms2 = SortedMultiset([0]*(N-K))
+ans = 0
+for _ in range(Q):
+    x,y = map(int,input().split())
+    x -= 1
 
-for i in range(M):
-    cnt[A[i]] += 1
-    ss.discard(A[i])
+    old = A[x]
+    new = y
+    A[x] = new
 
-ans = ss[0]
+    # add
+    sms2.add(new)
+    # balance
+    while len(sms1) < K:
+        tmp = sms2[0]
+        sms2.discard(tmp)
+        sms1.add(tmp)
+        ans += tmp
+    while len(sms2) > 0 and sms1[0] < sms2[len(sms2)-1]:
+        tmp1,tmp2 = sms1[0],sms2[len(sms2)-1]
+        sms1.discard(tmp1)
+        sms2.discard(tmp2)
+        sms1.add(tmp2)
+        sms2.add(tmp1)
+        ans += tmp2-tmp1
 
-for i in range(1,N-M+1):
-    cnt[A[i-1]] -= 1
-    if cnt[A[i-1]] == 0:
-        ss.add(A[i-1])
-    if cnt[A[i+M-1]] == 0:
-        ss.discard(A[i+M-1])
-    cnt[A[i+M-1]] += 1
-    ans = min(ans,ss[0])
-print(ans)
+    # erase
+    if old in sms1:
+        sms1.discard(old)
+        ans -= old
+    else:
+        sms2.discard(old)
+    # balance
+    while len(sms1) < K:
+        tmp = sms2[0]
+        sms2.discard(tmp)
+        sms1.add(tmp)
+        ans += tmp
+    while len(sms2) > 0 and sms1[0] < sms2[len(sms2)-1]:
+        tmp1,tmp2 = sms1[0],sms2[len(sms2)-1]
+        sms1.discard(tmp1)
+        sms2.discard(tmp2)
+        sms1.add(tmp2)
+        sms2.add(tmp1)
+        ans += tmp2-tmp1
+    
+    print(ans)
+
