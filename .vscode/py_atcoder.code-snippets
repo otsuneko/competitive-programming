@@ -161,6 +161,22 @@
         ],
         "description": "デバッグ用コメント出力関数"
     },
+    "MOVE": {
+        "prefix": "MOVE",
+        "body": [
+            "MOVE = ([1, 0], [-1, 0], [0, 1], [0, -1]) #縦横移動",
+            "#MOVE = ([-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]) #縦横斜め移動",
+        ],
+        "description": "上下左右(+斜め)の移動用"
+    },
+    "DIR": {
+        "prefix": "DIR",
+        "body": [
+            "DIR = {\"U\":(-1,0), \"R\":(0,1), \"D\":(1,0), \"L\":(0,-1)}",
+            "#INV_DIR = {\"(-1,0)\":U, \"(0,1)\":R, \"(1,0)\":D, \"(0,-1)\":L}",
+        ],
+        "description": "方角"
+    },
     "deque": {
         "scope": "python",
         "prefix": "deque",
@@ -799,6 +815,15 @@
             "13の倍数：3桁ごとに区切った数字を1つ飛ばしに足した和の差が13の倍数",
         ],
         "description": "倍数判別法"
+    },
+    "syousuu(decimal)": {
+        "scope": "python",
+        "prefix": "syousuu(decimal)",
+        "body": [
+            "python/PyPyのDecimalは遅い",
+            "答えが小数になる除算を整数で扱いたい場合は、(割られる数) に (割る数の最大値)**2 * 10を乗算してから除算すればOK",
+        ],
+        "description": "小数を整数で扱う方法"
     },
     "ceil": {
         "scope": "python",
@@ -2615,11 +2640,11 @@
             "import sys",
             "sys.setrecursionlimit(10**7)",
             "",
-            "#move = ([1, 0], [-1, 0], [0, 1], [0, -1]) #縦横移動",
-            "move = ([-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]) #縦横斜め移動",
+            "#MOVE = ([1, 0], [-1, 0], [0, 1], [0, -1]) #縦横移動",
+            "MOVE = ([-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]) #縦横斜め移動",
             "def dfs(y,x):",
             "    seen[y][x] = True",
-            "    for dy, dx in move:",
+            "    for dy, dx in MOVE:",
             "        ny,nx = y+dy,x+dx",
             "        if 0 <= ny < H and 0 <= nx < W and seen[ny][nx] == False and C[ny][nx] == 1:",
             "            dfs(ny,nx)",
@@ -2720,8 +2745,8 @@
         "body": [
             "from collections import deque",
             "",
-            "move = ([1, 0], [-1, 0], [0, 1], [0, -1])",
-            "#move = ([-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]) #縦横斜め移動",
+            "MOVE = ([1, 0], [-1, 0], [0, 1], [0, -1])",
+            "#MOVE = ([-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]) #縦横斜め移動",
             "#歩数カウント不要ならvisited = set()として、都度visited.add(nx+ny*C)して管理する方法も可",
             "def bfs(sy,sx,gy,gx):",
             "    queue = deque([[sy,sx]])",
@@ -2731,7 +2756,7 @@
             "        y,x = queue.popleft()",
             "        if [y,x] == [gy,gx]:",
             "            return visited[y][x]",
-            "        for dy,dx in move:",
+            "        for dy,dx in MOVE:",
             "            ny,nx = y+dy,x+dx",
             "            if 0<=ny<H and 0<=nx<W and maze[ny][nx] == \".\" and visited[ny][nx] == -1:",
             "                visited[ny][nx] = visited[y][x] + 1",
@@ -2787,7 +2812,7 @@
         "body": [
             "from collections import deque",
             "",
-            "move = ([1, 0], [-1, 0], [0, 1], [0, -1])",
+            "MOVE = ([1, 0], [-1, 0], [0, 1], [0, -1])",
             "def bfs_MultiStart(s):",
             "    global cnt_black",
             "    queue = deque(s)",
@@ -2799,7 +2824,7 @@
             "        ans += 1",
             "        for _ in range(len(queue)):",
             "            y,x = queue.popleft()",
-            "            for dy,dx in move:",
+            "            for dy,dx in MOVE:",
             "                ny,nx = y+dy,x+dx",
             "                if 0<=ny<H and 0<=nx<W and A[ny][nx] == \".\":",
             "                    A[ny][nx] = \"#\"",
@@ -3062,7 +3087,8 @@
         "body": [
             "import itertools",
             "import operator",
-            "cumsum = [0] + list(itertools.accumulate($1, func=operator.add))",
+            "cumsum = [0] + list(itertools.accumulate(A, func=operator.add))",
+            "# cumsum = list(itertools.accumulate(A[::-1], func=operator.add))[::-1] + [0] # 逆順の累積和",
         ],
         "description": "累積和"
     },

@@ -1,37 +1,31 @@
+import sys
+input = lambda: sys.stdin.readline().rstrip()
+INF = 10**18
+
 H,W,K = map(int,input().split())
-x1,y1,x2,y2 = map(int,input().split())
-mod = 998244353
+sx,sy,tx,ty = map(int,input().split())
+MOD = 998244353
 
-dp = [0]*4
+# 0:xもyも違う、1:xは同じ、2:yは同じ、3:xもyも同じ
+dp = [[0]*4 for _ in range(K+1)]
 
-if x1 == x2 and y1 == y2:
-    dp[0] += 1
-elif x1 == x2:
-    dp[1] += 1
-elif y1 == y2:
-    dp[2] += 1
+if sx == tx:
+    if sy == ty:
+        dp[0][3] = 1
+    else:
+        dp[0][1] = 1
 else:
-    dp[3] += 1
+    if sy == ty:
+        dp[0][2] = 1
+    else:
+        dp[0][0] = 1
 
-for _ in range(K):
-    nxt = [0]*4
+for i in range(K):
+    dp[i+1][0] = (dp[i][0]*(H-2) + dp[i][0]*(W-2) + dp[i][1]*(H-1) + dp[i][2]*(W-1)) % MOD
+    dp[i+1][1] = (dp[i][0] + dp[i][1]*(W-2) + dp[i][3]*(W-1)) % MOD
+    dp[i+1][2] = (dp[i][0] + dp[i][2]*(H-2) + dp[i][3]*(H-1)) % MOD
+    dp[i+1][3] = (dp[i][1] + dp[i][2]) % MOD
 
-    nxt[1] += dp[0]*(W-1)
-    nxt[2] += dp[0]*(H-1)
+# print(*dp, sep="\n")
 
-    nxt[0] += dp[1]
-    nxt[1] += dp[1]*(W-2)
-    nxt[3] += dp[1]*(H-1)
-
-    nxt[0] += dp[2]
-    nxt[2] += dp[2]*(H-2)
-    nxt[3] += dp[2]*(W-1)
-
-    nxt[1] += dp[3]
-    nxt[2] += dp[3]
-    nxt[3] += dp[3]*(H-2 + W-2)
-
-    for i in range(4):
-        dp[i] = nxt[i]%mod
-
-print(dp[0])
+print(dp[K][3])

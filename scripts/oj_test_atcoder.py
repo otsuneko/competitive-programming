@@ -38,21 +38,21 @@ def get_contest_id():
 def oj_download(tmp_path,contest_id,problem_id):
     #check url
     oj_url = "https://atcoder.jp/contests/{0}/tasks/{0}_{1}".format(contest_id,problem_id)
-    try:
-        f = urlopen(oj_url)
-    except:
-        print('URL not found:',oj_url)
-        try:
-            oj_url = "https://atcoder.jp/contests/{0}/tasks/{1}_{2}".format(contest_id,contest_id.replace('-','_'),problem_id)
-            f = urlopen(oj_url)
-        except:
-            print('URL not found:',oj_url)
-            try:
-                oj_url = "https://atcoder.jp/contests/{0}-open/tasks/{1}_{2}".format(contest_id,contest_id.replace('-','_'),problem_id)
-                f = urlopen(oj_url)
-            except:
-                print('URL not found:',oj_url)
-                oj_url = input('Please enter contest_url:')
+    # try:
+    #     f = urlopen(oj_url)
+    # except:
+    #     print('URL not found:',oj_url)
+    #     try:
+    #         oj_url = "https://atcoder.jp/contests/{0}/tasks/{1}_{2}".format(contest_id,contest_id.replace('-','_'),problem_id)
+    #         f = urlopen(oj_url)
+    #     except:
+    #         print('URL not found:',oj_url)
+    #         try:
+    #             oj_url = "https://atcoder.jp/contests/{0}-open/tasks/{1}_{2}".format(contest_id,contest_id.replace('-','_'),problem_id)
+    #             f = urlopen(oj_url)
+    #         except:
+    #             print('URL not found:',oj_url)
+    #             oj_url = input('Please enter contest_url:')
 
     cp = subprocess.run(['oj','d',oj_url,'--format','{}/sample-%i.%e'.format(tmp_path)])
     if cp.returncode!=0:
