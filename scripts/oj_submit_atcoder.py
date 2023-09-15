@@ -55,13 +55,13 @@ def oj_submit(contest_id,problem_id):
     #             oj_url = input('Please enter contest_url:')
 
     if sys.argv[1].split('.')[-1]=='py':
-        pypy_id = '4047'
+        pypy_id = '5078'
         cp = subprocess.run(['oj','submit','--wait=0','--yes','--no-guess','--language',pypy_id,oj_url,sys.argv[1]])
         if cp.returncode!=0:
             print('oj submit failed. exit')
             sys.exit(1)
     elif sys.argv[1].split('.')[-1]=='rs':
-        rust_id = '4050' # 1.42.0
+        rust_id = '5054' # 1.70.0
         cp = subprocess.run(['oj','submit','--wait=0','--yes','--no-guess','--language',rust_id,oj_url,sys.argv[1]])
         if cp.returncode!=0:
             print('oj submit failed. exit')
