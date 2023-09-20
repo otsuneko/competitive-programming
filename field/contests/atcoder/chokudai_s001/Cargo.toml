@@ -1,22 +1,4 @@
-[package]
-name = "chokudai_s001"
-version = "0.1.0"
-edition = "2018"
-
-[package.metadata.cargo-compete.bin]
-chokudai_s001-a = { alias = "a", problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_a" }
-chokudai_s001-b = { alias = "b", problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_b" }
-chokudai_s001-c = { alias = "c", problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_c" }
-chokudai_s001-d = { alias = "d", problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_d" }
-chokudai_s001-e = { alias = "e", problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_e" }
-chokudai_s001-f = { alias = "f", problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_f" }
-chokudai_s001-g = { alias = "g", problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_g" }
-chokudai_s001-h = { alias = "h", problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_h" }
-chokudai_s001-i = { alias = "i", problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_i" }
-chokudai_s001-j = { alias = "j", problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_j" }
-chokudai_s001-k = { alias = "k", problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_k" }
-chokudai_s001-l = { alias = "l", problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_l" }
-
+dependencies = [ "once_cell = \"=1.18.0\"", "static_assertions = \"=1.1.0\"", "varisat = \"=0.2.2\"", "memoise = \"=0.3.2\"", "argio = \"=0.2.0\"", "ac-library-rs = \"=0.1.1\"",]
 [[bin]]
 name = "chokudai_s001-a"
 path = "src/bin/a.rs"
@@ -65,45 +47,57 @@ path = "src/bin/k.rs"
 name = "chokudai_s001-l"
 path = "src/bin/l.rs"
 
-[dependencies]
-num = "=0.2.1"
-num-bigint = "=0.2.6"
-num-complex = "=0.2.4"
-num-integer = "=0.1.42"
-num-iter = "=0.1.40"
-num-rational = "=0.2.4"
-num-traits = "=0.2.11"
-num-derive = "=0.3.0"
-ndarray = "=0.13.0"
-nalgebra = "=0.20.0"
-alga = "=0.9.3"
-libm = "=0.2.1"
-rand = { version = "=0.7.3", features = ["small_rng"] }
-getrandom = "=0.1.14"
-rand_chacha = "=0.2.2"
-rand_core = "=0.5.1"
-rand_hc = "=0.2.0"
-rand_pcg = "=0.2.1"
-rand_distr = "=0.2.2"
-petgraph = "=0.5.0"
-indexmap = "=1.3.2"
-regex = "=1.3.6"
-lazy_static = "=1.4.0"
-ordered-float = "=1.0.2"
-ascii = "=1.0.0"
-permutohedron = "=0.2.4"
-superslice = "=1.0.0"
-itertools = "=0.9.0"
-itertools-num = "=0.1.3"
-maplit = "=1.0.2"
-either = "=1.5.3"
-im-rc = "=14.3.0"
-fixedbitset = "=0.2.0"
-bitset-fixed = "=0.1.0"
-proconio = { version = "=0.3.6", features = ["derive"] }
-text_io = "=0.1.8"
-whiteread = "=0.5.0"
-rustc-hash = "=1.1.0"
-smallvec = "=1.2.0"
+[package]
+name = "chokudai_s001"
+version = "0.1.0"
+edition = "2018"
 
 [dev-dependencies]
+
+[package.metadata.cargo-compete.bin.chokudai_s001-a]
+alias = "a"
+problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_a"
+
+[package.metadata.cargo-compete.bin.chokudai_s001-b]
+alias = "b"
+problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_b"
+
+[package.metadata.cargo-compete.bin.chokudai_s001-c]
+alias = "c"
+problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_c"
+
+[package.metadata.cargo-compete.bin.chokudai_s001-d]
+alias = "d"
+problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_d"
+
+[package.metadata.cargo-compete.bin.chokudai_s001-e]
+alias = "e"
+problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_e"
+
+[package.metadata.cargo-compete.bin.chokudai_s001-f]
+alias = "f"
+problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_f"
+
+[package.metadata.cargo-compete.bin.chokudai_s001-g]
+alias = "g"
+problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_g"
+
+[package.metadata.cargo-compete.bin.chokudai_s001-h]
+alias = "h"
+problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_h"
+
+[package.metadata.cargo-compete.bin.chokudai_s001-i]
+alias = "i"
+problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_i"
+
+[package.metadata.cargo-compete.bin.chokudai_s001-j]
+alias = "j"
+problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_j"
+
+[package.metadata.cargo-compete.bin.chokudai_s001-k]
+alias = "k"
+problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_k"
+
+[package.metadata.cargo-compete.bin.chokudai_s001-l]
+alias = "l"
+problem = "https://atcoder.jp/contests/chokudai_s001/tasks/chokudai_S001_l"

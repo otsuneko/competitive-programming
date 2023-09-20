@@ -4,9 +4,10 @@
         "prefix": "Template_AtCoder",
         "body": [
             "import sys",
+            "import pypyjit",
             "input = lambda: sys.stdin.readline().rstrip()",
             "INF = 10**18",
-            "",
+            "pypyjit.set_param('max_unroll_recursion=0')",
             "",
         ],
         "description": "AtCoder template"
@@ -16,9 +17,10 @@
         "prefix": "Template_Codeforces",
         "body": [
             "import sys",
-            "input = lambda: sys.stdin.readline().rstrip()",
-            "sys.setrecursionlimit(10**5)",
+            "import pypyjit",
             "import random",
+            "input = lambda: sys.stdin.readline().rstrip()",
+            "pypyjit.set_param('max_unroll_recursion=0')",
             "XOR=random.randint(10**7,10**8)",
             "INF = 10**18",
             "",
@@ -160,6 +162,13 @@
             "def debug(*args): print(*args, file=sys.stderr)",
         ],
         "description": "デバッグ用コメント出力関数"
+    },
+    "deepcopy": {
+        "prefix": "deepcopy",
+        "body": [
+            "[a[:] for a in $1]",
+        ],
+        "description": ""
     },
     "MOVE": {
         "prefix": "MOVE",
