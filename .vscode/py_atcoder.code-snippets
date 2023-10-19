@@ -775,7 +775,7 @@
         "body": [
             "# 二次元配列の90度右回転",
             "def rotate_2d(arr):",
-            "    return zip(*arr[::-1])",
+            "    return list(zip(*arr[::-1]))",
             "",
         ],
         "description": "二次元配列の90度右回転"
@@ -1171,6 +1171,16 @@
             "    __ne__ = lambda self, other: self.x != ModInt(other).x",
         ],
         "description": "Modint"
+    },
+    "linear_func": {
+        "prefix": "linear_func",
+        "body": [
+            "def linear_func(y1,x1,y2,x2):",
+            "    a = (y2-y1)/(x2-x1)",
+            "    b = y1-a*x1",
+            "    return a,b",
+        ],
+        "description": "一次関数の傾きと切片を求める"
     },
     "GrayCode": {
         "scope": "python",
@@ -2372,8 +2382,9 @@
         "scope": "python",
         "prefix": "LCA",
         "body": [
-            "import sys",
+            "import sys,pypyjit",
             "sys.setrecursionlimit(10**7)",
+            "pypyjit.set_param('max_unroll_recursion=0')",
             "",
             "class LCA:",
             "    \"\"\"",
@@ -2454,8 +2465,9 @@
         "scope": "python",
         "prefix": "LowLink",
         "body": [
-            "import sys",
+            "import sys,pypyjit",
             "sys.setrecursionlimit(10**7)",
+            "pypyjit.set_param('max_unroll_recursion=0')",
             "def get_articulation_points(adj, n, start=0):",
             "    order = [None]*n",
             "    result = []; count = 0",
@@ -2499,8 +2511,9 @@
         "scope": "python",
         "prefix": "Bridge",
         "body": [
-            "import sys",
-            "sys.setrecursionlimit(10**6)",
+            "import sys,pypyjit",
+            "sys.setrecursionlimit(10**7)",
+            "pypyjit.set_param('max_unroll_recursion=0')",
             "def bridge(adj, n):",
             "    result = set()",
             "    label = [None]*n",
@@ -2546,8 +2559,9 @@
         "scope": "python",
         "prefix": "SCC",
         "body": [
-            "import sys",
+            "import sys,pypyjit",
             "sys.setrecursionlimit(10**7)",
+            "pypyjit.set_param('max_unroll_recursion=0')",
             "",
             "# https://tjkendev.github.io/procon-library/python/graph/scc.html",
             "# 強連結成分分解(SCC): グラフGに対するSCCを行う",
@@ -2620,8 +2634,9 @@
     "dfs_graph": {
         "prefix": "dfs_graph",
         "body": [
-            "import sys",
+            "import sys,pypyjit",
             "sys.setrecursionlimit(10**7)",
+            "pypyjit.set_param('max_unroll_recursion=0')",
             "",
             "def dfs(s):",
             "    seen.add(s)",
@@ -2646,8 +2661,9 @@
         "scope": "python",
         "prefix": "dfs_grid",
         "body": [
-            "import sys",
+            "import sys,pypyjit",
             "sys.setrecursionlimit(10**7)",
+            "pypyjit.set_param('max_unroll_recursion=0')",
             "",
             "#MOVE = ([1, 0], [-1, 0], [0, 1], [0, -1]) #縦横移動",
             "MOVE = ([-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]) #縦横斜め移動",
@@ -2677,8 +2693,9 @@
         "scope": "python",
         "prefix": "dfs_timestamp",
         "body": [
-            "import sys",
+            "import sys,pypyjit",
             "sys.setrecursionlimit(10**7)",
+            "pypyjit.set_param('max_unroll_recursion=0')",
             "",
             "# 連結でないグラフの場合は、未発見の頂点が無くなるまでdfsを繰り返す必要あり",
             "# コメントアウト箇所を有効化するとオイラーツアー可能",
@@ -2725,8 +2742,9 @@
         "scope": "python",
         "prefix": "dfs_memo",
         "body": [
-            "import sys",
+            "import sys,pypyjit",
             "sys.setrecursionlimit(10**7)",
+            "pypyjit.set_param('max_unroll_recursion=0')",
             "",
             "MOD = 10**9+7",
             "def dfs(n):",
@@ -3323,10 +3341,10 @@
             "bit.add(1,3) # bit[1]に3を加算",
             "bit.add(2,5) # bit[2]に5を加算",
             "print(bit.sum(1,3)) # インデックス1から2(半閉半開区間)の要素の合計(=8)を取得",
-            "print(bit.data) # [0,3,5,8,0]",
+            "print(bit.d) # [0,3,5,8,0]",
             "'''",
             "",
-            "# 転倒数を求める（必要ならXは座圧しておく）",
+            "# 転倒数を求める（必要ならAは座圧しておく）",
             "def get_inversion_num(A):",
             "    ma = max(A)",
             "    bit = BIT(ma)",
@@ -3340,7 +3358,7 @@
             "N = int(input())",
             "A = list(map(int,input().split()))",
             "",
-            "print(num_inversion(A))",
+            "print(get_inversion_num(A))",
         ],
         "description": "転倒数"
     },
@@ -3516,8 +3534,9 @@
         "scope": "python",
         "prefix": "treeDP",
         "body": [
-            "import sys",
+            "import sys,pypyjit",
             "sys.setrecursionlimit(10**7)",
+            "pypyjit.set_param('max_unroll_recursion=0')",
             "",
             "def dfs(s,pre):",
             "    for to in graph[s]:",

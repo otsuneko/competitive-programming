@@ -94,6 +94,7 @@ text_io = "=0.1.12"
 rustc-hash = "=1.1.0"
 smallvec = "=1.11.0"
 
+
 [dev-dependencies]
 
 [dependencies.proconio]

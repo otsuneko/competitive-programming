@@ -1,0 +1,10 @@
+files for the non root package will be ignored, specify profiles at the workspace root:
+package:   /home/otsuneko/workspace/competitive-programming/field/contests/atcoder/ahc022/tools/Cargo.toml
+workspace: /home/otsuneko/workspace/competitive-programming/Cargo.toml
+    Finished release [optimized] target(s) in 0.17s
+     Running `/home/otsuneko/workspace/competitive-programming/target/release/tester pypy3 ../a.py`
+Score = 1
+Number of wrong answers = 83
+Placement cost = 109547000
+Measurement cost = 95000
+Measurement count = 95

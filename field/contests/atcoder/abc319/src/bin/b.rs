@@ -13,5 +13,21 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {N:usize}
+
+    let mut s: Vec<String> = vec![String::from("");N+1];
+    for i in 0..=N {
+        let mut flg = true;
+        for j in 1..=9 {
+            if N%j == 0 && i % (N/j) == 0 {
+                s[i] = j.to_string();
+                flg = false;
+                break
+            }
+        }
+        if flg == true {
+            s[i] = String::from("-");
+        }
+    }
+    println!("{}",s.iter().join(""));
 }

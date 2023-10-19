@@ -1,8 +1,9 @@
 from collections import defaultdict
 
-# Pythonで提出!!
-import sys
+import sys,pypyjit
 sys.setrecursionlimit(10**7)
+pypyjit.set_param('max_unroll_recursion=0')
+
 def dfs(s,dict):
 
     for to in graph[s]:

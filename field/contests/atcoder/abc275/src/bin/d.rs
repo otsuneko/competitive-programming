@@ -7,9 +7,24 @@ use std::{
     process::exit,
 };
 
+// use recur_fn::{recur_fn, RecurFn};
+use memoise::memoise;
+
 const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {N: i64}
+
+    #[memoise(n <= 100000000000)]
+    fn rec(n: i64) -> i64 {
+        if n == 0 {
+            return 1
+        } else {
+            return rec(n/2) + rec(n/3)
+        }
+    }
+
+    println!("{}", rec(N));
+    
 }

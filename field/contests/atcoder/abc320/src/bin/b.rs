@@ -13,5 +13,22 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {s: Bytes,}
+
+    let n = s.len();
+    let mut res = 0;
+    for i in 0..n {
+        for j in i+1..=n {
+            let s = &s[i..j];
+            let m = s.len();
+            let mut f = true;
+            for k in 0..m {
+                f &= s[k] == s[m-k-1];
+            }
+            if f {
+                res = res.max(m);
+            }
+        }
+    }
+    println!("{}",res);
 }

@@ -1,0 +1,19 @@
+2.0\"", "ac-library-rs = \"=0.1.1\"",]
+
+[package]
+name = "tools"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate_type = [ "cdylib", "rlib",]
+
+[profile.dev]
+overflow-checks = false
+
+[profile.test]
+overflow-checks = false
+
+[target."cfg(target_arch = \")".dependencies.web-sys]
+version = "0.3.4"
+features = [ "ImageData", "CanvasRenderingContext2d",]

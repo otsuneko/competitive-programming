@@ -1,22 +1,22 @@
-from bisect import bisect, bisect_left, bisect_right, insort, insort_left, insort_right
-'''
-bisect(A,x) #ソートされたリストAにソートを崩さずに値xを挿入するとき、xの入るべきインデックスを返す。
-bisect_left(A,x) #リストAに値xを入れ、xが複数になるとき、一番左の値xのインデックスを返す。
-bisect_right(A,x) #リストAに値xを入れ、xが複数になるとき、一番右の値xのインデックスを返す(bisect.bisectと同じ)。
-insort(A,x) #リストAに含まれるxのうち、どのエントリーよりも後ろにxをO(N)で挿入する。
-'''
-
 N,K = map(int,input().split())
 X = list(map(int,input().split()))
-X.sort()
-
-zidx = bisect(X,0)
-print(X,zidx)
 
 ans = 10**18
-l = r = 0
-if zidx >= K:
-    l = max(0,zidx-K)
-    r = l+K-1
-    ans = -X[0]
-# elif zidx == 0
+
+if K == 1:
+    for i in range(K):
+        ans = min(ans,abs(X[i]))
+elif K == N:
+    ans = X[-1]-X[0] + min(abs(X[-1]),abs(X[0]))
+
+for i in range(N-K):
+    ans = min(ans, abs(X[i]) + X[i+K-1]-X[i])
+
+X.sort(reverse=True)
+for i in range(N):
+    X[i] = -X[i]
+
+for i in range(N-K):
+    ans = min(ans, abs(X[i]) + X[i+K-1]-X[i])
+
+print(ans)

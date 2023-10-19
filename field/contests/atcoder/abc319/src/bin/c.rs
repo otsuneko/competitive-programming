@@ -13,5 +13,6 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! { masu: vec![usize;9]}
+
 }
