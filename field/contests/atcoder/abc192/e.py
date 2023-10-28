@@ -19,20 +19,8 @@ def dijkstra(d,p,s):
             if wait + cost < d[to]:
                 d[to] = wait + cost
                 heappush(hq, (d[to], to))
-                p[to] = v
     return d
 
-#s→tの最短経路復元
-def get_path(t):
-    if dist[t] == inf:
-        return []
-    path = []
-    while t != -1:
-        path.append(t)
-        t = prev[t]
-    #t->sの順になっているので逆順にする
-    path.reverse()
-    return path
 
 # 入力の受け取り・隣接リストadjの構築：
 N,M,X,Y = map(int, input().split()) # ノード数, エッジ数

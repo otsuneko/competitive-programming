@@ -46,4 +46,5 @@
         "javascript",
         "markdown"
     ],
+    "python.analysis.typeCheckingMode": "off",
 }

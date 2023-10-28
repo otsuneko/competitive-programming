@@ -1,22 +1,12 @@
 N = int(input())
+if N%2:
+    print(0)
+    exit()
 
-cnt = [0] # 10,100,1000,10000...以下の数字列が約数に持つ10の個数
-d = 1
-for i in range(18):
-    cnt.append(d)
-    d *= 10
-print(cnt)
-
+p5 = 5
 ans = 0
-if N < 10:
-    ans = 0
-else:
-    dig = len(str(N))
-    for i in range(dig):
-        if i == dig-1:
-            ans += N*cnt[i]
-        else:
-            ans += cnt[i]
-            N //= 10
+while p5 <= N:
+    ans += (N // p5) // 2 # 5,25,50の倍数であっても、N!!に下1桁が5のものは登場しないから個数は半分
+    p5 *= 5
 
 print(ans)
