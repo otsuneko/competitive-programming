@@ -1,0 +1,132 @@
+{
+    "SELECT": {
+        "scope": "sql",
+        "prefix": "SELECT",
+        "body": [
+            "SELECT ",
+            "FROM ",
+            "WHERE ",
+        ],
+        "description": ""
+    },
+    "LIKE": {
+        "scope": "sql",
+        "prefix": "LIKE",
+        "body": [
+            "SELECT *",
+            "FROM books",
+            "WHERE name LIKE '%マンガ%';",
+        ],
+        "description": "部分一致(%は正規表現の*に相当)"
+    },
+    "LIMIT": {
+        "scope": "sql",
+        "prefix": "LIMIT",
+        "body": [
+            "SELECT *",
+            "FROM books",
+            "WHERE name IS NOT NULL;",
+            "LIMIT 3"
+        ],
+        "description": "件数制限"
+    },
+    "BETWEEN": {
+        "scope": "sql",
+        "prefix": "BETWEEN",
+        "body": [
+            "SELECT *",
+            "FROM books",
+            "WHERE total_page BETWEEN 300 and 400;",
+        ],
+        "description": "件数制限"
+    },
+    "IN": {
+        "scope": "sql",
+        "prefix": "IN",
+        "body": [
+            "SELECT *",
+            "FROM books",
+            "WHERE release_year IN (2004, 2008, 2018);",
+        ],
+        "description": "候補のうちのどれか"
+    },
+    "NOT EQUAL": {
+        "scope": "sql",
+        "prefix": "NOT EQUAL",
+        "body": [
+            "SELECT *",
+            "FROM books",
+            "WHERE name <> 'マンガ';",
+        ],
+        "description": "等しくない"
+    },
+    "COUNT": {
+        "scope": "sql",
+        "prefix": "COUNT",
+        "body": [
+            "SELECT COUNT(*)",
+            "FROM authors",
+            "WHERE gender = '女性';",
+        ],
+        "description": "カウント"
+    },
+    "SUM": {
+        "scope": "sql",
+        "prefix": "SUM",
+        "body": [
+            "SELECT SUM(figure)",
+            "FROM book_sales;",
+        ],
+        "description": "合計"
+    },
+    "AVG": {
+        "scope": "sql",
+        "prefix": "AVG",
+        "body": [
+            "SELECT AVG(total_page)",
+            "FROM book;",
+        ],
+        "description": "平均"
+    },
+    "MAXMIN": {
+        "scope": "sql",
+        "prefix": "MAXMIN",
+        "body": [
+            "SELECT MAX(total_page), MIN(total_page)",
+            "FROM book;",
+        ],
+        "description": "平均"
+    },
+    "ORDER BY": {
+        "scope": "sql",
+        "prefix": "ORDER BY",
+        "body": [
+            "SELECT *",
+            "FROM book",
+            "ORDER BY release_year DESC;",
+        ],
+        "description": "ソート(降順)"
+    },
+    "GROUP BY": {
+        "scope": "sql",
+        "prefix": "GROUP BY",
+        "body": [
+            "SELECT release_year, COUNT(*) AS books_num",
+            "GROUP BY release_year",
+            "ORDER BY release_year DESC",
+            "ORDER BY books_num DESC;",
+        ],
+        "description": "グループ集計"
+    },
+    "HAVING": {
+        "scope": "sql",
+        "prefix": "HAVING",
+        "body": [
+            "SELECT release_year, COUNT(*) AS books_num",
+            "GROUP BY release_year",
+            "ORDER BY release_year DESC",
+            "ORDER BY books_num DESC;",
+        ],
+        "description": "グループ集計"
+    },
+}

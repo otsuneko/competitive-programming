@@ -1,26 +1,21 @@
 # https://github.com/tatyam-prime/SortedSet/blob/main/SortedMultiset.py
 import math
-from bisect import bisect_left, bisect_right, insort
-from typing import Generic, Iterable, Iterator, TypeVar, Union, List
+from bisect import bisect_left, bisect_right
+from typing import Generic, Iterable, Iterator, List, Tuple, TypeVar, Optional
 T = TypeVar('T')
 
 class SortedMultiset(Generic[T]):
-    BUCKET_RATIO = 50
-    REBUILD_RATIO = 170
-
-    def _build(self, a=None) -> None:
-        "Evenly divide `a` into buckets."
-        if a is None: a = list(self)
-        size = self.size = len(a)
-        bucket_size = int(math.ceil(math.sqrt(size / self.BUCKET_RATIO)))
-        self.a = [a[size * i // bucket_size : size * (i + 1) // bucket_size] for i in range(bucket_size)]
+    BUCKET_RATIO = 16
+    SPLIT_RATIO = 24
     
     def __init__(self, a: Iterable[T] = []) -> None:
         "Make a new SortedMultiset from iterable. / O(N) if sorted / O(N log N)"
         a = list(a)
-        if not all(a[i] <= a[i + 1] for i in range(len(a) - 1)):
-            a = sorted(a)
-        self._build(a)
+        n = self.size = len(a)
+        if any(a[i] > a[i + 1] for i in range(n - 1)):
+            a.sort()
+        bucket_size = int(math.ceil(math.sqrt(n / self.BUCKET_RATIO)))
+        self.a = [a[n * i // bucket_size : n * (i + 1) // bucket_size] for i in range(bucket_size)]
 
     def __iter__(self) -> Iterator[T]:
         for i in self.a:
@@ -29,6 +24,9 @@ class SortedMultiset(Generic[T]):
     def __reversed__(self) -> Iterator[T]:
         for i in reversed(self.a):
             for j in reversed(i): yield j
+    
+    def __eq__(self, other) -> bool:
+        return list(self) == list(other)
     
     def __len__(self) -> int:
         return self.size
@@ -40,16 +38,15 @@ class SortedMultiset(Generic[T]):
         s = str(list(self))
         return "{" + s[1 : len(s) - 1] + "}"
 
-    def _find_bucket(self, x: T) -> List[T]:
-        "Find the bucket which should contain x. self must not be empty."
-        for a in self.a:
-            if x <= a[-1]: return a
-        return a
+    def _position(self, x: T) -> Tuple[List[T], int, int]:
+        "return the bucket, index of the bucket and position in which x should be. self must not be empty."
+        for i, a in enumerate(self.a):
+            if x <= a[-1]: break
+        return (a, i, bisect_left(a, x))
 
     def __contains__(self, x: T) -> bool:
         if self.size == 0: return False
-        a = self._find_bucket(x)
-        i = bisect_left(a, x)
+        a, _, i = self._position(x)
         return i != len(a) and a[i] == x
 
     def count(self, x: T) -> int:
@@ -62,54 +59,73 @@ class SortedMultiset(Generic[T]):
             self.a = [[x]]
             self.size = 1
             return
-        a = self._find_bucket(x)
-        insort(a, x)
+        a, b, i = self._position(x)
+        a.insert(i, x)
         self.size += 1
-        if len(a) > len(self.a) * self.REBUILD_RATIO:
-            self._build()
+        if len(a) > len(self.a) * self.SPLIT_RATIO:
+            mid = len(a) >> 1
+            self.a[b:b+1] = [a[:mid], a[mid:]]
+    
+    def _pop(self, a: List[T], b: int, i: int) -> T:
+        ans = a.pop(i)
+        self.size -= 1
+        if not a: del self.a[b]
+        return ans
 
     def discard(self, x: T) -> bool:
         "Remove an element and return True if removed. / O(√N)"
         if self.size == 0: return False
-        a = self._find_bucket(x)
-        i = bisect_left(a, x)
+        a, b, i = self._position(x)
         if i == len(a) or a[i] != x: return False
-        a.pop(i)
-        self.size -= 1
-        if len(a) == 0: self._build()
+        self._pop(a, b, i)
         return True
 
-    def lt(self, x: T) -> Union[T, None]:
+    def lt(self, x: T) -> Optional[T]:
         "Find the largest element < x, or None if it doesn't exist."
         for a in reversed(self.a):
             if a[0] < x:
                 return a[bisect_left(a, x) - 1]
 
-    def le(self, x: T) -> Union[T, None]:
+    def le(self, x: T) -> Optional[T]:
         "Find the largest element <= x, or None if it doesn't exist."
         for a in reversed(self.a):
             if a[0] <= x:
                 return a[bisect_right(a, x) - 1]
 
-    def gt(self, x: T) -> Union[T, None]:
+    def gt(self, x: T) -> Optional[T]:
         "Find the smallest element > x, or None if it doesn't exist."
         for a in self.a:
             if a[-1] > x:
                 return a[bisect_right(a, x)]
 
-    def ge(self, x: T) -> Union[T, None]:
+    def ge(self, x: T) -> Optional[T]:
         "Find the smallest element >= x, or None if it doesn't exist."
         for a in self.a:
             if a[-1] >= x:
                 return a[bisect_left(a, x)]
     
-    def __getitem__(self, x: int) -> T:
-        "Return the x-th element, or IndexError if it doesn't exist."
-        if x < 0: x += self.size
-        if x < 0: raise IndexError
-        for a in self.a:
-            if x < len(a): return a[x]
-            x -= len(a)
+    def __getitem__(self, i: int) -> T:
+        "Return the i-th element."
+        if i < 0:
+            for a in reversed(self.a):
+                i += len(a)
+                if i >= 0: return a[i]
+        else:
+            for a in self.a:
+                if i < len(a): return a[i]
+                i -= len(a)
+        raise IndexError
+    
+    def pop(self, i: int = -1) -> T:
+        "Pop and return the i-th element."
+        if i < 0:
+            for b, a in enumerate(reversed(self.a)):
+                i += len(a)
+                if i >= 0: return self._pop(a, ~b, i)
+        else:
+            for b, a in enumerate(self.a):
+                if i < len(a): return self._pop(a, b, i)
+                i -= len(a)
         raise IndexError
 
     def index(self, x: T) -> int:

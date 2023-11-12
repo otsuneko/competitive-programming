@@ -1164,7 +1164,7 @@
         "prefix": "defaultdict",
         "body": [
             "from collections import defaultdict",
-            "dict = defaultdict(int)",
+            "dic = defaultdict(int)",
         ],
         "description": "defaultdict"
     },
