@@ -2,6 +2,14 @@ import sys
 input = lambda: sys.stdin.readline().rstrip()
 INF = 10**18
 
+# 区間に行う操作(最小値:min、最大値:max、区間和:x+y、区間積:x*y、最大公約数:gcd)
+def segfunc(x, y):
+    return min(x, y)
+
+# 単位元(最小値:inf、最大値:-inf、区間和:0、区間積:1、最大公約数:0)
+# 最小値/最大値はfloat('inf')を避けた方が高速化できる
+ide_ele = 10**18
+
 class SegTree:
     """
     init(init_val, segfunc,ide_ele): 配列init_valで初期化 O(N)
@@ -58,8 +66,14 @@ class SegTree:
             r >>= 1
         return res
 
+    def __getitem__(self, k):
+        "k番目の値を取得"
+        if not (0 <= k < self.n): raise IndexError
+        return self.tree[self.num + k]
+
 N,D = map(int,input().split())
 A = list(map(int,input().split()))
+
 L = 10**6
 seg = SegTree([0]*L, max, 0)
 
