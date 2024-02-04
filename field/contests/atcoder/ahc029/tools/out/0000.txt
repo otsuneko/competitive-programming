@@ -1,0 +1,3000 @@
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=39, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+1 0
+2
+# used Card(t=<CardType.CANCEL_ALL: 3>, w=0, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=7, p=8) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=10, p=3) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=9, p=11) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=21, p=24) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=36, p=55) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=30, p=47) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=13, p=12) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=20, p=28) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=34, p=58) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=40, p=33) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=7, p=8) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=28, p=25) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=7, p=8) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=37, p=29) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=4, p=3) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=35, p=30) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=28, p=47) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=15, p=21) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=22, p=37) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=33, p=41) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=47, p=37) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=7, p=9) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=39, p=46) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=10, p=4) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=31, p=54) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=1, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.INVEST: 4>, w=0, p=251) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=54, p=72) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.CANCEL_SINGLE: 2>, w=0, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=12, p=22) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=50, p=92) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=90, p=62) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=36, p=68) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=68, p=28) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=74, p=100) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=42, p=48) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=76, p=98) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=24, p=44) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=8, p=12) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=92, p=76) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=40, p=74) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=14, p=8) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=38, p=60) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=38, p=60) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=56, p=76) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=66, p=98) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=22, p=38) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=46, p=12) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=44, p=60) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.CANCEL_SINGLE: 2>, w=0, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=60, p=96) to target 0
+0 0
+0
+# used Card(t=<CardType.CANCEL_SINGLE: 2>, w=0, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=80, p=110) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=60, p=80) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=14, p=16) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=98, p=68) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=42, p=28) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=14, p=24) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=6, p=10) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=60, p=118) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=44, p=44) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=64, p=32) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=6, p=10) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=56, p=88) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=76, p=140) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=28, p=46) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_ALL: 1>, w=54, p=88) to target 0
+1 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=70, p=134) to target 0
+1 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=62, p=74) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=74, p=140) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=46, p=54) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=24, p=16) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=40, p=52) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=4, p=4) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+1 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=82, p=148) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+1 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=30, p=40) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 1
+1 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=86, p=114) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=30, p=56) to target 0
+1 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=82, p=160) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=2, p=0) to target 0
+1 0
+1
+# used Card(t=<CardType.INVEST: 4>, w=0, p=600) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+2
+# used Card(t=<CardType.CANCEL_SINGLE: 2>, w=0, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_ALL: 1>, w=80, p=80) to target 0
+1 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=160, p=88) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=112, p=196) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=172, p=44) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=12, p=20) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=32, p=36) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=44, p=56) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=32, p=32) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=24, p=40) to target 0
+1 0
+2
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=68, p=44) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=92, p=172) to target 0
+1 0
+1
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=152, p=124) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=132, p=100) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=24, p=32) to target 0
+1 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=8, p=8) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=100, p=144) to target 0
+1 0
+1
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=156, p=128) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=52, p=88) to target 0
+1 0
+2
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=28, p=20) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=140, p=268) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=100, p=128) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=4, p=4) to target 0
+1 0
+1
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=92, p=56) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=136, p=236) to target 0
+1 0
+2
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=120, p=96) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=92, p=132) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+1 1
+1
+# used Card(t=<CardType.CANCEL_SINGLE: 2>, w=0, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=72, p=116) to target 0
+1 0
+1
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=196, p=24) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=200, p=124) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=52, p=96) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=40, p=32) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=140, p=236) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=96, p=180) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=148, p=152) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=124, p=184) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=32, p=56) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=128, p=196) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=76, p=88) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=176, p=296) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=64, p=96) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=68, p=72) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+1 0
+0
+# used Card(t=<CardType.WORK_ALL: 1>, w=80, p=48) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=100, p=56) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=184, p=260) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=100, p=180) to target 0
+0 0
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=152, p=284) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=48, p=92) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=108, p=140) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=8, p=8) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 0
+0 0
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=96, p=180) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+1
+# used Card(t=<CardType.WORK_ALL: 1>, w=200, p=252) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+2
+# used Card(t=<CardType.WORK_ALL: 1>, w=200, p=360) to target 0
+0 0
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0
+# used Card(t=<CardType.WORK_SINGLE: 0>, w=4, p=0) to target 1
+0 1
+0

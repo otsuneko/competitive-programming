@@ -30,6 +30,10 @@ if args[1][:3] == "abc" and int(args[1][3:]) >= 126:
 if args[1][:3] == "abc" and int(args[1][3:]) >= 212:
     file_name += ["g","h"]
 
+# ABC319以降は7問体制
+if args[1][:3] == "abc" and int(args[1][3:]) >= 319:
+    file_name.pop()
+
 # pythonファイル作成
 for f in file_name:
     file_path = contest_path + "/" + f + ".py"

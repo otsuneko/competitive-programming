@@ -34,7 +34,7 @@ que = deque()
 done = [False]*N
 
 '''
-ゴール状態から逆順操作可能なidxを探し、次に操作すべきidxをqueに追加
+終了状態で逆順操作可能なidxを処理し、次に操作すべきidxをqueに追加
 '''
 for idx in range(N-M+1):
     check(idx)
