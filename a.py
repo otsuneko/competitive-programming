@@ -1,71 +1,77 @@
-N,K = map(int,input().split())
-A = list(map(int,input().split()))
+from heapq import heappush, heappop
+import List
+inf=10**18
+DIR = {"U":(-1,0), "R":(0,1), "D":(1,0), "L":(0,-1)}
+INV_DIR = {(-1,0):"U", (0,1):"R", (1,0):"D", (0,-1):"L"}
 
-class SegTree:
-    """
-    init(init_val, segfunc,ide_ele): 配列init_valで初期化 O(N)
-    update(k, x): k番目の値をxに更新 O(N)
-    query(l, r): 区間[l, r)をsegfuncしたものを返す O(logN)
-    """
-    def __init__(self, init_val, segfunc, ide_ele):
-        """
-        n: 要素数
-        num: n以上の最小の2のべき乗
-        tree: セグメント木(1-index)
-        """
-        n = len(init_val)
-        self.segfunc = segfunc
-        self.ide_ele = ide_ele
-        self.num = 1 << (n - 1).bit_length()
-        self.tree = [ide_ele] * 2 * self.num
-        # 配列の値を葉にセット
-        for i in range(n):
-            self.tree[self.num + i] = init_val[i]
-        # 構築していく
-        for i in range(self.num - 1, 0, -1):
-            self.tree[i] = self.segfunc(self.tree[2 * i], self.tree[2 * i + 1])
+H = W = 20
+NUM = 100
+TURN_LIMIT = 4000
+graph = [[-1]*W for _ in range(H)]
 
-    def update(self, k, x):
-        """
-        k番目の値をxに更新
-        k: index(0-index)
-        x: update value
-        """
-        k += self.num
-        self.tree[k] = x
-        while k > 1:
-            self.tree[k >> 1] = self.segfunc(self.tree[k], self.tree[k ^ 1])
-            k >>= 1
+class State:
+    def __init__(self, NUM: int, H: int, W: int, Cards: List[List[int]]):
+        self.NUM = NUM
+        self.H = H
+        self.W = W
+        self.turn = 0
+        self.Cards = Cards
+        self.ans = []
 
-    def query(self, l, r):
-        """
-        [l, r)のsegfuncしたものを得る
-        l: index(0-index)
-        r: index(0-index)
-        """
-        res = self.ide_ele
+        # 現在地
+        self.cur_y, self.cur_x = 0,0
+        # 山札
+        self.deck = []
+        # グリッドの状態(-1が何も置いてない)
+        self.grid = [[[-1] for _ in range(W)] for _ in range(H)]
+        for i,y,x in enumerate(Cards):
+            self.grid[y][x] = i
 
-        l += self.num
-        r += self.num
-        while l < r:
-            if l & 1:
-                res = self.segfunc(res, self.tree[l])
-                l += 1
-            if r & 1:
-                res = self.segfunc(res, self.tree[r - 1])
-            l >>= 1
-            r >>= 1
-        return res
+    # 移動に伴う更新
+    def move(self,y,x,ny,nx):
+        assert 0<=y<H and 0<=x<W and 0<=ny<H and 0<=nx<W
+        dy,dx = ny-y,nx-x
+        if dy==0:
+            dx 
+
+
+    # カードの取得
+    def input_card(self,y,x):
+        assert self.grid[y][x] >= 0
+        self.ans.append("I")
+        self.deck.append(self.grid[y][x])
+        self.grid[y][x] = -1
     
-li = [(10**18, 10**18) for _ in range(N)]
-seg = SegTree(li, min, (10**18,10**18))
-for i in range(N):
-    seg.update(i, (A[i],-i))
+    # カードの設置
+    def output_card(self,y,x):
+        assert self.grid[y][x] == -1
+        self.ans.append("O")
+        self.grid[y][x] = self.deck.pop()
 
-for i in range(N):
-    mi,idx = seg.query(i+1,min(i+K+1,N))
-    if mi < A[i]:
-        A[i],A[-idx] = A[-idx],A[i]
-        break
+class Solver:
 
-print(*A)
+    def __init__(self, NUM: int, H: int, W: int, Cards: List[List[int]]):
+        self.NUM = NUM
+        self.H = H
+        self.W = W
+        self.cards = Cards
+        self.state = State(NUM,H,W,Cards)
+
+
+    def solve(self) -> None:
+        # カードまでの移動経路を求める
+        self.
+
+        # 解の出力
+        print("".join("".join(self.state.ans)))
+
+def main():
+    Cards = [[-1,-1] for _ in range(NUM)]
+    for i in range(100):
+        x,y = map(int,input().split())
+        Cards[i] = [x,y]
+    solver = Solver(NUM,H,W,Cards)
+    solver.solve()
+
+if __name__ == "__main__":
+    main()

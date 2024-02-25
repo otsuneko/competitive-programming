@@ -6875,6 +6875,74 @@ dependencies = [
 ]
 
 [[package]]
+name = "ahc030"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
 name = "aho-corasick"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -7643,16 +7711,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "console_error_panic_hook"
-version = "0.1.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a06aeb73f470f66dcdbf7223caeebb85984942f22f1adb2a088cf9668146bbbc"
-dependencies = [
- "cfg-if",
- "wasm-bindgen",
-]
-
-[[package]]
 name = "counter"
 version = "0.5.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -7698,10 +7756,8 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "be4136b2a15dd319360be1c07d9933517ccf0be8f16bf62a3bee4f0d618df427"
 dependencies = [
  "cfg-if",
- "js-sys",
  "libc",
  "wasi",
- "wasm-bindgen",
 ]
 
 [[package]]
@@ -7806,15 +7862,6 @@ name = "itoa"
 version = "0.4.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b71991ff56294aa922b450139ee08b3bfc70982c6b2c7562771375cf73542dd4"
-
-[[package]]
-name = "js-sys"
-version = "0.3.64"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c5f195fe497f702db0f318b07fdd68edb16955aed830df8363d837542f8f935a"
-dependencies = [
- "wasm-bindgen",
-]
 
 [[package]]
 name = "keyence2020"
@@ -8593,9 +8640,9 @@ checksum = "ab16ced94dbd8a46c82fd81e3ed9a8727dac2977ea869d217bcc4ea1f122e81f"
 
 [[package]]
 name = "svg"
-version = "0.14.0"
+version = "0.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0d703a3635418d4e4d0e410009ddbfb65047ef9468b1d29afd3b057a5bc4c217"
+checksum = "02d815ad337e8449d2374d4248448645edfe74e699343dd5719139d93fa87112"
 
 [[package]]
 name = "syn"
@@ -8807,18 +8854,15 @@ dependencies = [
 
 [[package]]
 name = "tools"
-version = "0.1.0"
+version = "1.0.0"
 dependencies = [
- "anyhow",
  "clap",
- "console_error_panic_hook",
- "getrandom",
- "once_cell",
+ "itertools",
+ "proconio",
  "rand",
  "rand_chacha",
  "rand_distr",
  "svg",
- "wasm-bindgen",
 ]
 
 [[package]]
