@@ -32,6 +32,7 @@ use std::{
 };
 use itertools::Itertools;
 use superslice::Ext;
+use rustc_hash::FxHashMap;
 
 const INF: usize = 1 << 60;
 

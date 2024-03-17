@@ -1,13 +1,4 @@
 {
-    "FileInput": {
-        "scope": "python",
-        "prefix": "FileInput",
-        "body": [
-            "import sys",
-            "stdin = open('tmp\\abcxxx_a\\sample-1.in')",
-        ],
-        "description": "FileInput"
-    },
     "input_graph": {
         "scope": "rust",
         "prefix": "input_graph",
@@ -64,13 +55,21 @@
         ],
         "description": "print_YesNo"
     },
+    "print_debug": {
+        "scope": "rust",
+        "prefix": "print_debug",
+        "body": [
+            "eprintln!(\"{:?}\",$1);",
+        ],
+        "description": "printデバッグ(標準エラー出力)"
+    },
     "debug": {
         "scope": "rust",
         "prefix": "debug_comment",
         "body": [
             "dbg!($1)",
         ],
-        "description": "デバッグ用コメント出力関数"
+        "description": "デバッグ用コメント出力マクロ"
     },
     "cumsum": {
         "scope": "rust",
@@ -216,7 +215,8 @@
         "scope": "rust",
         "prefix": "deque",
         "body": [
-            "let mut deq:VecDeque<usize> = VecDeque::new();",
+            "let mut deque:VecDeque<usize> = VecDeque::new();"
+            "//deque.extend(vec) //既存のvecで初期化する場合",
         ],
         "description": "deque"
     },
@@ -466,10 +466,15 @@
         "description": "倍数判別法"
     },
     "ceil": {
-        "scope": "python",
+        "scope": "rust",
         "prefix": "ceil",
         "body": [
-            "-(-($1)//)",
+            "// Xはi64",
+            "if (X + 9) < 0 && (X + 9) % 10 != 0 {",
+            "    println!(\"{}\", (X + 9) / 10 - 1);",
+            "} else {",
+            "    println!(\"{}\", (X + 9) / 10);",
+            "}",
         ],
         "description": "ceil(切り上げ除算)"
     },
@@ -891,7 +896,7 @@
             "}",
         ],
         "description": "組合せ全探索"
-    },	
+    },
     "combinations_with_replacement": {
         "scope": "rust",
         "prefix": "combinations_with_replacement",
@@ -1151,13 +1156,15 @@
         "description": "二次元座標圧縮"
     },
     "counter": {
-        "scope": "python",
+        "scope": "rust",
         "prefix": "counter",
         "body": [
-            "from collections import Counter",
-            "count = Counter($1)",
+            "let mut count = HashMap::new();",
+            "for c in &S {",
+            "    *count.entry(c).or_insert(0) += 1;",
+            "}",
         ],
-        "description": "数え上げ"
+        "description": "ベクタ内の要素の数え上げ"
     },
     "defaultdict": {
         "scope": "python",

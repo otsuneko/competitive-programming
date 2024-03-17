@@ -1,7 +1,9 @@
 {
     "git.ignoreLimitWarning": true,
     "rust-analyzer.linkedProjects": [
-        "/home/otsuneko/workspace/competitive-programming/Cargo.toml"
+        "/home/otsuneko/workspace/competitive-programming/Cargo.toml",
+        "./field/contests/atcoder/masters-qual/Cargo.toml",
+        "./field/contests/atcoder/masters-qual/Cargo.toml"
     ],
     // ====================================
     // エディタ全体のUIに関する設定
@@ -127,4 +129,5 @@
         "cassert": "cpp"
     },
     "cmake.configureOnOpen": false,
+    "rust-analyzer.showUnlinkedFileNotification": false,
 }
