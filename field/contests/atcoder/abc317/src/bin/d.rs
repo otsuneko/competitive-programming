@@ -13,5 +13,42 @@ const INF: usize = 1 << 60;
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        N: usize,
+        votes: [[usize;3]; N]
+    }
+
+    let su = votes.iter().map(|v| v[2]).sum::<usize>();
+    let mut dp = vec![vec![INF; su+1]; N];
+
+    if votes[0][0] > votes[0][1] {
+        dp[0][votes[0][2]] = 0;
+    } else {
+        dp[0][votes[0][2]] = (votes[0][1] - votes[0][0] + 1) / 2;
+        dp[0][0] = 0;
+    }
+
+    for i in 1..N {
+        for j in 0..=su {
+            if dp[i-1][j] == INF {
+                continue;
+            }
+
+            if votes[i][0] > votes[i][1] {
+                dp[i][j+votes[i][2]] = dp[i-1][j];
+            } else {
+                dp[i][j] = min(dp[i][j],dp[i-1][j]);
+                dp[i][j+votes[i][2]] = dp[i-1][j] + (votes[i][1] - votes[i][0] + 1) / 2;
+            }
+        }
+    }
+
+    let mut ans = INF;
+    for i in su/2+1..=su {
+        ans = min(ans, dp[N-1][i]);
+    }
+
+    println!("{}", ans);
+
+
 }

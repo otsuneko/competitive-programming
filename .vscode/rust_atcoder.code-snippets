@@ -71,6 +71,14 @@
         ],
         "description": "デバッグ用コメント出力マクロ"
     },
+    "MOVE": {
+        "scope": "rust",
+        "prefix": "MOVE",
+        "body": [
+            "const MOVE: [(usize, usize); 4] = [(!0, 0), (0, 1), (1, 0), (0, !0)]; //縦横移動",
+        ],
+        "description": "縦横移動"
+    },
     "cumsum": {
         "scope": "rust",
         "prefix": "cumsum",

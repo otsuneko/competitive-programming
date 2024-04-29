@@ -1,0 +1,162 @@
+#![allow(dead_code,unused_imports,unused_variables,non_snake_case, non_upper_case_globals, path_statements)]
+use proconio::{fastout, input,marker::{Chars, Bytes, Isize1, Usize1}};
+use std::{
+    cmp::{max, min, Reverse},
+    collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque},
+    mem::swap,
+    process::exit,
+    time::Instant
+};
+use itertools::Itertools;
+use superslice::Ext;
+use rustc_hash::FxHashMap;
+
+const TIME_LIMIT: f64 = 1.6;
+const INF: usize = usize::MAX;
+const MOD: i64 = 998244353;
+
+#[derive(Clone)]
+struct Solver {
+    n: usize,
+    m: usize,
+    k: usize,
+    a: Vec<Vec<i64>>,
+    stamps: Vec<Vec<Vec<i64>>>,
+    start_time: Instant,
+    current_time: Instant,
+    best_score: i64,
+    ans: Vec<(usize, usize, usize)>,
+}
+
+impl Solver {
+    fn new(n: usize, m: usize, k: usize, a: Vec<Vec<i64>>, stamps: Vec<Vec<Vec<i64>>>) -> Self {
+        Solver {
+            n,
+            m,
+            k,
+            a,
+            stamps,
+            start_time: Instant::now(),
+            current_time: Instant::now(),
+            best_score: 0,
+            ans: Vec::new(),
+        }
+    }
+
+    fn solve(&mut self) {
+        self.best_score = self.calc_score(&self.a);
+        // K回ループ
+        for y in 0..self.n-2 {
+            for x in 0..self.n-2 {
+                if y == self.n-3 || x == self.n-3 {
+                    self.greedy_choice_nine(y,x);
+                } else {
+                    self.greedy_choice_one(y,x);
+                }
+            }
+        }
+
+        println!("{}", self.ans.len());
+        for &(m, p, q) in &self.ans {
+            println!("{} {} {}", m, p, q);
+        }
+
+        eprintln!("{}", self.ans.len());
+        eprintln!("Score = {}", self.calc_score(&self.a));
+    }
+
+    fn greedy_choice_nine(&mut self, y:usize, x:usize) {
+        let mut cand_add = vec![];
+        for m in 0..self.m {
+            let mut b = self.a.clone();
+            for dy in 0..3 {
+                for dx in 0..3 {
+                    b[y+dy][x+dx] = (b[y+dy][x+dx] + self.stamps[m][dy][dx]) % MOD;
+                }
+            }
+            let score = self.calc_score(&b);
+            let mut stamps = vec![];
+            stamps.push(m);
+            cand_add.push((score,stamps,b));
+        }
+
+        let mut cand_add2 = BinaryHeap::new();
+        while cand_add.len() > 0 {
+            let (score,stamps2,b2) = cand_add.pop().unwrap();
+            let c = b2.clone();
+            let stamps3 = stamps2.clone();
+            cand_add2.push((score,stamps2,c));
+            for m in 0..self.m {
+                let mut c = b2.clone();
+                let mut stamps3 = stamps3.clone();
+                for dy in 0..3 {
+                    for dx in 0..3 {
+                        c[y+dy][x+dx] = (c[y+dy][x+dx] + self.stamps[m][dy][dx]) % MOD;
+                    }
+                }
+                let score = self.calc_score(&c);
+                stamps3.push(m);
+                cand_add2.push((score,stamps3,c));
+            }
+        }
+
+        let (score,stamps,b) = cand_add2.pop().unwrap();
+
+        for dy in 0..3 {
+            for dx in 0..3 {
+                self.a[y+dy][x+dx] = b[y+dy][x+dx];
+            }
+        }
+        for m in stamps {
+            self.ans.push((m, y, x));
+        }
+        self.best_score = self.calc_score(&self.a);
+    }
+
+    fn greedy_choice_one(&mut self, y:usize, x:usize) {
+        let mut best_score = self.a[y][x];
+        let mut best_m = 0;
+        for m in 0..self.m {
+            let mut b = self.a.clone();
+            for dy in 0..3 {
+                for dx in 0..3 {
+                    b[y+dy][x+dx] = (b[y+dy][x+dx] + self.stamps[m][dy][dx]) % MOD;
+                }
+            }
+            let score = b[y][x];
+            if score > best_score {
+                best_score = score;
+                best_m = m;
+            }
+        }
+
+        for dy in 0..3 {
+            for dx in 0..3 {
+                self.a[y+dy][x+dx] = (self.a[y+dy][x+dx] + self.stamps[best_m][dy][dx]) % MOD;
+            }
+        }
+        self.ans.push((best_m, y, x));
+        self.best_score = self.calc_score(&self.a);
+    }
+
+    fn calc_score(&self, a: &[Vec<i64>]) -> i64 {
+        let mut score = 0;
+        for y in 0..self.n {
+            for x in 0..self.n {
+                score += a[y][x] % MOD;
+            }
+        }
+        score
+    }
+}
+
+fn main() {
+    input! {
+        n: usize, m: usize, k: usize,
+        a: [[i64; n]; n],
+        stamps: [[[i64; 3]; 3]; m]
+    }
+
+    let mut solver = Solver::new(n, m, k, a, stamps);
+    solver.solve();
+}

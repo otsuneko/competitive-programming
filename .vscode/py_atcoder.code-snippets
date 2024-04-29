@@ -46,7 +46,7 @@
 		"scope": "python",
         "prefix":"input_line int(single)",
 		"body":[
-            " int(input())"
+            "int(input())"
         ],
 		"description":"input int(single)",
 	},
@@ -54,7 +54,7 @@
 		"scope": "python",
         "prefix":"input_line int(multiple)",
 		"body":[
-            " map(int,input().split())"
+            "map(int,input().split())"
         ],
 		"description":"input int(multiple)",
 	},
@@ -62,7 +62,7 @@
 		"scope": "python",
         "prefix":"input_line list(int)",
 		"body":[
-            " list(map(int,input().split()))"
+            "list(map(int,input().split()))"
         ],
 		"description":"input list(int)",
 	},
@@ -70,7 +70,7 @@
 		"scope": "python",
         "prefix":"input_lines list(int)",
 		"body":[
-            " [int(input()) for _ in range($1)]"
+            "[int(input()) for _ in range($1)]"
         ],
 		"description":"input_lines list(int)",
 	},
@@ -78,7 +78,7 @@
 		"scope": "python",
         "prefix":"input_lines list(multiple_int)",
 		"body":[
-            " [list(map(int,input().split())) for _ in range($1)]"
+            "[list(map(int,input().split())) for _ in range($1)]"
         ],
 		"description":"input_lines list(multiple_int)",
 	},
@@ -86,7 +86,7 @@
 		"scope": "python",
         "prefix":"input_line list(string)",
 		"body":[
-            " list(input())"
+            "list(input())"
         ],
 		"description":"input line list(string)",
 	},
@@ -94,7 +94,7 @@
 		"scope": "python",
         "prefix":"input_lines list(string)",
 		"body":[
-            " [list(input()) for _ in range($1)]"
+            "[list(input()) for _ in range($1)]"
         ],
 		"description":"input_lines list(string)",
 	},
@@ -171,6 +171,7 @@
         "description": ""
     },
     "MOVE": {
+        "scope": "python",
         "prefix": "MOVE",
         "body": [
             "MOVE = ([1, 0], [-1, 0], [0, 1], [0, -1]) #縦横移動",
@@ -2771,6 +2772,7 @@
         "description": "SCC(強連結成分分解)"
     },
     "dfs_graph": {
+        "scope": "python",
         "prefix": "dfs_graph",
         "body": [
             "import sys,pypyjit",
@@ -3482,11 +3484,11 @@
         "body": [
             "# 区間に行う操作(最小値:min、最大値:max、区間和:x+y、区間積:x*y、最大公約数:gcd)",
             "def segfunc(x, y):",
-            "    return min(x, y)",
+            "    return x+y",
             "",
             "# 単位元(最小値:inf、最大値:-inf、区間和:0、区間積:1、最大公約数:0)",
             "# 最小値/最大値はfloat('inf')を避けた方が高速化できる",
-            "ide_ele = 10**18",
+            "ide_ele = 0",
             "",
             "class SegTree:",
             "    \"\"\"",
@@ -3549,12 +3551,19 @@
             "        if not (0 <= k < self.n): raise IndexError",
             "        return self.tree[self.num + k]",
             "",
+            "    def bisect(self, x):",
+            "        \"a1 + a2 + ... + an >= x となる最小のidxを返す\"",
+            "        \"nが含まれる場合1、それ以外を0として管理すれば、x番目に小さい値を取得可能\"",
+            "        lo, hi = 0, self.num",
+            "        while lo < hi:",
+            "            mid = (lo+hi)//2",
+            "            if self.query(0, mid + 1) < x:",
+            "                lo = mid + 1",
+            "            else:",
+            "                hi = mid",
+            "        return lo",
+            "",
             "seg = SegTree(, segfunc, ide_ele)",
-            "'''",
-            "print(seg.query(0, 8))",
-            "seg.update(5, 0)",
-            "print(seg.query(0, 8))",
-            "'''",
         ],
         "description": "抽象化セグメント木"
     },

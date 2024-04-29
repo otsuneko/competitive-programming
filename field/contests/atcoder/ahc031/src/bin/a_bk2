@@ -1,0 +1,518 @@
+#![allow(dead_code,unused_imports,unused_variables,non_snake_case, non_upper_case_globals, path_statements)]
+use proconio::{fastout, input,marker::{Chars, Bytes, Isize1, Usize1}};
+use std::{
+    cmp::{max, min, Reverse},
+    collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque},
+    mem::swap,
+    process::exit,
+};
+use itertools::Itertools;
+use superslice::Ext;
+use rustc_hash::FxHashMap;
+use rand::prelude::*;
+use rand::Rng;
+
+const INF: usize = usize::MAX;
+const TIME_LIMIT: f64 = 3.0 * 0.5;
+
+#[derive(Debug,Clone)]
+pub struct Rect {
+    x1: usize, // 左上のx座標
+    y1: usize, // 左上のy座標
+    x2: usize, // 右下のx座標
+    y2: usize, // 右下のy座標
+    area: usize, // 面積
+    col_id: usize, // どの列に配置するか
+    req_id: usize // どの顧客希望面積に対応するか(暫定。処理途中で値バグるかも)
+}
+
+pub struct Solve {
+    W: usize, // 幅と高さ。1000固定
+    D: usize, // 日数。5~50の一様分布
+    N: usize, // 日毎の長方形数。5~50の一様分布
+    req_areas: Vec<Vec<usize>>, // 日毎の顧客希望面積一覧(昇順)
+}
+
+impl Solve {
+    pub fn new(w: usize, d:usize, n:usize, req_areas:Vec<Vec<usize>>) -> Self {
+        Self {
+            W: w,
+            D: d,
+            N: n,
+            req_areas: req_areas,
+        }
+    }
+
+    pub fn solve(&self) {
+
+        // 時間計測
+        get_time();
+
+        // 乱数生成器
+        // let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(890482);
+
+        // ステップ１：列の分割数を変えながら探索面積が大きいものから貪欲に配置
+        // 先頭行から順番に必要な面積をカバーできるだけの行を選択していく
+        // 配置した長方形は各列の高さの差が最小となるよう列ごとに管理
+        let mut best_cost = INF;
+        let min_split_num:usize = if self.N < 30 { 1 } else { 3 }; // 列を最小何分割するか
+        let max_split_num:usize = if self.N < 30 { 6 } else { 10 }; // 列を最大何分割するか
+        let mut best_col_rects:Vec<Vec<Vec<Rect>>> = vec![vec![vec![];max_split_num];self.D]; // 日毎と列毎の長方形配置
+        for col_split_num in min_split_num..=max_split_num {
+            // D日分の処理
+            let mut rects:Vec<Vec<Rect>> = vec![vec![];self.D];
+            let mut col_rects:Vec<Vec<Vec<Rect>>> = vec![vec![vec![];col_split_num];self.D];
+            for d in 0..self.D {
+                let col_len = self.W / col_split_num;
+                let mut rows = vec![0;col_split_num];
+                // N個の長方形を大きい順に配置
+                for n in (0..self.N).rev() {
+                    // 全列の縦の長さの残差平方和が最小になる列を選択
+                    let mut squared_sum = vec![INF;col_split_num];
+                    let mut add_rows = vec![0;col_split_num];
+                    for col in 0..col_split_num {
+                        // 既に長方形で埋まっている列はスキップ
+                        if rows[col] == self.W {
+                            continue;
+                        }
+                        // 仮に追加した場合の残差平方和を計算
+                        let mut tmp_rows = rows.clone();
+                        for add_row in 1..=self.W {
+                            if add_row * col_len >= self.req_areas[d][n] || rows[col] + add_row == self.W {
+                                tmp_rows[col] += add_row;
+                                add_rows[col] = add_row;
+                                break;
+                            }
+                        }
+
+                        // 充填率0の列は1個にまとめる
+                        let cnt_zero = tmp_rows.iter().filter(|&r| *r == 0).count();
+                        let mean = tmp_rows.iter().sum::<usize>() / (col_split_num - cnt_zero);
+                        let mut sum = 0;
+                        for r in tmp_rows.iter() {
+                            sum += (r - mean).pow(2);
+                        }
+                        squared_sum[col] = sum;
+                    }
+
+                    // 最小の残差平方和を持つ列のインデックスを取得
+                    let mut min_col = 0;
+                    let mut min_val = INF;
+                    for col in 0..col_split_num {
+                        if squared_sum[col] < min_val {
+                            min_val = squared_sum[col];
+                            min_col = col;
+                        }
+                    }
+
+                    // 長方形を追加
+                    let rect = Rect{
+                        x1: min_col*col_len,
+                        y1: rows[min_col],
+                        x2: (min_col+1)*col_len,
+                        y2: rows[min_col]+add_rows[min_col],
+                        area: add_rows[min_col] * col_len,
+                        col_id: min_col,
+                        req_id: n
+                    };
+                    rects[d].push(rect.clone());
+                    col_rects[d][min_col].push(rect.clone());
+                    rows[min_col] += add_rows[min_col];
+                }
+            }
+            // スコアが最大の場合を採用
+            let cost = self.compute_cost(&mut rects);
+            if cost < best_cost {
+                best_cost = cost;
+                best_col_rects = col_rects.clone();
+            }
+        }
+
+        // ステップ２：パーティションのズレ補正その１
+        let mut col_rects = best_col_rects.clone();
+
+        // dbg!(&col_cumsum_height,&col_total_height);
+
+        // 面積の大きい長方形をなるべく左の列に寄せることで、前後日のパーティション変更回数を減らす
+        // 右側に面積の小さい長方形が寄るので、サイズ調整によるパーティション変更防止もしやすいはず
+        for d in 0..self.D {
+            let mut loop_cnt = 0; // 全列を何周したか
+
+            while loop_cnt < self.N {
+                let mut best_score = 0.0;
+                let (mut best_top, mut best_bottom) = (0,0); //topとbottom
+                let mut best_rect_pos = (0,0); //colとn
+
+                // 各列のy1の値をリストに格納して、二分探索や累積和で高速に操作できるようにする
+                let (col_cumsum_height, col_total_height) = self.calc_cumsum(&col_rects);
+                dbg!(&col_total_height[d][0],&col_cumsum_height[d][0]);
+
+                for col in 1..col_rects[d].len() {
+                    // loop_cnt番目に面積が大きい長方形を選ぶ
+                    if loop_cnt >= col_rects[d][col].len() {
+                        continue;
+                    }
+                    // 対象の長方形を0列目に移動できるか確認
+                    let right_height = col_rects[d][col][loop_cnt].y2 - col_rects[d][col][loop_cnt].y1;
+                    // 0列目のy1とy2を順番に見ていって、面積の差が小さいペアがあれば交換
+                    let n = col_cumsum_height[d][0].len();
+                    for top in 0..n-1 {
+                        for bottom in top+1..n {
+                            let left_height = col_cumsum_height[d][0][bottom] - col_cumsum_height[d][0][top];
+
+                            // 高さを比較し、交換したときにお互いの高さがスペースに収まるか確認
+                            // 候補長方形が列0に収まるか(余白も考慮)
+                            let left_free_space = col_total_height[d][0] - left_height;
+                            if left_free_space + right_height > self.W {
+                                continue;
+                            }
+                            // 列0の長方形たちが列colに収まるか(余白も考慮)
+                            let right_free_space = col_total_height[d][col] - right_height;
+                            if  right_free_space + left_height > self.W {
+                                continue;
+                            }
+                            // 評価値は高さの差と0列目の長方形を何個含んでいるかで計算
+                            let diff_height = (right_height as isize - (self.W - left_free_space) as isize).abs();
+                            let num_rects = bottom - top;
+                            // 交換する0列目の長方形が1個で、かつ0列目の余白が減らない場合は交換しない
+                            if num_rects == 1 {
+                                continue;
+                            }
+                            let score:f64 = (num_rects as f64 / (diff_height + 1) as f64) as f64;
+                            if score > best_score {
+                                best_score = score;
+                                (best_top, best_bottom) = (top,bottom);
+                                best_rect_pos = (col,loop_cnt);
+                            }
+                        }
+                    }
+                }
+
+                // 長方形を交換
+                if best_score > 0.0 {
+                    // TODO: l列目のn番目の長方形とr列目のm番目の長方形を交換できるよう関数化(複数の長方形も指定可能に)
+
+                    // 交換先(右側の列)の長方形
+                    let (col, n) = best_rect_pos;
+                    let mut right_rect = col_rects[d][col][n].clone();
+
+                    // col列目の長方形を交換
+                    col_rects[d][col].remove(n);
+                    dbg!(best_top, best_bottom, &col_rects[d][0]);
+                    for i in best_top..best_bottom {
+                        let mut left_rect = col_rects[d][0][i].clone();
+                        left_rect.x1 = right_rect.x1;
+                        left_rect.x2 = right_rect.x2;
+                        left_rect.col_id = col;
+                        col_rects[d][col].push(left_rect);
+                    }
+
+                    // col列目の長方形の高さを更新
+                    let mut cur_right_height = 0;
+                    for i in 0..col_rects[d][col].len() {
+                        let rect_height = col_rects[d][col][i].y2 - col_rects[d][col][i].y1;
+                        col_rects[d][col][i].y1 = cur_right_height;
+                        col_rects[d][col][i].y2 = cur_right_height + rect_height;
+                        cur_right_height += rect_height;
+                    }
+
+                    // 0列目の長方形を更新
+                    let rect_height = right_rect.y2 - right_rect.y1;
+                    let cur_left_height = col_rects[d][0][best_top].y1;
+                    right_rect.x1 = 0;
+                    right_rect.y1 = cur_left_height;
+                    right_rect.x2 = self.W / col_rects[d].len();
+                    right_rect.y2 = cur_left_height + rect_height;
+                    right_rect.col_id = 0;
+                    // dbg!(&col_rects[d][0].len());
+                    col_rects[d][0].drain(best_top..best_bottom);
+                    col_rects[d][0].push(right_rect);
+                    // dbg!(&col_rects[d][0].len());
+
+                    // 0列目の長方形の高さを更新
+                    let mut cur_left_height = 0;
+                    for i in 0..col_rects[d][0].len() {
+                        let rect_height = col_rects[d][0][i].y2 - col_rects[d][0][i].y1;
+                        col_rects[d][0][i].y1 = cur_left_height;
+                        col_rects[d][0][i].y2 = cur_left_height + rect_height;
+                        cur_left_height += rect_height;
+                    }
+
+                    // let mut su = 0;
+                    // for i in 0..self.D {
+                    //     for j in 0..col_rects[i].len() {
+                    //         su += col_rects[i][j].len();
+                    //     }
+                    // }
+                    // dbg!(su);
+
+                }
+                loop_cnt += 1;
+            }
+        }
+
+        // ステップ３：希望面積に満たない長方形の面積補正
+        // 希望面積との差が最大のものを列0に配置、その隣に総面積最小の列を移動
+        // 列0を右に広げ、列1で希望面積を満たせないものは下に伸ばす(3,6,7,9と割り切れない列数なら余り列を使う)
+        // でもこれをすると前後日のパーティションがずれるから、先にやるべきか？
+
+        // ステップ４：パーティションのズレ補正その２
+        // 簡単：各列で一番下にある長方形のy2を取得し、self.Wになるように調整する
+        // 中くらい：D日間で１番小さい面積の長方形の最大値に高さを揃えて最も空き面積の大きい列に配置(２番目以降も同様)
+        // 難しい：D日間で最も差が少ない長方形(１個か複数個の和)を求め、最も空き面積の大きい列の一番下に配置(面積が大きすぎると置けない)
+        // for d in 0..self.D {
+        //     for col in 0..best_col_rects[d].len() {
+        //         // 各列で一番下にある長方形のy2を取得し、self.Wになるように調整
+        //         let id = best_col_rects[d][col].len()-1;
+        //         best_col_rects[d][col][id].y2 = self.W;
+        //     }
+        // }
+
+
+        // dbg!(get_time());
+
+        // 焼きなましで面積を変更する
+        // const T0: f64 = 5e6;
+        // const T1: f64 = 1e6;
+        // let mut cnt = 0;
+        // let mut T = T0;
+        // loop {
+        //     cnt += 1;
+        //     if cnt%100 == 0 {
+        //         let t = get_time() / ((TIME_LIMIT / self.D as f64));
+        //         if t >= 1.0 {
+        //             break;
+        //         }
+        //         T = T0.powf(1.0 - t) * T1.powf(t);
+        //     }
+
+        //     // スコア計算
+        //     let mut rects = best_rects.clone();
+        //     let old_cost = self.compute_cost(&mut rects);
+        //     // 乱数で日とRectを選択
+        //     let d = rng.gen_range(0..self.D);
+        //     let n = rng.gen_range(0..self.N);
+        //     let change_len = rng.gen_range(1..5);
+
+        //     let (old_x1, old_y1, old_x2, old_y2, old_area) = (rects[d][n].x1, rects[d][n].y1, rects[d][n].x2, rects[d][n].y2, rects[d][n].area);
+        //     // 選択したRectをランダムに伸縮、移動させる
+        //     let (new_x1, new_y1, new_x2, new_y2) = match rng.gen_range(0..12) {
+        //         1 => { (old_x1, old_y1.wrapping_sub(block_len), old_x2, old_y2) },
+        //         2 => { (old_x1, old_y1, old_x2 + block_len, old_y2) },
+        //         3 => { (old_x1, old_y1, old_x2, old_y2 + block_len) },
+        //         4 => { (old_x1.wrapping_sub(block_len), old_y1, old_x2.wrapping_sub(block_len), old_y2) },
+        //         5 => { (old_x1, old_y1.wrapping_sub(block_len), old_x2, old_y2.wrapping_sub(block_len)) },
+        //         6 => { (old_x1 + block_len, old_y1, old_x2 + block_len, old_y2) },
+        //         7 => { (old_x1, old_y1 + block_len, old_x2, old_y2 + block_len) },
+        //         8 => { (old_x1 + block_len, old_y1, old_x2, old_y2) },
+        //         9 => { (old_x1, old_y1 + block_len, old_x2, old_y2) },
+        //         10 => { (old_x1, old_y1, old_x2 - block_len, old_y2) },
+        //         11 => { (old_x1, old_y1, old_x2, old_y2 - block_len) },
+        //         _ => unreachable!("impossible")
+        //     };
+        //     let new_area = (new_x2 - new_x1) * (new_y2 - new_y1);
+
+        //     if new_x1 >= new_x2 || new_y1 >= new_y2 || new_x2 > self.W || new_y2 > self.W || self.is_overlap(new_x1, new_y1, new_x2, new_y2, &rects, n){
+        //         continue;
+        //     }
+
+        //     rects[n] = Rect{x1:new_x1, y1:new_y1, x2:new_x2, y2:new_y2, area:new_area};
+        //     let mut new_rects = rects.clone();
+        //     let new_cost = self.compute_cost(d, &mut new_rects);
+        //     // dbg!(old_cost, new_cost, f64::exp((new_cost - old_cost) / T).clamp(0.0, 1.0));
+        //     if old_cost < new_cost && !rng.gen_bool(f64::exp((new_cost - old_cost) / T).clamp(0.0, 1.0)) {
+        //         (rects[n].x1, rects[n].y1, rects[n].x2, rects[n].y2, rects[n].area) = (old_x1,old_y1,old_x2,old_y2,old_area);
+        //     }
+
+        //     // スコアが改善されたら更新
+        //     let cost = self.compute_cost(d, &mut rects);
+        //     if cost > best_cost {
+        //         // dbg!(n, rects[n].x1, rects[n].y1, rects[n].x2, rects[n].y2);
+        //         best_cost = cost;
+        //         best_rects = rects.clone();
+        //     }
+        // }
+
+        // dbg!(cnt);
+
+        dbg!(&col_rects[0]);
+
+        // best_col_rectsから日毎に面積で昇順ソートされたbest_rectsを復元
+        let mut best_rects = vec![vec![];self.D];
+        best_col_rects = col_rects.clone();
+        for d in 0..self.D {
+            for col in 0..best_col_rects[d].len() {
+                for n in 0..best_col_rects[d][col].len() {
+                    best_rects[d].push(&best_col_rects[d][col][n]);
+                }
+            }
+            best_rects[d].sort_by_key(|r| r.req_id);
+        }
+
+        // 回答出力
+        for d in 0..self.D {
+            for n in 0..self.N {
+                println!("{} {} {} {}", best_rects[d][n].y1, best_rects[d][n].x1, best_rects[d][n].y2, best_rects[d][n].x2);
+            }
+        }
+    }
+
+    // 作成した長方形が他の長方形と重ならないかチェック
+    fn is_overlap(&self, x1:usize, y1:usize, x2:usize, y2:usize, rects:&Vec<Rect>, n:usize) -> bool {
+        for i in 0..rects.len() {
+            if i == n {
+                continue;
+            }
+            let (x3,y3,x4,y4) = (rects[i].x1,rects[i].y1,rects[i].x2,rects[i].y2);
+            if max(x1, x3) < min(x2, x4) && max(y1, y3) < min(y2, y4) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    fn calc_cumsum(&self, col_rects:&Vec<Vec<Vec<Rect>>>) -> (Vec<Vec<Vec<usize>>>, Vec<Vec<usize>>) {
+        let col_split_num = col_rects[0].len();
+        let mut col_cumsum_height:Vec<Vec<Vec<usize>>> = vec![vec![vec![];col_split_num];self.D];
+        let mut col_total_height:Vec<Vec<usize>> = vec![vec![0;col_split_num];self.D];
+        for d in 0..self.D {
+            for col in 0..col_split_num {
+                for n in 0..col_rects[d][col].len() {
+                    col_cumsum_height[d][col].push(col_rects[d][col][n].y1);
+                }
+                // 累積和に長方形の高さの合計を追加
+                col_cumsum_height[d][col].push(col_rects[d][col][col_rects[d][col].len()-1].y2);
+                col_total_height[d][col] = col_rects[d][col][col_rects[d][col].len()-1].y2;
+            }
+        }
+        (col_cumsum_height, col_total_height)
+    }
+
+    // スコア計算(希望面積との差だけを考慮)
+    fn compute_cost_area_only(&self, d:usize, rects:&mut Vec<Vec<Rect>>) -> f64 {
+        // d日目の顧客希望面積に対する長方形配置のコストを計算
+        rects[d].sort_by_key(|r| r.area);
+        let mut cost = 1.0;
+        for n in 0..self.N {
+            let a = self.req_areas[d][n] as f64;
+            let b = rects[d][n].area as f64;
+            if a > b {
+                // 顧客希望面積と長方形の面積の差分をコストに加算
+                cost += 100.0 * (a - b);
+            // } else {
+            //     // 顧客希望面積よりも大きすぎる長方形の面積を確保した場合もコストに加算
+            //     cost += 10.0 * (b - a);
+            }
+        }
+        // TODO: 前日のパーティションとのずれをコストに加算
+        1e15 / cost
+    }
+
+    // スコア計算(希望面積との差、前日のパーティションとのずれを考慮)
+    // スコアは小さいほど良いことに注意
+    fn compute_cost(&self, rects: &mut Vec<Vec<Rect>>) -> usize {
+
+        let mut cost = 0;
+        let mut hs = BTreeSet::new();
+        let mut vs = BTreeSet::new();
+        for d in 0..self.D {
+            // 長方形同士が重なっていないかチェックし、重なっている場合は最大スコアを返す
+            for p in 0..self.N {
+                // 長方形の面積が0になっていないかチェックし、0になっている場合は最大スコアを返す
+                if rects[d][p].area == 0 || rects[d][p].x1 >= rects[d][p].x2 || rects[d][p].y1 >= rects[d][p].y2{
+                    return INF;
+                }
+                for q in 0..p {
+                    if max(rects[d][p].x1, rects[d][q].x1) < min(rects[d][p].x2, rects[d][q].x2) &&
+                       max(rects[d][p].y1, rects[d][q].y1) < min(rects[d][p].y2, rects[d][q].y2)
+                    {
+                        return INF;
+                    }
+                }
+            }
+            rects[d].sort_by_key(|r| r.area);
+            let mut hs2 = BTreeSet::new();
+            let mut vs2 = BTreeSet::new();
+
+            // 希望面積との差
+            for n in 0..self.N {
+                let (y1, x1, y2, x2) = (rects[d][n].y1, rects[d][n].x1, rects[d][n].y2, rects[d][n].x2);
+                let b = (y2 - y1) * (x2 - x1);
+                if self.req_areas[d][n] > b {
+                    cost += 100 * (self.req_areas[d][n] - b) as i64;
+                }
+                for x in x1..x2 {
+                    if y1 > 0 {
+                        hs2.insert((y1, x));
+                    }
+                    if y2 < self.W {
+                        hs2.insert((y2, x));
+                    }
+                }
+                for y in y1..y2 {
+                    if x1 > 0 {
+                        vs2.insert((x1, y));
+                    }
+                    if x2 < self.W {
+                        vs2.insert((x2, y));
+                    }
+                }
+            }
+            // 前日のパーティションとのずれ
+            if d > 0 {
+                for &(y, x) in &hs {
+                    if !hs2.contains(&(y, x)) {
+                        cost += 1;
+                    }
+                }
+                for &(x, y) in &vs {
+                    if !vs2.contains(&(x, y)) {
+                        cost += 1;
+                    }
+                }
+                for &(y, x) in &hs2 {
+                    if !hs.contains(&(y, x)) {
+                        cost += 1;
+                    }
+                }
+                for &(x, y) in &vs2 {
+                    if !vs.contains(&(x, y)) {
+                        cost += 1;
+                    }
+                }
+            }
+            hs = hs2;
+            vs = vs2;
+        }
+        (cost + 1) as usize
+    }
+}
+
+#[fastout]
+fn main() {
+    input! {
+        w: usize,
+        d: usize,
+        n: usize,
+        req_areas: [[usize;n];d]
+    }
+
+    let solve = Solve::new(w,d,n,req_areas);
+    solve.solve();
+
+}
+
+////////////////////////////////////////
+// ここから下はテンプレート
+////////////////////////////////////////
+pub fn get_time() -> f64 {
+	static mut STIME: f64 = -1.0;
+	let t = std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).unwrap();
+	let ms = t.as_secs() as f64 + t.subsec_nanos() as f64 * 1e-9;
+	unsafe {
+		if STIME < 0.0 {
+			STIME = ms;
+		}
+		ms - STIME
+	}
+}

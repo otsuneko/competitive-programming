@@ -1,0 +1,291 @@
+#![allow(dead_code,unused_imports,unused_variables,non_snake_case, non_upper_case_globals, path_statements)]
+use proconio::{fastout, input,marker::{Chars, Bytes, Isize1, Usize1}};
+use std::{
+    cmp::{max, min, Reverse},
+    collections::{BTreeMap, BTreeSet, BinaryHeap, HashMap, HashSet, VecDeque},
+    mem::swap,
+    process::exit,
+};
+use itertools::Itertools;
+use superslice::Ext;
+use rustc_hash::FxHashMap;
+use rand::prelude::*;
+use rand::Rng;
+
+const INF: usize = 1 << 60;
+const TIME_LIMIT: f64 = 3.0 * 0.5;
+
+#[derive(Clone)]
+pub struct Rect {
+    x1: usize,
+    y1: usize,
+    x2: usize,
+    y2: usize,
+    area: usize
+}
+
+pub struct Solve {
+    W: usize, // 1000固定
+    D: usize, // 5~50
+    N: usize, // 5~50
+    req_areas: Vec<Vec<usize>>
+}
+
+impl Solve {
+    pub fn new(w: usize, d:usize, n:usize, req_areas:Vec<Vec<usize>>) -> Self {
+        Self {
+            W: w,
+            D: d,
+            N: n,
+            req_areas: req_areas
+        }
+    }
+
+    pub fn solve(&self) {
+
+        // 時間計測
+        get_time();
+
+        // 乱数生成器
+        // rng.gen_range(0..2)のように使う
+        let mut rng = rand_pcg::Pcg64Mcg::seed_from_u64(890482);
+
+        // N個の長方形の左上座標と右下座標をD日分格納する
+        let mut ans = vec![vec![Rect{x1:0,y1:0,x2:1,y2:1,area:1};self.N];self.D];
+
+        // D日分の処理
+        for d in 0..self.D {
+            // Nの値によって区画の大きさを変更する
+            let mut block_num: usize;
+            let mut block_len: usize;
+            if self.N > 10 {
+                block_num = 50;
+                block_len = self.W / block_num;
+            } else {
+                block_num = 10;
+                block_len = self.W / block_num;
+            }
+
+            //面積が大きい順に貪欲に配置
+            let mut rects = Vec::<Rect>::new();
+            let mut used_pos = vec![vec![false;block_num];block_num];
+            let mut cur_row = 0;
+            for n in (0..self.N).rev() {
+                if cur_row < (self.W as f64 * 0.75) as usize {
+                    // 上の行から順番に、必要な面積をカバーできるだけの行を選択していく
+                    let size = self.req_areas[d][n];
+                    for row in 0..self.W {
+                        if row * self.W >= size {
+                            rects.push(Rect{x1:0,y1:cur_row,x2:self.W,y2:min(cur+row,self.W),area:row * self.W});
+                            cur_row += row;
+                            break;
+                        }
+                    }
+                } else {
+                    let mut max_area = 0;
+                    let mut min_cover_ratio = f64::MAX;
+                    let (mut max_bx1, mut max_by1, mut max_bx2, mut max_by2) = (0,0,0,0);
+                    for by1 in 0..block_num {
+                        for bx1 in 0..block_num {
+                            if used_pos[by1][bx1] {
+                                continue;
+                            }
+                            for by2 in by1+1..=block_num {
+                                for bx2 in bx1+1..=block_num {
+                                    let area = (bx2 - bx1) * (by2 - by1) * block_len * block_len;
+                                    let cover_ratio = area as f64 / self.req_areas[d][n] as f64;
+                                    if area >= self.req_areas[d][n] && cover_ratio <= min_cover_ratio && !self.is_overlap(block_len * bx1, block_len * by1, block_len * bx2, block_len * by2, &rects, self.N) {
+                                        max_area = area;
+                                        min_cover_ratio = cover_ratio;
+                                        (max_bx1,max_by1,max_bx2,max_by2) = (bx1,by1,bx2,by2);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // 希望面積を満たす場所が無かった場合は残った場所を割り当てる
+                    if max_area == 0 {
+                        'outer:for by1 in 0..block_num {
+                            for bx1 in 0..block_num {
+                                if used_pos[by1][bx1] {
+                                    continue;
+                                }
+                                for by2 in by1+1..=block_num {
+                                    for bx2 in bx1+1..=block_num {
+                                        let area = (bx2 - bx1) * (by2 - by1) * block_len * block_len;
+                                        if !self.is_overlap(block_len * bx1, block_len * by1, block_len * bx2, block_len * by2, &rects, self.N) {
+                                            max_area = area;
+                                            max_bx1 = bx1;
+                                            max_by1 = by1;
+                                            max_bx2 = bx2;
+                                            max_by2 = by2;
+                                            break 'outer;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    rects.push(Rect{x1:block_len*max_bx1,y1:block_len*max_by1,x2:block_len*max_bx2,y2:block_len*max_by2,area:max_area});
+                    // すでに使われた場所を記録
+                    for by in max_by1..max_by2 {
+                        for bx in max_bx1..max_bx2 {
+                            used_pos[by][bx] = true;
+                        }
+                    }
+                }
+            }
+
+            rects.reverse();
+
+            // dbg!(get_time());
+
+            // 焼きなましで面積を変更する
+            const T0: f64 = 5e6;
+            const T1: f64 = 1e6;
+            let mut best_rects = rects.clone();
+            let mut cnt = 0;
+            let mut T = T0;
+            let mut best_score = self.compute_score(d, &mut best_rects);
+            loop {
+                cnt += 1;
+                if cnt%100 == 0 {
+                    let t = get_time() / ((TIME_LIMIT / self.D as f64) * (d+1) as f64);
+                    if t >= 1.0 {
+                        break;
+                    }
+                    // T = T0.powf(1.0 - t) * T1.powf(t);
+                    T = 0.0000001
+                }
+
+                // スコア計算
+                let old_score = self.compute_score(d, &mut rects);
+                // 乱数でRectを選択
+                let n = rng.gen_range(0..self.N);
+                let a = self.req_areas[d][n] as f64;
+                let b = rects[n].area as f64;
+                // 希望面積に近く条件を満たすRectはスキップ　→　探索空間の多様性確保のためコメントアウト
+                // if a < b && a / b > 0.99 {
+                //     continue;
+                // }
+
+                let (old_x1, old_y1, old_x2, old_y2, old_area) = (rects[n].x1, rects[n].y1, rects[n].x2, rects[n].y2, rects[n].area);
+                // 選択したRectをランダムに伸縮、移動させる
+                block_len /= 2;
+                let (new_x1, new_y1, new_x2, new_y2) = match rng.gen_range(0..12) {
+                    0 => { (old_x1.wrapping_sub(block_len), old_y1, old_x2, old_y2) },
+                    1 => { (old_x1, old_y1.wrapping_sub(block_len), old_x2, old_y2) },
+                    2 => { (old_x1, old_y1, old_x2 + block_len, old_y2) },
+                    3 => { (old_x1, old_y1, old_x2, old_y2 + block_len) },
+                    4 => { (old_x1.wrapping_sub(block_len), old_y1, old_x2.wrapping_sub(block_len), old_y2) },
+                    5 => { (old_x1, old_y1.wrapping_sub(block_len), old_x2, old_y2.wrapping_sub(block_len)) },
+                    6 => { (old_x1 + block_len, old_y1, old_x2 + block_len, old_y2) },
+                    7 => { (old_x1, old_y1 + block_len, old_x2, old_y2 + block_len) },
+                    8 => { (old_x1 + block_len, old_y1, old_x2, old_y2) },
+                    9 => { (old_x1, old_y1 + block_len, old_x2, old_y2) },
+                    10 => { (old_x1, old_y1, old_x2 - block_len, old_y2) },
+                    11 => { (old_x1, old_y1, old_x2, old_y2 - block_len) },
+                    _ => unreachable!("impossible")
+                };
+                let new_area = (new_x2 - new_x1) * (new_y2 - new_y1);
+
+                if new_x1 >= new_x2 || new_y1 >= new_y2 || new_x2 > self.W || new_y2 > self.W || self.is_overlap(new_x1, new_y1, new_x2, new_y2, &rects, n){
+                    continue;
+                }
+
+                rects[n] = Rect{x1:new_x1, y1:new_y1, x2:new_x2, y2:new_y2, area:new_area};
+                let mut new_rects = rects.clone();
+                let new_score = self.compute_score(d, &mut new_rects);
+                // dbg!(old_score, new_score, f64::exp((new_score - old_score) / T).clamp(0.0, 1.0));
+                if old_score < new_score && !rng.gen_bool(f64::exp((new_score - old_score) / T).clamp(0.0, 1.0)) {
+                    (rects[n].x1, rects[n].y1, rects[n].x2, rects[n].y2, rects[n].area) = (old_x1,old_y1,old_x2,old_y2,old_area);
+                }
+
+                // スコアが改善されたら更新
+                let score = self.compute_score(d, &mut rects);
+                if score > best_score {
+                    // dbg!(n, rects[n].x1, rects[n].y1, rects[n].x2, rects[n].y2);
+                    best_score = score;
+                    best_rects = rects.clone();
+                }
+            }
+
+            dbg!(cnt);
+
+            // ansに格納
+            for n in 0..self.N {
+               (ans[d][n].x1, ans[d][n].y1, ans[d][n].x2, ans[d][n].y2) = (best_rects[n].x1, best_rects[n].y1, best_rects[n].x2, best_rects[n].y2);
+                // dbg!(n, ans[d][n].y1, ans[d][n].x1, ans[d][n].y2, ans[d][n].x2);
+            }
+
+            for n in 0..self.N {
+                println!("{} {} {} {}", ans[d][n].y1, ans[d][n].x1, ans[d][n].y2, ans[d][n].x2);
+            }
+        }
+    }
+
+    // 作成した長方形が他の長方形と重ならないかチェック
+    fn is_overlap(&self, x1:usize, y1:usize, x2:usize, y2:usize, rects:&Vec<Rect>, n:usize) -> bool {
+        for i in 0..rects.len() {
+            if i == n {
+                continue;
+            }
+            let (x3,y3,x4,y4) = (rects[i].x1,rects[i].y1,rects[i].x2,rects[i].y2);
+            if max(x1, x3) < min(x2, x4) && max(y1, y3) < min(y2, y4) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // スコア計算
+    fn compute_score(&self, d:usize, rects:&mut Vec<Rect>) -> f64 {
+        // d日目の顧客希望面積に対する長方形配置のコストを計算
+        rects.sort_by_key(|r| r.area);
+        let mut cost = 1.0;
+        for n in 0..self.N {
+            let a = self.req_areas[d][n] as f64;
+            let b = rects[n].area as f64;
+            if a > b {
+                // 顧客希望面積と長方形の面積の差分をコストに加算
+                cost += 100.0 * (a - b);
+            } else {
+                // 顧客希望面積よりも大きすぎる長方形の面積を確保した場合もコストに加算
+                cost += 10.0 * (b - a);
+            }
+        }
+
+        // TODO: 前日のパーティションとのずれをコストに加算
+
+        1e15 / cost
+    }
+}
+
+#[fastout]
+fn main() {
+    input! {
+        w: usize,
+        d: usize,
+        n: usize,
+        req_areas: [[usize;n];d]
+    }
+
+    let solve = Solve::new(w,d,n,req_areas);
+    solve.solve();
+
+}
+
+////////////////////////////////////////
+// ここから下はテンプレート
+////////////////////////////////////////
+pub fn get_time() -> f64 {
+	static mut STIME: f64 = -1.0;
+	let t = std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).unwrap();
+	let ms = t.as_secs() as f64 + t.subsec_nanos() as f64 * 1e-9;
+	unsafe {
+		if STIME < 0.0 {
+			STIME = ms;
+		}
+		ms - STIME
+	}
+}

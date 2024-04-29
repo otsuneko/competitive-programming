@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.18.1/lib/index.min.js">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markdown-it-texmath@0.6.5/css/texmath.css">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/vscode-texmath.css">
+
+</head>
+<body class="markdown-body">
+<h1 id="usage" data-line="0" class="code-line">Usage</h1>
+<h2 id="requirements" data-line="2" class="code-line">Requirements</h2>
+<p data-line="3" class="code-line">Please install a compiler for Rust language (see <a href="https://www.rust-lang.org" data-href="https://www.rust-lang.org">https://www.rust-lang.org</a>).</p>
+<h2 id="input-generation" data-line="5" class="code-line">Input Generation</h2>
+<p data-line="6" class="code-line">Prepare <code>seeds.txt</code> which contains a list of random seeds (unsigned 64bit integers) and execute the following command.</p>
+<pre><code data-line="7" class="code-line"><code><div>cargo run --release --bin gen seeds.txt
+</div></code></code></pre>
+<p data-line="11" class="code-line">This will output input files into <code>in</code> directory.</p>
+<h2 id="visualization" data-line="13" class="code-line">Visualization</h2>
+<p data-line="14" class="code-line">Let <code>in.txt</code> be an input file and <code>out.txt</code> be an output file.
+You can visualize the output by executing the following command.</p>
+<pre><code data-line="16" class="code-line"><code><div>cargo run --release --bin vis in.txt out.txt
+</div></code></code></pre>
+<p data-line="19" class="code-line">The above command writes a visualization result to <code>out.svg</code>.
+It also outputs the score to standard output.
+You can open the svg file using image viewers, web browsers, or via <code>vis.html</code> file.</p>
+<h1 id="%E4%BD%BF%E3%81%84%E6%96%B9" data-line="23" class="code-line">使い方</h1>
+<h2 id="%E5%AE%9F%E8%A1%8C%E7%92%B0%E5%A2%83" data-line="25" class="code-line">実行環境</h2>
+<p data-line="26" class="code-line">Rust言語のコンパイル環境が必要です。
+<a href="https://www.rust-lang.org/ja" data-href="https://www.rust-lang.org/ja">https://www.rust-lang.org/ja</a> を参考に各自インストールして下さい。</p>
+<h2 id="%E5%85%A5%E5%8A%9B%E7%94%9F%E6%88%90" data-line="29" class="code-line">入力生成</h2>
+<p data-line="30" class="code-line"><code>seeds.txt</code> に欲しい入力ファイルの数だけ乱数seed値(符号なし64bit整数値)を記入し、以下のコマンドを実行します。</p>
+<pre><code data-line="31" class="code-line"><code><div>cargo run --release --bin gen seeds.txt
+</div></code></code></pre>
+<p data-line="35" class="code-line">生成された入力ファイルは <code>in</code> ディレクトリに出力されます。</p>
+<h2 id="%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%B6" data-line="37" class="code-line">ビジュアライザ</h2>
+<p data-line="38" class="code-line">入力ファイル名を<code>in.txt</code>、出力ファイル名を<code>out.txt</code>としたとき、以下のコマンドを実行します。</p>
+<pre><code data-line="39" class="code-line"><code><div>cargo run --release --bin vis in.txt out.txt
+</div></code></code></pre>
+<p data-line="42" class="code-line">出力のビジュアライズ結果は <code>out.svg</code> というファイルに書き出されます。
+標準出力にはスコアを出力します。
+svgファイルは画像ビューアソフト、webブラウザなどで表示できます。
+<code>vis.html</code> ファイルを開くことでも表示できます。</p>
+
+</body></html>
