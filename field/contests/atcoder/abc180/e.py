@@ -2,34 +2,28 @@ import sys
 input = lambda: sys.stdin.readline().rstrip()
 INF = 10**18
 
-# https://atcoder.jp/contests/abc180/tasks/abc180_e
 N = int(input())
-cities = [list(map(int,input().split())) for _ in range(N)]
+cities = [list(map(int, input().split())) for _ in range(N)]
 
-dp = [[INF]*N for _ in range(1<<N)]
-# 都市1に着くためのコストは0
+dp = [[INF] * N for _ in range(1 << N)]
 dp[1][0] = 0
 
-#bitDP
-for S in range(1<<N):
-    for last in range(N):
-        # lastに居ない場合はスキップ
-        if S & (1 << last) == 0:
+for s in range(1 << N):
+    for i in range(N):
+        if dp[s][i] == INF:
             continue
-        for nxt in range(N):
-            # 既にnxtに訪れている場合はスキップ
-            if S & (1 << nxt):
+        for j in range(N):
+            if s >> j & 1:
                 continue
-            cx,cy,cz = cities[last]
-            nx,ny,nz = cities[nxt]
-            cost = abs(nx-cx) + abs(ny-cy) + max(0,nz-cz)
-            dp[S|(1<<nxt)][nxt] = min(dp[S|(1<<nxt)][nxt], dp[S][last] + cost)
+            x1,y1,z1 = cities[i]
+            x2,y2,z2 = cities[j]
+            d = abs(x2 - x1) + abs(y2 - y1) + max(0, z2 - z1)
+            dp[s | 1 << j][j] = min(dp[s | 1 << j][j], dp[s][i] + d)
 
-# 全ての都市を巡った後で都市1に戻ってくるコストの最小値
 ans = INF
-for last in range(N):
-    cx,cy,cz = cities[last]
-    nx,ny,nz = cities[0]
-    cost = abs(nx-cx) + abs(ny-cy) + max(0,nz-cz)
-    ans = min(ans, dp[(1<<N)-1][last] + cost)
+for i in range(1,N):
+    x1,y1,z1 = cities[i]
+    x2,y2,z2 = cities[0]
+    d = abs(x2 - x1) + abs(y2 - y1) + max(0, z2 - z1)
+    ans = min(ans, dp[(1 << N) - 1][i] + d)
 print(ans)

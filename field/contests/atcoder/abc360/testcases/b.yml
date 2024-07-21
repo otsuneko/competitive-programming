@@ -1,0 +1,27 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      atcoder toe
+    out: |
+      Yes
+  - name: sample2
+    in: |
+      beginner r
+    out: |
+      No
+  - name: sample3
+    in: |
+      verticalreading agh
+    out: |
+      No
+
+extend:
+  - type: Text
+    path: "./b"
+    in: /in/*.txt
+    out: /out/*.txt

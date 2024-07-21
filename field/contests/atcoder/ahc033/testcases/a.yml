@@ -1,0 +1,26 @@
+---
+type: Batch
+timelimit: 3s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      5
+      24 10 17 15 13
+      14 11 2 1 5
+      7 9 6 21 20
+      8 4 19 3 16
+      18 23 22 0 12
+    out: |
+      PRDDDDRRRQLLLUUPRRRUQ
+      B
+      PRQB
+      PRRRRUUQB
+      PRRRRQB
+
+extend:
+  - type: Text
+    path: "./a"
+    in: /in/*.txt
+    out: /out/*.txt

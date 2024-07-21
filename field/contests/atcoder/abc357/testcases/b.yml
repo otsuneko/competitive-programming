@@ -1,0 +1,27 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      AtCoder
+    out: |
+      atcoder
+  - name: sample2
+    in: |
+      SunTORY
+    out: |
+      SUNTORY
+  - name: sample3
+    in: |
+      a
+    out: |
+      a
+
+extend:
+  - type: Text
+    path: "./b"
+    in: /in/*.txt
+    out: /out/*.txt

@@ -1,27 +1,24 @@
+S = input()
 from collections import deque
-S = list(input())
+T = deque()
 
-T = deque([])
-flag = False
+flg = False
 for s in S:
     if s == "R":
-        flag = not flag
+        flg = not flg
     else:
-        if flag:
+        if flg:
             if T and T[0] == s:
                 T.popleft()
-                continue
             else:
-                T.appendleft(s)        
+                T.appendleft(s)
         else:
-            if T and T[len(T)-1] == s:
+            if T and T[-1] == s:
                 T.pop()
-                continue
             else:
                 T.append(s)
 
-T = list(T)
-if flag:
-    T = T[::-1]
-
-print("".join(T))
+if flg:
+    print("".join(T)[::-1])
+else:
+    print("".join(T))

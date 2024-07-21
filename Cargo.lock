@@ -1567,6 +1567,142 @@ dependencies = [
 ]
 
 [[package]]
+name = "abc192"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
+name = "abc193"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
 name = "abc211"
 version = "0.1.0"
 dependencies = [
@@ -7005,6 +7141,754 @@ dependencies = [
 ]
 
 [[package]]
+name = "abc353"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
+name = "abc354"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
+name = "abc355"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
+name = "abc356"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
+name = "abc357"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
+name = "abc358"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
+name = "abc359"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
+name = "abc360"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
+name = "abc361"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
+name = "abc362"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
+name = "abc363"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
 name = "ac-library-rs"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -7419,7 +8303,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "ahc032"
+name = "ahc033"
 version = "0.1.0"
 dependencies = [
  "ac-library-rs",
@@ -7547,54 +8431,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 1.0.105",
-]
-
-[[package]]
-name = "anstream"
-version = "0.6.13"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d96bd03f33fe50a863e394ee9718a706f988b9079b20c3784fb726e7678b62fb"
-dependencies = [
- "anstyle",
- "anstyle-parse",
- "anstyle-query",
- "anstyle-wincon",
- "colorchoice",
- "utf8parse",
-]
-
-[[package]]
-name = "anstyle"
-version = "1.0.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8901269c6307e8d93993578286ac0edf7f195079ffff5ebdeea6a59ffb7e36bc"
-
-[[package]]
-name = "anstyle-parse"
-version = "0.2.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c75ac65da39e5fe5ab759307499ddad880d724eed2f6ce5b5e8a26f4f387928c"
-dependencies = [
- "utf8parse",
-]
-
-[[package]]
-name = "anstyle-query"
-version = "1.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e28923312444cdd728e4738b3f9c9cac739500909bb3d3c94b43551b16517648"
-dependencies = [
- "windows-sys",
-]
-
-[[package]]
-name = "anstyle-wincon"
-version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1cd54b81ec8d6180e24654d0b371ad22fc3dd083b6ff8ba325b72e00c87660a7"
-dependencies = [
- "anstyle",
- "windows-sys",
 ]
 
 [[package]]
@@ -8036,6 +8872,74 @@ dependencies = [
 ]
 
 [[package]]
+name = "arc177"
+version = "0.1.0"
+dependencies = [
+ "ac-library-rs",
+ "alga",
+ "amplify",
+ "amplify_derive",
+ "amplify_num",
+ "argio",
+ "ascii",
+ "az",
+ "bitset-fixed",
+ "bitvec",
+ "bstr",
+ "btreemultimap",
+ "counter",
+ "easy-ext",
+ "either",
+ "fixedbitset",
+ "getrandom",
+ "glidesort",
+ "hashbag",
+ "im-rc",
+ "indexing",
+ "indexmap 2.0.0",
+ "itertools",
+ "itertools-num",
+ "lazy_static",
+ "libm",
+ "maplit",
+ "memoise",
+ "multimap",
+ "multiversion",
+ "nalgebra",
+ "ndarray",
+ "num",
+ "num-bigint",
+ "num-complex 0.4.3",
+ "num-derive",
+ "num-integer",
+ "num-iter",
+ "num-rational",
+ "num-traits",
+ "omniswap",
+ "once_cell",
+ "ordered-float 3.7.0",
+ "pathfinding",
+ "permutohedron",
+ "petgraph",
+ "proconio",
+ "rand",
+ "rand_chacha",
+ "rand_core",
+ "rand_distr",
+ "rand_hc",
+ "rand_pcg",
+ "recur-fn",
+ "regex",
+ "rustc-hash",
+ "smallvec",
+ "static_assertions",
+ "superslice",
+ "tap",
+ "text_io",
+ "varisat",
+]
+
+[[package]]
 name = "argio"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -8139,52 +9043,6 @@ name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
-
-[[package]]
-name = "clap"
-version = "4.5.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "90bc066a67923782aa8515dbaea16946c5bcc5addbd668bb80af688e53e548a0"
-dependencies = [
- "clap_builder",
- "clap_derive",
-]
-
-[[package]]
-name = "clap_builder"
-version = "4.5.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae129e2e766ae0ec03484e609954119f123cc1fe650337e155d03b022f24f7b4"
-dependencies = [
- "anstream",
- "anstyle",
- "clap_lex",
- "strsim",
-]
-
-[[package]]
-name = "clap_derive"
-version = "4.5.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "528131438037fd55894f62d6e9f068b8f45ac57ffa77517819645d10aed04f64"
-dependencies = [
- "heck",
- "proc-macro2",
- "quote",
- "syn 2.0.37",
-]
-
-[[package]]
-name = "clap_lex"
-version = "0.7.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "98cc8fbded0c607b7ba9dd60cd98df59af97e84d24e49c8557331cfc26d301ce"
-
-[[package]]
-name = "colorchoice"
-version = "1.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "acbf1af155f9b9ef647e42cdc158db4b64a1b61f743629225fde6f3e0be2a7c7"
 
 [[package]]
 name = "competitive-programming"
@@ -8327,12 +9185,6 @@ name = "hashbrown"
 version = "0.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2c6201b9ff9fd90a5a3bac2e56a830d0caa509576f0e503818ee82c181b3437a"
-
-[[package]]
-name = "heck"
-version = "0.5.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2304e00983f87ffb38b55b444b5e3b60a884b5d30c0fca7d82fe33449bbe55ea"
 
 [[package]]
 name = "im-rc"
@@ -9171,12 +10023,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "strsim"
-version = "0.11.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f"
-
-[[package]]
 name = "superslice"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -9184,9 +10030,9 @@ checksum = "ab16ced94dbd8a46c82fd81e3ed9a8727dac2977ea869d217bcc4ea1f122e81f"
 
 [[package]]
 name = "svg"
-version = "0.16.0"
+version = "0.17.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "583e1c5c326fd6fede8797006de3b95ad6bcd60a592952952c5ba7ddd7e84c83"
+checksum = "700efb40f3f559c23c18b446e8ed62b08b56b2bb3197b36d57e0470b4102779e"
 
 [[package]]
 name = "syn"
@@ -9400,7 +10246,6 @@ dependencies = [
 name = "tools"
 version = "1.0.0"
 dependencies = [
- "clap",
  "itertools",
  "proconio",
  "rand",
@@ -9426,12 +10271,6 @@ name = "unicode-xid"
 version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f962df74c8c05a667b5ee8bcf162993134c104e96440b663c8daa176dc772d8c"
-
-[[package]]
-name = "utf8parse"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "711b9620af191e0cdc7468a8d14e709c3dcdb115b36f838e601583af800a370a"
 
 [[package]]
 name = "varisat"
@@ -9595,72 +10434,6 @@ dependencies = [
  "bytemuck",
  "safe_arch",
 ]
-
-[[package]]
-name = "windows-sys"
-version = "0.52.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "282be5f36a8ce781fad8c8ae18fa3f9beff57ec1b52cb3de0789201425d9a33d"
-dependencies = [
- "windows-targets",
-]
-
-[[package]]
-name = "windows-targets"
-version = "0.52.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7dd37b7e5ab9018759f893a1952c9420d060016fc19a472b4bb20d1bdd694d1b"
-dependencies = [
- "windows_aarch64_gnullvm",
- "windows_aarch64_msvc",
- "windows_i686_gnu",
- "windows_i686_msvc",
- "windows_x86_64_gnu",
- "windows_x86_64_gnullvm",
- "windows_x86_64_msvc",
-]
-
-[[package]]
-name = "windows_aarch64_gnullvm"
-version = "0.52.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bcf46cf4c365c6f2d1cc93ce535f2c8b244591df96ceee75d8e83deb70a9cac9"
-
-[[package]]
-name = "windows_aarch64_msvc"
-version = "0.52.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "da9f259dd3bcf6990b55bffd094c4f7235817ba4ceebde8e6d11cd0c5633b675"
-
-[[package]]
-name = "windows_i686_gnu"
-version = "0.52.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b474d8268f99e0995f25b9f095bc7434632601028cf86590aea5c8a5cb7801d3"
-
-[[package]]
-name = "windows_i686_msvc"
-version = "0.52.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1515e9a29e5bed743cb4415a9ecf5dfca648ce85ee42e15873c3cd8610ff8e02"
-
-[[package]]
-name = "windows_x86_64_gnu"
-version = "0.52.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5eee091590e89cc02ad514ffe3ead9eb6b660aedca2183455434b93546371a03"
-
-[[package]]
-name = "windows_x86_64_gnullvm"
-version = "0.52.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "77ca79f2451b49fa9e2af39f0747fe999fcda4f5e241b2898624dca97a1f2177"
-
-[[package]]
-name = "windows_x86_64_msvc"
-version = "0.52.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "32b752e52a2da0ddfbdbcc6fceadfeede4c939ed16d13e648833a61dfb611ed8"
 
 [[package]]
 name = "wyz"
