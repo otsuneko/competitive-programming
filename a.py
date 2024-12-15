@@ -1,7 +1,21 @@
-S = input()
+from bisect import bisect, bisect_left, bisect_right, insort, insort_left, insort_right
 
-idx = S.index("SUNSET")
-if idx+6 < len(S)-1:
-    print(S[idx+6:]+S[:(idx+9)%len(S)])
-else:
-    print(S[idx+6:idx+9])
+N = int(input())
+A = list(map(int,input().split()))
+A.sort()
+
+import itertools
+import operator
+cumsum = [0] + list(itertools.accumulate(A, func=operator.add))
+print(cumsum)
+
+mod = 10**8
+ans = 0
+for i,a in enumerate(A):
+    idx = bisect_left(A,mod-a)
+    print(A,idx)
+    ans += max(0,cumsum[idx]-cumsum[i] + a * (idx-i))
+    print(ans)
+    ans += (cumsum[N]-cumsum[idx] + a * (N-idx)) % mod
+    print(ans)
+print(ans)

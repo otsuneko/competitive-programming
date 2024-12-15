@@ -1,0 +1,33 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      aB
+      16
+      1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+    out: |
+      a B A b A b a B A b a B a B A b
+  - name: sample2
+    in: |
+      qWeRtYuIoP
+      8
+      1 1 2 3 5 8 13 21
+    out: |
+      q q W e t I E Q
+  - name: sample3
+    in: |
+      AnUoHrjhgfLMcDIpzxXmEWPwBZvbKqQuiJTtFSlkNGVReOYCdsay
+      5
+      1000000000000000000 123456789 1 987654321 999999999999999999
+    out: |
+      K a A Z L
+
+extend:
+  - type: Text
+    path: "./d"
+    in: /in/*.txt
+    out: /out/*.txt

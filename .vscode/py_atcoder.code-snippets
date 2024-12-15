@@ -154,12 +154,11 @@
         ],
         "description": "print_YESNO"
     },
-    "debug": {
+    "debug_print": {
         "scope": "python",
-        "prefix": "debug_comment",
+        "prefix": "debug_print",
         "body": [
-            "import sys",
-            "def debug(*args): print(*args, file=sys.stderr)",
+            "print($1, file=sys.stderr)",
         ],
         "description": "デバッグ用コメント出力関数"
     },
@@ -754,11 +753,7 @@
         "scope": "python",
         "prefix": "sort_with_index",
         "body": [
-            "def sort_with_index(arr, reverse=False):",
-            "    if reverse:",
-            "        return sorted([ (x,i) for i, x in enumerate(arr)], reverse=True)",
-            "    else:",
-            "        return sorted([ (x,i) for i, x in enumerate(arr)])",
+            "sorted([ (x,i) for i, x in enumerate(A)])",
         ],
         "description": "index付きソート"
     },
@@ -3324,6 +3319,31 @@
             "    # (何らかの処理を行う。whileがbreakしたので、dequeに入っている連続部分列は条件を満たしている。特に右端の要素から左に延ばせる最大の長さになっている。)",
         ],
         "description": "しゃくとり法"
+    },
+    "sliding_window_minimum": {
+        "prefix": "sliding_window_minimum",
+        "body": [
+            "from collections import deque",
+            "# arr内の連続する長さKのスライディングウィンドウ中の最小値を(N-K+1)区間分求める",
+            "# arrの各要素を[-x for x in arr]と正負反転して与えれば最大値が求まる",
+            "def sliding_window_minimum(arr, K):",
+            "    ans = []",
+            "    d = deque() # dequeは常に単調増加になるよう管理",
+            "    for i in range(len(arr)):",
+            "        # 新入りがdequeの末尾(最大値)になれるように新入り以上の要素を削除",
+            "        while d and arr[i] <= arr[d[-1]]:",
+            "            d.pop()",
+            "        # 新入りを末尾(最大値)に追加",
+            "        d.append(i)",
+            "        # SWの長さがK以上ならd[0]がその時点の最小値",
+            "        if i >= K-1:",
+            "            ans.append(arr[d[0]])",
+            "        # d[0]がSWの先頭idx(i+1-K)以下ならSW範囲外として削除しておく",
+            "        if d and d[0] <= i+1-K:",
+            "            d.popleft()",
+            "    return ans",
+        ],
+        "description": "スライド最小値/最大値"
     },
     "BIT": {
         "prefix": "BIT",

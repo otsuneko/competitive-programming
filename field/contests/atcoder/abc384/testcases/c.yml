@@ -1,0 +1,117 @@
+---
+type: Batch
+timelimit: 2s
+match: Lines
+
+cases:
+  - name: sample1
+    in: |
+      400 500 600 700 800
+    out: |
+      ABCDE
+      BCDE
+      ACDE
+      ABDE
+      ABCE
+      ABCD
+      CDE
+      BDE
+      ADE
+      BCE
+      ACE
+      BCD
+      ABE
+      ACD
+      ABD
+      ABC
+      DE
+      CE
+      BE
+      CD
+      AE
+      BD
+      AD
+      BC
+      AC
+      AB
+      E
+      D
+      C
+      B
+      A
+  - name: sample2
+    in: |
+      800 800 900 900 1000
+    out: |
+      ABCDE
+      ACDE
+      BCDE
+      ABCE
+      ABDE
+      ABCD
+      CDE
+      ACE
+      ADE
+      BCE
+      BDE
+      ABE
+      ACD
+      BCD
+      ABC
+      ABD
+      CE
+      DE
+      AE
+      BE
+      CD
+      AC
+      AD
+      BC
+      BD
+      AB
+      E
+      C
+      D
+      A
+      B
+  - name: sample3
+    in: |
+      128 256 512 1024 2048
+    out: |
+      ABCDE
+      BCDE
+      ACDE
+      CDE
+      ABDE
+      BDE
+      ADE
+      DE
+      ABCE
+      BCE
+      ACE
+      CE
+      ABE
+      BE
+      AE
+      E
+      ABCD
+      BCD
+      ACD
+      CD
+      ABD
+      BD
+      AD
+      D
+      ABC
+      BC
+      AC
+      C
+      AB
+      B
+      A
+
+extend:
+  - type: Text
+    path: "./c"
+    in: /in/*.txt
+    out: /out/*.txt
